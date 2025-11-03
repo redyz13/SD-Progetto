@@ -1,6 +1,35 @@
+# === Build directories ===
+target/
 build/
-WebContent/META-INF/
+
+# === IDE files ===
+.idea/
+.vscode/
+*.iml
+
+# === Output folders ===
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-.vscode/
+
+# === OS / System files ===
+.DS_Store
+Thumbs.db
+
+# === Logs and temp files ===
+*.log
+*.tmp
+
+# === Maven ===
+.mvn/
+.settings/
+.classpath
+.project
+
+# === WAR, JAR, ZIP ===
+*.war
+*.jar
+*.zip
+
+# === META-INF sensitive files ===
+src/main/webapp/META-INF/context.xml
