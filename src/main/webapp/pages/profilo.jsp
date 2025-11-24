@@ -77,7 +77,7 @@
                 <label for="nomeCarta">Nome Carta</label><br>
                 <input type="text" id="nomeCarta" name="nomeCarta" value="<%=utenteBean.getNomeCarta()%>" disabled><br><br>
                 <label for="cognomeCarta">Cognome Carta</label><br>
-                <input type="text" id="cognomeCarta" name="cognomeCarta" value="<%=utenteBean.getNomeCarta()%>" disabled><br><br>
+                <input type="text" id="cognomeCarta" name="cognomeCarta" value="<%=utenteBean.getCognomeCarta()%>" disabled><br><br>
                 <label for="numCarta">Numero Carta</label><br>
                 <input type="text" id="numCarta" name="numCarta" value="<%=utenteBean.getNumCarta()%>" disabled><br><br>
                 <label for="dataScadenza">Data Scadenza</label><br>
