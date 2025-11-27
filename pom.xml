@@ -144,6 +144,91 @@
                     <useModulePath>false</useModulePath>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.14</version>
+                <executions>
+
+                    <!-- Prepare agent for test execution -->
+                    <execution>
+                        <id>prepare-agent</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+
+                    <!-- Generate report after tests -->
+                    <execution>
+                        <id>report</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                        <configuration>
+
+                            <!-- Report exclusions -->
+                            <excludes>
+                                <!-- packages -->
+                                <exclude>model/populator/**</exclude>
+                                <exclude>model/security/**</exclude>
+                                <!-- classes -->
+                                <exclude>model/acquisto/AcquistoBean.class</exclude>
+                                <exclude>model/maglietta/MagliettaBean.class</exclude>
+                                <exclude>model/maglietta/MagliettaOrdine.class</exclude>
+                                <exclude>model/misura/MisuraBean.class</exclude>
+                                <exclude>model/ordine/OrdineBean.class</exclude>
+                                <exclude>model/utente/UtenteBean.class</exclude>
+                                <exclude>model/DBConnection.class</exclude>
+                            </excludes>
+                        </configuration>
+                    </execution>
+
+                    <!-- Check coverage thresholds -->
+                    <execution>
+                        <id>check</id>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                        <configuration>
+
+                            <!-- Check exclusions -->
+                            <excludes>
+                                <!-- packages -->
+                                <exclude>model/populator/**</exclude>
+                                <exclude>model/security/**</exclude>
+                                <!-- classes -->
+                                <exclude>model/acquisto/AcquistoBean.class</exclude>
+                                <exclude>model/maglietta/MagliettaBean.class</exclude>
+                                <exclude>model/maglietta/MagliettaOrdine.class</exclude>
+                                <exclude>model/misura/MisuraBean.class</exclude>
+                                <exclude>model/ordine/OrdineBean.class</exclude>
+                                <exclude>model/utente/UtenteBean.class</exclude>
+                                <exclude>model/DBConnection.class</exclude>
+                            </excludes>
+                            <rules>
+                                <rule>
+                                    <element>BUNDLE</element>
+                                    <limits>
+                                        <limit>
+                                            <counter>LINE</counter>
+                                            <value>COVEREDRATIO</value>
+                                            <!-- <minimum>0.80</minimum> -->
+                                            <minimum>0.0</minimum>
+                                        </limit>
+                                        <limit>
+                                            <counter>BRANCH</counter>
+                                            <value>COVEREDRATIO</value>
+                                            <!-- <minimum>0.80</minimum> -->
+                                            <minimum>0.0</minimum>
+                                        </limit>
+                                    </limits>
+                                </rule>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 </project>
