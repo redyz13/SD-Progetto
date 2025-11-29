@@ -43,7 +43,7 @@ jobs:
             -e "s#YOUR_DB_NAME#${{ secrets.MYSQL_DATABASE }}#g" \
             src/main/webapp/META-INF/context-template.xml \
             > src/main/webapp/META-INF/context.xml
-      
+
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
