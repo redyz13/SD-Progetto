@@ -18,6 +18,10 @@ public class AcquistoDAO implements DAOInterface<AcquistoBean, Integer> {
         ds = DBConnection.getDataSource();
     }
 
+    public AcquistoDAO(DataSource ds) {
+        AcquistoDAO.ds = ds;
+    }
+
     @Override
     public AcquistoBean doRetrieveByKey(Integer code) throws SQLException {
         AcquistoBean acquistoBean = new AcquistoBean();

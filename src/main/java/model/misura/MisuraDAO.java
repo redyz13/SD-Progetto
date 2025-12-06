@@ -18,6 +18,10 @@ public class MisuraDAO {
         ds = DBConnection.getDataSource();
     }
 
+    public MisuraDAO(DataSource ds) {
+        MisuraDAO.ds = ds;
+    }
+
     public void doSave(MisuraBean product) throws SQLException {
         String query = "INSERT INTO " + TABLE_NAME + " (IDMaglietta, taglia, quantita)" + " VALUES (?, ?, ?)";
 

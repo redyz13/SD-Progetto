@@ -19,6 +19,10 @@ public class OrdineDAO implements DAOInterface<OrdineBean, Integer> {
         ds = DBConnection.getDataSource();
     }
 
+    public OrdineDAO(DataSource dataSource) {
+        ds = dataSource;
+    }
+
     @Override
     public OrdineBean doRetrieveByKey(Integer code) throws SQLException {
         OrdineBean ordineBean = new OrdineBean();

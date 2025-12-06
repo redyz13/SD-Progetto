@@ -23,6 +23,10 @@ public class UtenteDAO implements DAOInterface<UtenteBean, String> {
         ds = DBConnection.getDataSource();
     }
 
+    public UtenteDAO(DataSource ds) {
+        UtenteDAO.ds = ds;
+    }
+
     @Override
     public UtenteBean doRetrieveByKey(String code) throws SQLException {
         UtenteBean user = new UtenteBean();

@@ -24,6 +24,10 @@ public class SearchBar extends HttpServlet {
         ds = DBConnection.getDataSource();
     }
 
+    public SearchBar(DataSource ds) {
+        SearchBar.ds = ds;
+    }
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String search = req.getParameter("search");

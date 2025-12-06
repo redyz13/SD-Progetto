@@ -15,6 +15,10 @@ public class MagliettaDAO implements DAOInterface<MagliettaBean, Integer> {
         ds = DBConnection.getDataSource();
     }
 
+    public MagliettaDAO(DataSource ds) {
+        this.ds = ds;
+    }
+
     public synchronized Collection<MagliettaBean> doRetrieveByTipo(String tipo) throws SQLException {
         Collection<MagliettaBean> maglietteTipo = new ArrayList<>();
 
