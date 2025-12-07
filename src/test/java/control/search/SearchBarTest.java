@@ -64,6 +64,10 @@ public class SearchBarTest {
 
         servlet.doPost(req, resp);
 
+        verify(psMock).setString(1, "%mag%");
+        verify(resp).setContentType("application/json");
+        verify(resp).setCharacterEncoding("UTF-8");
+
         assertEquals("[]", writer.toString());
     }
 
