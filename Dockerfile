@@ -10,7 +10,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # === Runtime stage: lightweight Tomcat container ===
-FROM tomcat:9.0.90-jdk11
+FROM tomcat:9.0.112-jdk11
 
 # Remove default Tomcat applications
 RUN rm -rf /usr/local/tomcat/webapps/*
