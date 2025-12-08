@@ -14,14 +14,16 @@ permissions:
 
 jobs:
   scanning:
-    name: GitGuardian scan
+    name: Security Scannings
     runs-on: ubuntu-latest
     if: ${{ github.event_name == 'workflow_dispatch' || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v5
         with:
           fetch-depth: 0
+
       - name: GitGuardian scan
         uses: GitGuardian/ggshield/actions/secret@v1.45.0
         env:
