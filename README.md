@@ -19,8 +19,6 @@ The focus is not on introducing new features, but on evaluating and strengthenin
 
 As part of the SD course activities, this project integrates several tools to assess and improve correctness, test quality, performance, and security.
 
----
-
 ### 🧾 **OpenJML — JML Formal Specification**
 
 OpenJML is used to introduce formal methods into the codebase:
@@ -162,8 +160,6 @@ If any of these criteria are not met, SonarQube marks the analysis as failed, bl
 ## 🚀 CI/CD Pipeline
 
 The repository uses a **three-workflow GitHub Actions setup** to automate testing, quality analysis, security checks, and container delivery.
-
----
 
 ### 1️⃣ CI/CD Pipeline (Build, Tests, Coverage & Code Quality)
 
