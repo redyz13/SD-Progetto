@@ -144,11 +144,28 @@ Note that we excluded the same classes as we did with JaCoCo.
 
 ---
 
+### 🧹 **SonarQube Quality Gates**
+
+The project adopts the Sonar way quality gate, which evaluates only new code and requires all the following conditions to be satisfied:
+
+* No new bugs
+* No new vulnerabilities
+* Limited technical debt
+* All new security hotspots are reviewed
+* Sufficient test coverage on new code
+* Limited code duplication
+
+If any of these criteria are not met, SonarQube marks the analysis as failed, blocking the quality gate.
+
+---
+
 ## 🚀 CI/CD Pipeline
 
-The repository uses a **two-workflow CI/CD setup** designed to automate testing, reporting, and deployment.
+The repository uses a **three-workflow GitHub Actions setup** to automate testing, quality analysis, security checks, and container delivery.
 
-### 1️⃣ CI/CD Pipeline (Build & Verification)
+---
+
+### 1️⃣ CI/CD Pipeline (Build, Tests, Coverage & Code Quality)
 
 Triggered on every push or pull request to `main`, this workflow performs:
 
@@ -156,8 +173,9 @@ Triggered on every push or pull request to `main`, this workflow performs:
 * **Coverage & Mutation Reporting:** generation of JaCoCo and PiTest HTML reports
 * **GitHub Pages Publishing:** automatic publication of generated reports
 * **Codecov Integration:** upload of coverage data and test results to Codecov
-* **Test Summary:** human-readable JUnit report via *dorny/test-reporter*
-* **Artifacts:** the compiled application artifact is uploaded as a downloadable file. The same applies to the GitHub Pages reports.
+* **SonarQube Cloud Analysis:** static analysis of code quality and security, executed in a separate job after a successful build and test phase.
+* **Test Summary:** human-readable JUnit report via dorny/test-reporter
+* **Artifacts:** the compiled application artifact is uploaded as a downloadable file. The same applies to the GitHub Pages reports
 
 📄 **Public Reports (GitHub Pages):**
 
@@ -167,26 +185,41 @@ Triggered on every push or pull request to `main`, this workflow performs:
 * **PiTest Reports:**
   [https://rosacarota.github.io/SD-Progetto/PiTest/](https://rosacarota.github.io/SD-Progetto/PiTest/)
 
-### 2️⃣ Docker Publishing Workflow
+---
 
-A dedicated GitHub Actions workflow handles the automated build and distribution of the application’s Docker image.
-It is triggered **after a successful CI/CD Pipeline execution**, or manually via `workflow_dispatch`.
+### 2️⃣ Security Pipeline (Secrets & Vulnerability Scanning)
 
-The workflow performs:
+Triggered **after a successful CI/CD Pipeline run** (or manually via `workflow_dispatch`), this workflow focuses on security analysis:
 
-* **Automated Build:** compiles the application and generates a production-ready `context.xml` using GitHub Secrets.
-* **Multi-Architecture Image Build:** uses Docker Buildx to produce images for both `amd64` and `arm64`.
-* **Metadata Injection:** automatically tags the image using `docker/metadata-action`.
+* **GitGuardian Scan:** detection of hard-coded secrets and credential leaks in the repository history
+* **Snyk SAST:** source code analysis to identify insecure coding patterns
+* **Snyk Maven Scan:** vulnerability scanning of direct and transitive Maven dependencies
+* **Automated Build & Configuration:** generation of a `context.xml` file from GitHub Secrets and build of a local Docker image (`app`) for analysis
+* **Snyk Docker Scan:** vulnerability scanning of the built container image with severity thresholds
+
+This stage ensures that the project passes secret detection and vulnerability checks before the Docker image is published.
+
+---
+
+### 3️⃣ Docker Publishing Workflow (Multi-Architecture Image Release)
+
+Triggered **after a successful Security Pipeline run** (or manually via `workflow_dispatch`), this workflow handles the final container delivery:
+
+* **Automated Build:** compiles the application and generates a production-ready `context.xml` using GitHub Secrets
+
+* **Multi-Architecture Image Build:** uses Docker Buildx to produce images for both `amd64` and `arm64`
+
+* **Metadata Injection:** automatically tags the image using `docker/metadata-action`
+
 * **DockerHub Publishing:** pushes the final image to:
 
-```
-rosacarota/whitee-app:latest
-```
+  ```text
+  rosacarota/whitee-app:latest
+  ```
 
-* **Build Summary & Downloadable Artifact:**
-  the action automatically provides a **Docker Build Summary**, including cache usage, build duration, and a downloadable `.dockerbuild` archive.
+* **Build Summary & Downloadable Artifact:** the action automatically provides a **Docker Build Summary**, including cache usage, build duration, and a downloadable `.dockerbuild` archive
 
-This workflow ensures reproducible, traceable, and continuously delivered container images.
+This workflow ensures that only code that has passed all tests and security checks is released as a reproducible and traceable Docker image.
 
 ---
 ## 🔐 Dependabot Integration
