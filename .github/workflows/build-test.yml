@@ -36,11 +36,8 @@ jobs:
         restore-keys: ${{ runner.os }}-m2
 
 
-    - name: Run tests + coverage gate
+    - name: Run tests, generate JaCoCo report and enforce coverage
       run: mvn clean verify
-
-    - name: Generate JaCoCo report
-      run: mvn jacoco:report
 
     - name: Generate test report
       uses: dorny/test-reporter@v2
