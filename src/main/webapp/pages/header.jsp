@@ -37,16 +37,16 @@
 			<% } %>
 			<%-------------- Blocco utente non registrato ----------%>
 			<% if (tipoUtente == null) { %>
-			<a href="${pageContext.request.contextPath}/pages/login.jsp" id="login-icon" class="a"><img src="${pageContext.request.contextPath}/images/system/login.png" class="logo lo" alt="login"></a>
+			<a href="${pageContext.request.contextPath}/pages/login.jsp" id="login-icon-not-registered" class="a"><img src="${pageContext.request.contextPath}/images/system/login.png" class="logo lo" alt="login"></a>
 			<% } %>
 			<%------------------------------------------------------%>
 	
 			<%-------------- Blocco utente registrato ----------%>
 			<% if (tipoUtente != null && tipoUtente.equals(Login.REGISTRATO)) { %>
 			<div class="dropdown b">
-			  	<a href="${pageContext.request.contextPath}/pages/profilo.jsp" id="login-icon" class="a"><img src="${pageContext.request.contextPath}/images/system/profilo.png" class="logo lo" alt="profilo"></a>
+			  	<a href="${pageContext.request.contextPath}/pages/profilo.jsp" id="login-icon-profile" class="a"><img src="${pageContext.request.contextPath}/images/system/profilo.png" class="logo lo" alt="profilo"></a>
 			    <div class="dropdown-content">
-			    	<a href="${pageContext.request.contextPath}/Logout" id="login-icon" class="a"><img src="${pageContext.request.contextPath}/images/system/logout.png" class="esci" alt="Logout"></a>
+			    	<a href="${pageContext.request.contextPath}/Logout" id="login-icon-logout" class="a"><img src="${pageContext.request.contextPath}/images/system/logout.png" class="esci" alt="Logout"></a>
 			    </div>
 			</div>
 			
@@ -55,7 +55,7 @@
 	
 			<%-------------- Blocco admin ----------%>
 			<% if (tipoUtente != null && tipoUtente.equals(Login.ADMIN)) { %>
-			<a href="${pageContext.request.contextPath}/Logout" id="login-icon" class="a"><img src="${pageContext.request.contextPath}/images/system/logout.png" class="logo lo" alt="Log Out"></a>
+			<a href="${pageContext.request.contextPath}/Logout" id="login-icon-admin-logout" class="a"><img src="${pageContext.request.contextPath}/images/system/logout.png" class="logo lo" alt="Log Out"></a>
 			<% } %>
 			<%--------------------------------------%>
 	

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -15,7 +14,7 @@
 	<img src="${pageContext.request.contextPath}/images/system/logSig.png" id="imgLogSig" alt="Logo">
 	<div class="form-container">
 			<form action="${pageContext.request.contextPath}/Login" method="post" id="lform">
-			    <p id="head">Accedi</p>
+			    <p id="head-accedi">Accedi</p>
 			    <p>Non ti sei ancora registrato? <a href='javascript:changeForm("Sign Up")'>Registrati ora!</a></p> 
 			    <div class="group">      
       				<input type="text" name="username" id="username" required>
@@ -28,7 +27,7 @@
 			    <br><button type="submit" class="button2">Accedi</button>
 			</form>
 			<form action="${pageContext.request.contextPath}/Registrazione" method="post" id="sform">
-			    <p id="head">Registrati</p>
+			    <p id="head-registrati">Registrati</p>
 		        <p>Sei gi&agrave; registrato? <a href='javascript:changeForm("Log In")'>Accedi ora!</a></p> 
 			    <div class="group">      
       				<input type="text" name="usernameReg" id="usernameReg" required>
