@@ -74,8 +74,8 @@
                                        autocomplete="off"><%=magliettaBean.getDescrizione()%></textarea></label>
 
     <p>Aggiornare la grafica?</p>
-    <label>S&igrave<input type="radio" name="selezione" value="si" onclick="selezione()"></label>
-    <label>No<input type="radio" id="radioNo" name="selezione" value="no" checked onclick="selezione()"></label>
+    <label>S&igrave<input type="radio" name="selezione" value="si" onchange="selezione()"></label>
+    <label>No<input type="radio" id="radioNo" name="selezione" value="no" checked onchange="selezione()"></label>
     <br id="newLine" hidden>
     <label id="labelGrafica" hidden>Grafica: <input form="update" id="fileInput" type="file" hidden name="grafica" accept="image/*"></label> <br>
     <input form="update" type="hidden" name="path" value="<%= magliettaBean.getGrafica() %>">

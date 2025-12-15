@@ -64,19 +64,43 @@
 			<script src="https://cdn.lordicon.com/bhenfmcm.js"
 					integrity="sha384-VY539ll5TIagHE4WlmKaJKJ4gKxfKtGxK0MgVqVuFG4RXvATOK4KWfapoPR/PE9K"
 					crossorigin="anonymous"></script>
-			<lord-icon src="https://cdn.lordicon.com/lpddubrl.json" trigger="hover"
-					   colors="primary:#e88c30,secondary:#30c9e8" stroke="65" class="cart"
-					   onclick="location.href = '${pageContext.request.contextPath}/pages/carrello.jsp';"></lord-icon>
+			<lord-icon src="https://cdn.lordicon.com/lpddubrl.json" 
+					trigger="hover"
+					colors="primary:#e88c30,secondary:#30c9e8" 
+					stroke="65" 
+					role="link"
+					tabindex="0"
+					aria-label="Vai al carrello"
+					class="cart"
+					onclick="location.href = '${pageContext.request.contextPath}/pages/carrello.jsp';"
+					onkeydown="if(event.key==='Enter' || event.key===' '){ event.preventDefault(); location.href='${pageContext.request.contextPath}/pages/carrello.jsp'; }">
+			</lord-icon>
 			<% } %>
 		</div>
 		<div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#"
+				class="closebtn"
+				role="button"
+				onclick="event.preventDefault(); closeNav();"
+				aria-label="Chiudi menu">
+				&times;
+			</a>
 			<a href="${pageContext.request.contextPath}/Catalogo">Catalogo</a>
 			<a href="${pageContext.request.contextPath}/pages/personalizzata.jsp">Personalizza</a>
 		</div>
 
 		<div id="main">
-			<span id="open" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+			<span id="open"
+				role="button"
+				tabindex="0"
+				style="font-size:30px;cursor:pointer"
+				aria-label="Apri menu"
+				aria-controls="sidenav"
+				aria-expanded="false"
+				onclick="openNav()"
+				onkeydown="if(event.key==='Enter' || event.key===' '){ event.preventDefault(); openNav(); }">
+			&#9776;
+			</span>		
 		</div>
 
 		<script>

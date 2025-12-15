@@ -28,10 +28,10 @@
 	
 			<div class="slider">
 				<div class="img-per-slider">
-					<img id="img-1" class="active" src="${pageContext.request.contextPath}/images/system/adv/adv-1.png" data-value="naruto" alt="Naruto image">
-					<img id="img-2" src="${pageContext.request.contextPath}/images/system/adv/adv-2.png" data-value="garfield" alt="Garfield image">
-					<img id="img-3" src="${pageContext.request.contextPath}/images/system/adv/adv-3.png" data-value="marvel" alt="Marvel image">
-					<img id="img-4" src="${pageContext.request.contextPath}/images/system/adv/adv-4.png" data-value="personalizzata" alt="Custom image">
+					<img id="img-1" class="active" src="${pageContext.request.contextPath}/images/system/adv/adv-1.png" data-value="naruto" alt="Naruto">
+					<img id="img-2" src="${pageContext.request.contextPath}/images/system/adv/adv-2.png" data-value="garfield" alt="Garfield">
+					<img id="img-3" src="${pageContext.request.contextPath}/images/system/adv/adv-3.png" data-value="marvel" alt="Marvel">
+					<img id="img-4" src="${pageContext.request.contextPath}/images/system/adv/adv-4.png" data-value="personalizzata" alt="Custom">
 				</div>
 			</div>
 
