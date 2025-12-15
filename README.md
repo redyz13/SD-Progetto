@@ -50,6 +50,9 @@ Codecov is used to publish and visualize coverage in CI:
 
 This ensures continuous visibility of test effectiveness.
 
+* **Codecov Report:**
+  [https://app.codecov.io/gh/rosacarota/SD-Progetto](https://app.codecov.io/gh/rosacarota/SD-Progetto)
+
 ---
 
 ### 🧬 **PiTest — Mutation Testing**
