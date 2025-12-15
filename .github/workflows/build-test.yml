@@ -39,6 +39,12 @@ jobs:
     - name: Run tests, generate JaCoCo report and enforce coverage
       run: mvn clean verify
 
+    - name: Upload JaCoCo XML report
+      uses: actions/upload-artifact@v4
+      with:
+        name: jacoco-report
+        path: target/site/jacoco/jacoco.xml
+
     - name: Generate test report
       uses: dorny/test-reporter@v2
       if: success() || failure()
@@ -127,7 +133,15 @@ jobs:
           key: ${{ runner.os }}-sonar
           restore-keys: ${{ runner.os }}-sonar
 
-      - name: Run SonarQube Scan
+      - name: Download JaCoCo report
+        uses: actions/download-artifact@v4
+        with:
+          name: jacoco-report
+          path: target/site/jacoco
+
+      - name: Run SonarCloud Scan
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
+        run: |
+          mvn -B sonar:sonar \
+            -Dsonar.login=${SONAR_TOKEN}
