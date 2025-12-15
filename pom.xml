@@ -17,7 +17,6 @@
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.organization>rosa-carotenuto</sonar.organization>
         <sonar.coverage.jacoco.xmlReportPaths>target/site/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
         <!-- Same exclusions as JaCoCo -->
         <sonar.coverage.exclusions>
@@ -145,11 +144,6 @@
                 <configuration>
                     <useModulePath>false</useModulePath>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.sonarsource.scanner.maven</groupId>
-                <artifactId>sonar-maven-plugin</artifactId>
-                <version>4.0.0.4121</version>
             </plugin>
             <plugin>
                 <groupId>org.jacoco</groupId>

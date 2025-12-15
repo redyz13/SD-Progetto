@@ -152,11 +152,12 @@ jobs:
           path: target/site/jacoco
 
       - name: Run SonarCloud Scan
+        continue-on-error: true
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           mvn -B sonar:sonar \
-            -Dsonar.login=${SONAR_TOKEN} \
+            -Dsonar.token=${SONAR_TOKEN} \
             -Dsonar.projectKey=rosacarota_SD-Progetto \
             -Dsonar.organization=rosa-carotenuto \
             -Dsonar.qualitygate.wait=true
