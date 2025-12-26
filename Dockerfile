@@ -44,6 +44,8 @@ RUN openjml --esc --release 21 \
     --class-path "$(cat /tmp/cp.txt):target/classes" \
     src/main/java/model/acquisto/AcquistoBean.java \
     src/main/java/model/maglietta/MagliettaBean.java \
+    src/main/java/model/misura/MisuraBean.java\
+    src/main/java/model/ordine/OrdineBean.java\
  && echo "OPENJML DONE"
 
 RUN echo "openjml-ok" > /openjml.ok
