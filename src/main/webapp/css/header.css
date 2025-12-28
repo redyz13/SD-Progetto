@@ -218,12 +218,14 @@ nav .nav-right {
 	.sidenav .closebtn {
 	  position: absolute;
 	  top: 0;
-	  right: 2vw;
+	  right: 2.5vw;
 	  font-size: 10vh;
-	  margin-right: 20px;
+	  margin-right: 30px;
 	  transform: translateX(100%);
 	  background: transparent;
 	  text-align: right;
+    border: none;
+    cursor: pointer;
 	}
 	
 	#main {
