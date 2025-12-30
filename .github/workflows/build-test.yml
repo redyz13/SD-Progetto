@@ -5,17 +5,17 @@ on:
   pull_request:
     branches: [ main ]
 
-permissions:
-  contents: read
-  pull-requests: write   # needed for PR comments (Codecov/Test Reporter)
-  checks: write          # needed to publish test results in GitHub Checks
-  pages: write           # needed if you publish Jacoco/Pitest reports to GitHub Pages
-  id-token: write        # needed by deploy-pages
-
 jobs:
   build-test:
     runs-on: ubuntu-latest
     name: Build and Test with Java 11
+
+    permissions:
+      contents: read
+      pull-requests: write   # needed for PR comments (Codecov/Test Reporter)
+      checks: write          # needed to publish test results in GitHub Checks
+      pages: write           # needed if you publish Jacoco/Pitest reports to GitHub Pages
+      id-token: write        # needed by deploy-pages
 
     steps:
     - name: Checkout code
