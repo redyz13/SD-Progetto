@@ -41,7 +41,7 @@ public class UtentePopulator implements TablePopulator {
         }
     }
 
-    private List<UtenteBean> loadUsers() throws Exception {
+    private List<UtenteBean> loadUsers() {
         List<UtenteBean> list = new ArrayList<>();
 
         list.add(make("admin","admin","admin","admin","admin",
@@ -118,10 +118,89 @@ public class UtentePopulator implements TablePopulator {
                 LocalDate.parse("2027-05-26"),"12345","82259","9981 Forest Dale Crossing",
                 "Bluri","user"));
 
+        list.add(make("gflucks1","0KNTOZqVDF","Gianina","Flucks","gflucks1@soundcloud.com",
+                LocalDate.parse("2003-12-04"),"Gianina","Flucks","3549105101434644",
+                LocalDate.parse("2027-06-28"),"12345","61244","8 Esch Park",
+                "Koundara","user"));
+
+        list.add(make("gidwalevansd","awkUzNGmcOzF","Gert","Idwal Evans","gidwalevansd@amazonaws.com",
+                LocalDate.parse("1961-08-30"),"Gert","Idwal Evans","3533409596742760",
+                LocalDate.parse("2026-07-04"),"12345","16810","1 Lyons Lane",
+                "Topolovgrad","user"));
+
+        list.add(make("jarmfieldp","vPHONxyJxER","Jennifer","Armfield","jarmfieldp@vimeo.com",
+                LocalDate.parse("1986-04-27"),"Jennifer","Armfield","67615079647924265",
+                LocalDate.parse("2025-07-19"),"12345","33268","422 Toban Place",
+                "Bangkle","user"));
+
+        list.add(make("jmaddicksb","ktDH8DKi","Jocelyne","Maddicks","jmaddicksb@usda.gov",
+                LocalDate.parse("1988-08-02"),"Jocelyne","Maddicks","4459672859008074",
+                LocalDate.parse("2028-09-29"),"12345","97429","72625 Del Mar Alley",
+                "Huaicheng","user"));
+
+        list.add(make("jtironeg","x8rWaf","Jule","Tirone","jtironeg@about.me",
+                LocalDate.parse("1998-08-23"),"Jule","Tirone","5100144892952163",
+                LocalDate.parse("2025-10-22"),"12345","61516","161 Golf Course Hill",
+                "Pokrovka","user"));
+
+        list.add(make("klelievre3","kTXQyQfWMj","Kahaleel","Lelievre","klelievre3@thetimes.co.uk",
+                LocalDate.parse("1969-12-06"),"Kahaleel","Lelievre","5108497127350302",
+                LocalDate.parse("2025-08-01"),"12345","45172","87375 Michigan Center",
+                "Bakungan","user"));
+
+        list.add(make("ltayloure","98pNQnX","Lanni","Taylour","ltayloure@japanpost.jp",
+                LocalDate.parse("1982-11-13"),"Lanni","Taylour","67619566239208061",
+                LocalDate.parse("2025-07-08"),"12345","70889","33 Delladonna Place",
+                "Tindog","user"));
+
+        list.add(make("msolland8","1LS9mRVW2Wx3","Major","Solland","msolland8@jalbum.net",
+                LocalDate.parse("1989-10-31"),"Major","Solland","63047057357415531",
+                LocalDate.parse("2027-02-21"),"12345","27493","51981 Nova Court",
+                "Rat├¡┼íkovice","user"));
+
+        list.add(make("nlockner4","830L29YLWVB","Nixie","Lockner","nlockner4@furl.net",
+                LocalDate.parse("1979-08-04"),"Nixie","Lockner","201419602648320",
+                LocalDate.parse("2025-08-23"),"12345","39695","1 Farwell Place",
+                "Nyk├Âping","user"));
+
+        list.add(make("nskeneq","tlqPz8PF96","Neda","Skene","nskeneq@comcast.net",
+                LocalDate.parse("2000-04-28"),"Neda","Skene","30260857131472",
+                LocalDate.parse("2026-11-07"),"28387","12345","919 Melrose Court",
+                "Kolobolon","user"));
+
+        list.add(make("rgethinsa","5D5ajEWbz","Roana","Gethins","rgethinsa@blog.com",
+                LocalDate.parse("1989-04-21"),"Roana","Gethins","201410134416500",
+                LocalDate.parse("2027-03-28"),"12345","62657","861 Surrey Drive",
+                "Amqui","user"));
+
+        list.add(make("sbittlestone6","8YpzCljci6o","Shandeigh","Bittlestone","sbittlestone6@chronoengine.com",
+                LocalDate.parse("1991-08-12"),"Shandeigh","Bittlestone","560224701266557244",
+                LocalDate.parse("2025-12-06"),"12345","38609","584 Golf Course Avenue",
+                "Vilarinho da Castanheira","user"));
+
+        list.add(make("sbrouwerj","egM3oyF3X","Sallee","Brouwer","sbrouwerj@yelp.com",
+                LocalDate.parse("1969-12-06"),"Sallee","Brouwer","3544121540810570",
+                LocalDate.parse("2025-12-16"),"12345","36371","8 Meadow Valley Drive",
+                "Barayong","user"));
+
+        list.add(make("sferons","dzhPifMJJUNR","Sandro","Feron","sferons@live.com",
+                LocalDate.parse("1974-04-18"),"Sandro","Feron","6331105789968794094",
+                LocalDate.parse("2026-11-27"),"12345","44682","05325 Bashford Junction",
+                "Tagum","user"));
+
+        list.add(make("slarmouthc","UslwRz666l","Susie","Larmouth","slarmouthc@nationalgeographic.com",
+                LocalDate.parse("1987-10-26"),"Susie","Larmouth","5610112778422666542",
+                LocalDate.parse("2028-01-24"),"12345","78269","276 Hoard Alley",
+                "Kanbe","user"));
+
+        list.add(make("tchastonl","yjmvNIBMEQ","Ted","Chaston","tchastonl@stanford.edu",
+                LocalDate.parse("1999-07-29"),"Ted","Chaston","3571788550196508",
+                LocalDate.parse("2028-06-02"),"12345","36615","0 Maple Wood Terrace",
+                "Ampele├¡es","user"));
+
         list.add(make("username","username","Casotto","Mango Loco","username@example.com",
                 LocalDate.parse("2002-04-05"),"Casotto","Mango Loco","4111111111111111",
-                LocalDate.parse("2027-12-31"),"123","00100","Via Roma 1",
-                "Roma","user"));
+                LocalDate.parse("2027-12-31"),"123","00100","Via Roma 1","Roma","user"));
 
         return list;
     }
