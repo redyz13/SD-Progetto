@@ -67,10 +67,14 @@ public class UpdateMaglietta extends HttpServlet {
             return;
         }
 
+
         if (grafica != null) {
-            pathGrafica = gestisciUploadGrafica(
-                    grafica, ID, tipo, uploadDir, req, resp
-            );
+            try {
+                pathGrafica = gestisciUploadGrafica(grafica, ID, tipo, uploadDir, req, resp);
+            } catch (ServletException | IOException e) {
+                req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
+                return;
+            }
             if (pathGrafica == null) return;
         }
 
