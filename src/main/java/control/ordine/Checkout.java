@@ -22,9 +22,23 @@ public class Checkout extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         CarrelloModel carrelloModel = (CarrelloModel) req.getSession().getAttribute("carrello");
-        LocalDate dataConsegna = LocalDate.parse(req.getParameter("data-consegna"));
         UtenteBean utenteBean = (UtenteBean) req.getSession().getAttribute("utente");
-        float prezzoTot = Float.parseFloat(req.getParameter("prezzo-totale"));
+
+        LocalDate dataConsegna;
+        try {
+            dataConsegna = LocalDate.parse(req.getParameter("data-consegna"));
+        } catch (java.time.format.DateTimeParseException | NullPointerException e) {
+            req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
+            return;
+        }
+
+        float prezzoTot;
+        try {
+            prezzoTot = Float.parseFloat(req.getParameter("prezzo-totale"));
+        } catch (NumberFormatException | NullPointerException e) {
+            req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
+            return;
+        }
 
         OrdineBean ordineBean = new OrdineBean();
         ordineBean.setUsername(utenteBean.getUsername());
