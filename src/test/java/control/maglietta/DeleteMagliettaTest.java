@@ -9,7 +9,7 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+import java.sql.SQLException;
 import static org.mockito.Mockito.*;
 
 public class DeleteMagliettaTest {
@@ -66,7 +66,7 @@ public class DeleteMagliettaTest {
             servlet.doPost(req, resp);
 
             verify(dispatcherError).forward(req, resp);
-            verify(dispatcherOk).forward(req, resp);
+            verify(dispatcherOk, never()).forward(any(), any());
         }
     }
 
@@ -76,12 +76,12 @@ public class DeleteMagliettaTest {
         try (MockedConstruction<MagliettaDAO> mocked =
                      mockConstruction(MagliettaDAO.class,
                              (dao, ctx) -> when(dao.deleteMaglietta(5))
-                                     .thenThrow(new java.sql.SQLException()))) {
+                                     .thenThrow(new SQLException()))) {
 
             servlet.doPost(req, resp);
 
             verify(dispatcherError).forward(req, resp);
-            verify(dispatcherOk).forward(req, resp);
+            verify(dispatcherOk, never()).forward(any(), any());
         }
     }
 }
