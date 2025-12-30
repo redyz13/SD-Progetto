@@ -113,6 +113,7 @@ public class OrdineDAO implements DAOInterface<OrdineBean, Integer> {
 
     @Override
     public void doUpdate(OrdineBean product) {
+        // Update operation is not supported for Ordine entities
     }
 
     @Override

@@ -41,15 +41,6 @@ public class UtenteBean implements Serializable {
     private /*@ spec_public nullable @*/ LocalDate dataNascita;
     private /*@ spec_public nullable @*/ LocalDate dataScadenza;
 
-
-    /*@ public normal_behavior
-      @ ensures username == null && pwd == null && nome == null && cognome == null && email == null;
-      @ ensures nomeCarta == null && cognomeCarta == null && numCarta == null && CVV == null;
-      @ ensures cap == null && via == null && citta == null && tipo == null;
-      @ ensures dataNascita == null && dataScadenza == null;
-      @*/
-    public UtenteBean() {}
-
     /*@ public normal_behavior
       @ ensures \result == username;
       @ pure
