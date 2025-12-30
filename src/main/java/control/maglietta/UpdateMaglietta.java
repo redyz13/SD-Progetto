@@ -61,7 +61,8 @@ public class UpdateMaglietta extends HttpServlet {
         String colore = req.getParameter("colore");
         String descrizione = req.getParameter("descrizione");
         String pathGrafica = req.getParameter("path");
-        Part grafica = req.getPart("grafica");
+
+        Part grafica;
         try {
             grafica = req.getPart("grafica");
         } catch (IOException | ServletException e) {
