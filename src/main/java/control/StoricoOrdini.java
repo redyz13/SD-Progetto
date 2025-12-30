@@ -30,32 +30,34 @@ public class StoricoOrdini extends HttpServlet {
         AcquistoDAO acquistoDAO = new AcquistoDAO();
 
         try {
-            Collection<OrdineBean> ordini =
-                    ordineDAO.doRetrieveByKey(utenteBean.getUsername());
+            Collection<OrdineBean> ordini = ordineDAO.doRetrieveByKey(utenteBean.getUsername());
 
-            Map<OrdineBean, Collection<AcquistoBean>> map = new HashMap<>();
-
-            for (OrdineBean o : ordini) {
-                try {
-                    map.put(o, acquistoDAO.doRetrieveByOrdine(o.getID()));
-                } catch (SQLException e) {
-                    req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
-                    return;
-                }
-            }
+            Map<OrdineBean, Collection<AcquistoBean>> map =
+                    buildOrdiniAcquistiMap(ordini, acquistoDAO);
 
             req.setAttribute("ordini", map);
-
-            try {
-                req.getRequestDispatcher("pages/profilo.jsp").forward(req, resp);
-            } catch (ServletException | IOException e) {
-                req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
-            }
+            req.getRequestDispatcher("pages/profilo.jsp").forward(req, resp);
 
         } catch (SQLException e) {
             req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
+            return;
         }
     }
+
+    private Map<OrdineBean, Collection<AcquistoBean>> buildOrdiniAcquistiMap(
+            Collection<OrdineBean> ordini,
+            AcquistoDAO acquistoDAO
+    ) throws SQLException {
+
+        Map<OrdineBean, Collection<AcquistoBean>> map = new HashMap<>();
+
+        for (OrdineBean o : ordini) {
+            map.put(o, acquistoDAO.doRetrieveByOrdine(o.getID()));
+        }
+
+        return map;
+    }
+
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)

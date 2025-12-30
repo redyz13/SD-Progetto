@@ -123,7 +123,7 @@ public class UpdateMaglietta extends HttpServlet {
             files.filter(p -> p.normalize().startsWith(uploadDir))
                     .filter(p -> p.getFileName().toString().startsWith(ID + tipo))
                     .forEach(p -> {
-                        try { Files.deleteIfExists(p); } catch (IOException ignored) {}
+                        try { Files.deleteIfExists(p); } catch (IOException ignored) {/* Ignored*/ }
                     });
         } catch (IOException e) {
             req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);

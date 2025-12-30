@@ -147,15 +147,14 @@ public class StampaFattura extends HttpServlet {
                 try {
                     contentStream.close();
                 } catch (IOException ignored) {
-                    System.err.println("Failed to close PDF content stream");
+                    // Ignored
                 }
             }
             if (document != null) {
                 try {
                     document.close();
                 } catch (IOException ignored) {
-                    System.err.println("Failed to close PDF content stream");
-
+                    // Ignored
                 }
             }
             req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
