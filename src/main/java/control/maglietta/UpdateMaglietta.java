@@ -120,7 +120,7 @@ public class UpdateMaglietta extends HttpServlet {
             try (InputStream inputStream = grafica.getInputStream()) {
                 Files.copy(inputStream, destinationFile);
             } catch (IOException e) {
-                req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
+                req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
                 return;
             }
         }
@@ -153,7 +153,7 @@ public class UpdateMaglietta extends HttpServlet {
             magliettaDAO.doUpdate(maglietta);
             misuraDAO.doUpdate(misuraBean);
         } catch (SQLException e) {
-            req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
+            req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
             return;
         }
 

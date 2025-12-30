@@ -12,7 +12,7 @@ import java.sql.SQLException;
 
 @WebServlet("/DeleteMaglietta")
 public class DeleteMaglietta extends HttpServlet {
-
+    final String ERROR_PAGE = "/pages/errorpage.jsp";
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
@@ -22,7 +22,7 @@ public class DeleteMaglietta extends HttpServlet {
         try {
             ID = Integer.parseInt(req.getParameter("ID"));
         } catch (NumberFormatException e) {
-            req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
+            req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
             return;
         }
 
@@ -30,11 +30,11 @@ public class DeleteMaglietta extends HttpServlet {
 
         try {
             if (!magliettaDAO.deleteMaglietta(ID)) {
-                req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
+                req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
                 return;
             }
         } catch (SQLException e) {
-            req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
+            req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
             return;
         }
 

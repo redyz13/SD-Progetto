@@ -23,7 +23,7 @@ public class StoricoOrdini extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-
+        final String ERROR_PAGE = "/pages/errorpage.jsp";
         UtenteBean utenteBean = (UtenteBean) req.getSession().getAttribute("utente");
 
         OrdineDAO ordineDAO = new OrdineDAO();
@@ -39,11 +39,7 @@ public class StoricoOrdini extends HttpServlet {
                 try {
                     map.put(o, acquistoDAO.doRetrieveByOrdine(o.getID()));
                 } catch (SQLException e) {
-                    try {
-                        req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
-                    } catch (ServletException | IOException ex) {
-                        req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
-                    }
+                    req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
                     return;
                 }
             }
@@ -53,15 +49,11 @@ public class StoricoOrdini extends HttpServlet {
             try {
                 req.getRequestDispatcher("pages/profilo.jsp").forward(req, resp);
             } catch (ServletException | IOException e) {
-                req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
+                req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
             }
 
         } catch (SQLException e) {
-            try {
-                req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
-            } catch (ServletException | IOException ex) {
-                req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
-            }
+            req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
         }
     }
 

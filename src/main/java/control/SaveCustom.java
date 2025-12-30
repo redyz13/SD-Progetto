@@ -20,14 +20,11 @@ public class SaveCustom extends HttpServlet {
             throws ServletException, IOException {
 
         final String PATH = req.getServletContext().getRealPath("/images/grafiche/");
+        final String ERROR_PAGE = "/pages/errorpage.jsp";
         String imgData = req.getParameter("imgData");
 
         if (imgData == null || imgData.isEmpty()) {
-            try {
-                req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
-            } catch (ServletException | IOException e) {
-                req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
-            }
+            req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
             return;
         }
 
@@ -75,11 +72,7 @@ public class SaveCustom extends HttpServlet {
             resp.sendRedirect("pages/carrello.jsp");
 
         } catch (SQLException | IOException e) {
-            try {
-                req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
-            } catch (ServletException | IOException ex) {
-                req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
-            }
+            req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
         }
     }
 

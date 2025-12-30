@@ -21,6 +21,7 @@ import java.time.LocalDate;
 public class Checkout extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        final String ERROR_PAGE = "/pages/errorpage.jsp";
         CarrelloModel carrelloModel = (CarrelloModel) req.getSession().getAttribute("carrello");
         UtenteBean utenteBean = (UtenteBean) req.getSession().getAttribute("utente");
 
@@ -28,7 +29,7 @@ public class Checkout extends HttpServlet {
         try {
             dataConsegna = LocalDate.parse(req.getParameter("data-consegna"));
         } catch (java.time.format.DateTimeParseException | NullPointerException e) {
-            req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
+            req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
             return;
         }
 
@@ -36,7 +37,7 @@ public class Checkout extends HttpServlet {
         try {
             prezzoTot = Float.parseFloat(req.getParameter("prezzo-totale"));
         } catch (NumberFormatException | NullPointerException e) {
-            req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
+            req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
             return;
         }
 
@@ -55,7 +56,7 @@ public class Checkout extends HttpServlet {
         try {
             ordineDAO.doSave(ordineBean);
         } catch (SQLException e) {
-            req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
+            req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
         }
 
         for (MagliettaOrdine p: carrelloModel.getCarrello()) {
@@ -76,7 +77,7 @@ public class Checkout extends HttpServlet {
                 misuraDAO.doUpdateUtente(acquistoBean, p.getTaglia());
 
             } catch (SQLException e) {
-                req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
+                req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
             }
         }
 
