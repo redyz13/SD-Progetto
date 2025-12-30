@@ -81,4 +81,19 @@ public class AggiungiMagliettaTest {
         verify(carrelloMock).setQuantita(5, 3, "L");
         verify(resp, never()).sendRedirect(anyString());
     }
+
+    // {id_non_numerico}
+    @Test
+    void doPost_IDNonNumerico_redirectError() throws Exception {
+        when(session.getAttribute("carrello")).thenReturn(carrelloMock);
+        when(req.getParameter("ID")).thenReturn("abc");
+        when(req.getParameter("quantita")).thenReturn(null);
+        when(req.getParameter("taglia")).thenReturn("M");
+
+        servlet.doPost(req, resp);
+
+        verify(resp).sendRedirect("pages/errorpage.jsp");
+        verify(carrelloMock, never()).aggiungi(anyInt(), any());
+        verify(carrelloMock, never()).setQuantita(anyInt(), anyInt(), any());
+    }
 }

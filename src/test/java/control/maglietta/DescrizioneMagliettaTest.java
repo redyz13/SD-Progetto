@@ -10,6 +10,8 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import java.sql.SQLException;
+
 import static org.mockito.Mockito.*;
 
 public class DescrizioneMagliettaTest {
@@ -59,13 +61,24 @@ public class DescrizioneMagliettaTest {
         try (MockedConstruction<MagliettaDAO> mocked =
                      mockConstruction(MagliettaDAO.class,
                              (dao, ctx) -> when(dao.doRetrieveByKey(5))
-                                     .thenThrow(new java.sql.SQLException()))) {
+                                     .thenThrow(new SQLException()))) {
 
             servlet.doGet(req, resp);
 
             verify(dispatcherError).forward(req, resp);
-            verify(dispatcherOk).forward(req, resp);
+            verify(dispatcherOk, never()).forward(any(), any());
         }
+    }
+
+    // {id_non_numerico}
+    @Test
+    void doGet_idNonNumerico_forwardError() throws Exception {
+        when(req.getParameter("id")).thenReturn("abc");
+
+        servlet.doGet(req, resp);
+
+        verify(dispatcherError).forward(req, resp);
+        verify(dispatcherOk, never()).forward(any(), any());
     }
 
     // -------- Test doPost() --------

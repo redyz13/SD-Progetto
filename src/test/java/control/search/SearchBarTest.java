@@ -8,6 +8,7 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.sql.*;
@@ -145,6 +146,26 @@ public class SearchBarTest {
         when(req.getParameter("search")).thenReturn("mag");
 
         when(dsMock.getConnection()).thenThrow(new SQLException());
+
+        RequestDispatcher dispatcher = mock(RequestDispatcher.class);
+        when(req.getRequestDispatcher("/pages/errorpage.jsp")).thenReturn(dispatcher);
+
+        servlet.doPost(req, resp);
+
+        verify(dispatcher).forward(req, resp);
+    }
+
+    // {search_normale, writer_exception}
+    @Test
+    void doPost_writerException_forwardErrorPage() throws Exception {
+        when(req.getParameter("search")).thenReturn("mag");
+
+        when(metaMock.getColumnCount()).thenReturn(1);
+        when(metaMock.getColumnName(1)).thenReturn("ID");
+        when(rsMock.next()).thenReturn(true, false);
+        when(rsMock.getObject(1)).thenReturn(1);
+
+        when(resp.getWriter()).thenThrow(new IOException());
 
         RequestDispatcher dispatcher = mock(RequestDispatcher.class);
         when(req.getRequestDispatcher("/pages/errorpage.jsp")).thenReturn(dispatcher);

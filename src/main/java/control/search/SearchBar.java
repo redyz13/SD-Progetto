@@ -29,38 +29,45 @@ public class SearchBar extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+
         String search = req.getParameter("search");
+        if (search == null) {
+            search = "";
+        }
 
-        String query = "SELECT * FROM " + TABLE_NAME + " WHERE Tipo <> 'Personalizzata' AND Tipo <> 'Eliminata' AND nome LIKE ?";
-        try (Connection connection = ds.getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+        String query = "SELECT * FROM " + TABLE_NAME +
+                " WHERE Tipo <> 'Personalizzata' AND Tipo <> 'Eliminata' AND nome LIKE ?";
+
+        try (
+                Connection connection = ds.getConnection();
+                PreparedStatement preparedStatement = connection.prepareStatement(query)
+        ) {
             preparedStatement.setString(1, "%" + search + "%");
-
             ResultSet resultSet = preparedStatement.executeQuery();
 
-            // Lista da far passare in json
             List<Map<String, Object>> results = new ArrayList<>();
-            // Per prendere nomi delle colonne e oggetti delle colonne per ogni rigo della tabella
             ResultSetMetaData metaData = resultSet.getMetaData();
             int colonne = metaData.getColumnCount();
 
-            // Per riempire la Lista
             while (resultSet.next()) {
-                // Un oggetto Map per ogni valore delle colonne
                 Map<String, Object> oggetto = new HashMap<>();
                 for (int i = 1; i <= colonne; i++) {
-                    String nomeColonna = metaData.getColumnName(i);
-                    Object value = resultSet.getObject(i);
-                    oggetto.put(nomeColonna,value);
+                    oggetto.put(metaData.getColumnName(i), resultSet.getObject(i));
                 }
                 results.add(oggetto);
             }
 
             String lista = new Gson().toJson(results);
 
-            resp.setContentType("application/json");
-            resp.setCharacterEncoding("UTF-8");
-            resp.getWriter().write(lista);
+            try {
+                resp.setContentType("application/json");
+                resp.setCharacterEncoding("UTF-8");
+                resp.getWriter().write(lista);
+            } catch (IOException e) {
+                req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
+            }
 
         } catch (SQLException e) {
             req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
@@ -68,7 +75,8 @@ public class SearchBar extends HttpServlet {
     }
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-       doPost(req,resp);
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+        doPost(req, resp);
     }
 }

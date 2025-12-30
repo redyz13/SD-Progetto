@@ -10,6 +10,7 @@ import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.sql.SQLException;
+
 import static org.mockito.Mockito.*;
 
 public class DeleteMagliettaTest {
@@ -34,7 +35,6 @@ public class DeleteMagliettaTest {
         when(context.getRealPath(anyString())).thenReturn("/tmp");
 
         when(req.getParameter("ID")).thenReturn("5");
-        when(req.getParameter("tipo")).thenReturn("T");
 
         when(req.getRequestDispatcher("catalogoAdmin.jsp")).thenReturn(dispatcherOk);
         when(req.getRequestDispatcher("/pages/errorpage.jsp")).thenReturn(dispatcherError);
@@ -83,5 +83,16 @@ public class DeleteMagliettaTest {
             verify(dispatcherError).forward(req, resp);
             verify(dispatcherOk, never()).forward(any(), any());
         }
+    }
+
+    // {id_non_numerico}
+    @Test
+    void doPost_idNonNumerico_forwardError() throws Exception {
+        when(req.getParameter("ID")).thenReturn("abc");
+
+        servlet.doPost(req, resp);
+
+        verify(dispatcherError).forward(req, resp);
+        verify(dispatcherOk, never()).forward(any(), any());
     }
 }

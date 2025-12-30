@@ -4,7 +4,6 @@ import model.maglietta.MagliettaBean;
 import model.maglietta.MagliettaDAO;
 import model.misura.MisuraDAO;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,9 +14,19 @@ import java.sql.SQLException;
 
 @WebServlet("/ModificaMaglietta")
 public class ModificaMaglietta extends HttpServlet {
+
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        int ID = Integer.parseInt(req.getParameter("id"));
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+
+        int ID;
+
+        try {
+            ID = Integer.parseInt(req.getParameter("id"));
+        } catch (NumberFormatException e) {
+            req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
+            return;
+        }
 
         MagliettaDAO magliettaDAO = new MagliettaDAO();
         MisuraDAO misuraDAO = new MisuraDAO();
@@ -28,14 +37,15 @@ public class ModificaMaglietta extends HttpServlet {
             req.setAttribute("misure", misuraDAO.doRetrieveAll(ID));
         } catch (SQLException e) {
             req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
+            return;
         }
 
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("pages/modifica.jsp");
-        requestDispatcher.forward(req,resp);
+        req.getRequestDispatcher("pages/modifica.jsp").forward(req, resp);
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-       doGet(req, resp);
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+        doGet(req, resp);
     }
 }

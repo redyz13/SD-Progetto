@@ -87,8 +87,22 @@ public class ModificaMagliettaTest {
             servlet.doGet(req, resp);
 
             verify(errorDispatcher).forward(req, resp);
-            verify(modificaDispatcher).forward(req, resp);
+            verify(modificaDispatcher, never()).forward(req, resp);
         }
+    }
+
+    // {id_non_numerico}
+    @Test
+    void doGet_idNonNumerico_forwardError() throws Exception {
+        when(req.getParameter("id")).thenReturn("abc");
+
+        RequestDispatcher errorDispatcher = mock(RequestDispatcher.class);
+        when(req.getRequestDispatcher("/pages/errorpage.jsp"))
+                .thenReturn(errorDispatcher);
+
+        servlet.doGet(req, resp);
+
+        verify(errorDispatcher).forward(req, resp);
     }
 
     // -------- Test doPost() --------
