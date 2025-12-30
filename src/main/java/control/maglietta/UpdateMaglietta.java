@@ -68,44 +68,10 @@ public class UpdateMaglietta extends HttpServlet {
         }
 
         if (grafica != null) {
-
-            int extensionIndex = grafica.getSubmittedFileName().lastIndexOf(".");
-            String estensione = grafica.getSubmittedFileName().substring(extensionIndex);
-            String nomeFile = (ID + tipo + estensione)
-                    .replaceAll("[^a-zA-Z0-9._-]", "_");
-
-            pathGrafica = "images/grafiche/" + nomeFile;
-
-            try (Stream<Path> files = Files.list(uploadDir)) {
-                String finalTipo = tipo;
-                files.filter(p -> p.normalize().startsWith(uploadDir))
-                        .filter(p -> p.getFileName().toString().startsWith(ID + finalTipo))
-                        .forEach(p -> {
-                            try {
-                                Files.deleteIfExists(p);
-                            } catch (IOException ignored) {
-                                // Intentionally ignored:
-                                // failure to delete a previous graphic file must not prevent
-                                // the upload of the new graphic or the update of the product.
-                            }
-                        });
-            } catch (IOException e) {
-                req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
-                return;
-            }
-
-            Path destinationFile = uploadDir.resolve(nomeFile).normalize();
-            if (!destinationFile.startsWith(uploadDir)) {
-                req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
-                return;
-            }
-
-            try (InputStream inputStream = grafica.getInputStream()) {
-                Files.copy(inputStream, destinationFile);
-            } catch (IOException e) {
-                req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
-                return;
-            }
+            pathGrafica = gestisciUploadGrafica(
+                    grafica, ID, tipo, uploadDir, req, resp
+            );
+            if (pathGrafica == null) return;
         }
 
         MagliettaBean maglietta = new MagliettaBean();
@@ -129,5 +95,50 @@ public class UpdateMaglietta extends HttpServlet {
         }
 
         resp.sendRedirect("Catalogo");
+    }
+
+    private String gestisciUploadGrafica(
+            Part grafica,
+            int ID,
+            String tipo,
+            Path uploadDir,
+            HttpServletRequest req,
+            HttpServletResponse resp)
+            throws ServletException, IOException {
+
+        final String ERROR_PAGE = "/pages/errorpage.jsp";
+
+        int extensionIndex = grafica.getSubmittedFileName().lastIndexOf(".");
+        String estensione = grafica.getSubmittedFileName().substring(extensionIndex);
+        String nomeFile = (ID + tipo + estensione)
+                .replaceAll("[^a-zA-Z0-9._-]", "_");
+
+        String pathGrafica = "images/grafiche/" + nomeFile;
+
+        try (Stream<Path> files = Files.list(uploadDir)) {
+            files.filter(p -> p.normalize().startsWith(uploadDir))
+                    .filter(p -> p.getFileName().toString().startsWith(ID + tipo))
+                    .forEach(p -> {
+                        try { Files.deleteIfExists(p); } catch (IOException ignored) {}
+                    });
+        } catch (IOException e) {
+            req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
+            return null;
+        }
+
+        Path destinationFile = uploadDir.resolve(nomeFile).normalize();
+        if (!destinationFile.startsWith(uploadDir)) {
+            req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
+            return null;
+        }
+
+        try (InputStream inputStream = grafica.getInputStream()) {
+            Files.copy(inputStream, destinationFile);
+        } catch (IOException e) {
+            req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
+            return null;
+        }
+
+        return pathGrafica;
     }
 }
