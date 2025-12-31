@@ -96,8 +96,6 @@ class StampaFatturaTest {
 
             servlet.doPost(req, resp);
 
-            PDPageContentStream cs = createdStreams.get(0);
-
             verify(resp).sendRedirect("pdf/output.pdf");
             verify(dispatcher, never()).forward(req, resp);
         }
