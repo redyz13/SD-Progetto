@@ -13,6 +13,10 @@ public class CryptoUtils {
     private static final int IV_LENGTH = 12;
     private static final int TAG_LENGTH = 128;
 
+    private CryptoUtils() {
+        // static class
+    }
+
     public static String encrypt(SecretKey key, String plaintext) throws GeneralSecurityException {
         byte[] iv = new byte[IV_LENGTH];
         random.nextBytes(iv);

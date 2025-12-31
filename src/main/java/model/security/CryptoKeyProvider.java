@@ -8,6 +8,10 @@ public class CryptoKeyProvider {
 
   private static SecretKey key;
 
+  private CryptoKeyProvider() {
+      // static class
+  }
+
   public static SecretKey getKey() {
     if (key == null) {
       String base64 = System.getenv("AES_KEY_BASE64");
