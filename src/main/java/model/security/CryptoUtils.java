@@ -3,6 +3,7 @@ package model.security;
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.GCMParameterSpec;
+import java.nio.charset.StandardCharsets;
 import java.security.GeneralSecurityException;
 import java.security.SecureRandom;
 import java.util.Base64;
@@ -24,7 +25,7 @@ public class CryptoUtils {
         Cipher cipher = Cipher.getInstance("AES/GCM/NoPadding");
         cipher.init(Cipher.ENCRYPT_MODE, key, new GCMParameterSpec(TAG_LENGTH, iv));
 
-        byte[] ciphertext = cipher.doFinal(plaintext.getBytes());
+        byte[] ciphertext = cipher.doFinal(plaintext.getBytes(StandardCharsets.UTF_8));
         byte[] result = new byte[iv.length + ciphertext.length];
 
         System.arraycopy(iv, 0, result, 0, iv.length);
@@ -46,7 +47,7 @@ public class CryptoUtils {
         cipher.init(Cipher.DECRYPT_MODE, key, new GCMParameterSpec(TAG_LENGTH, iv));
 
         byte[] plain = cipher.doFinal(ciphertext);
-        return new String(plain);
+        return new String(plain, StandardCharsets.UTF_8);
     }
 }
 
