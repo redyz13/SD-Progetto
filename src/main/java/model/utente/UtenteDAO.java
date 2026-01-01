@@ -17,15 +17,17 @@ import java.util.Collection;
 public class UtenteDAO implements DAOInterface<UtenteBean, String> {
 
     private static final String TABLE_NAME = "Utente";
-    private static final SecretKey KEY = CryptoKeyProvider.getKey();
+    private static SecretKey key;
     private static DataSource ds;
 
     public UtenteDAO() {
         ds = DBConnection.getDataSource();
+        key = CryptoKeyProvider.getKey();
     }
 
-    public UtenteDAO(DataSource ds) {
+    public UtenteDAO(DataSource ds, SecretKey keyProvider) {
         UtenteDAO.ds = ds;
+        UtenteDAO.key = keyProvider;
     }
 
     @Override
@@ -77,11 +79,11 @@ public class UtenteDAO implements DAOInterface<UtenteBean, String> {
             ps.setDate(6, Date.valueOf(u.getDataNascita()));
 
             try {
-                ps.setString(7, encryptOrNull(KEY, u.getNomeCarta()));
-                ps.setString(8, encryptOrNull(KEY, u.getCognomeCarta()));
-                ps.setString(9, encryptOrNull(KEY, u.getNumCarta()));
-                ps.setString(10, encryptOrNull(KEY, u.getDataScadenza() == null ? null : u.getDataScadenza().toString()));
-                ps.setString(11, encryptOrNull(KEY, u.getCVV()));
+                ps.setString(7, encryptOrNull(key, u.getNomeCarta()));
+                ps.setString(8, encryptOrNull(key, u.getCognomeCarta()));
+                ps.setString(9, encryptOrNull(key, u.getNumCarta()));
+                ps.setString(10, encryptOrNull(key, u.getDataScadenza() == null ? null : u.getDataScadenza().toString()));
+                ps.setString(11, encryptOrNull(key, u.getCVV()));
             } catch (Exception e) {
                 throw new SQLException("Encryption error", e);
             }
@@ -112,11 +114,11 @@ public class UtenteDAO implements DAOInterface<UtenteBean, String> {
             ps.setDate(5, Date.valueOf(u.getDataNascita()));
 
             try {
-                ps.setString(6, encryptOrNull(KEY, u.getNumCarta()));
-                ps.setString(7, encryptOrNull(KEY, u.getDataScadenza() == null ? null : u.getDataScadenza().toString()));
-                ps.setString(8, encryptOrNull(KEY, u.getCVV()));
-                ps.setString(9, encryptOrNull(KEY, u.getNomeCarta()));
-                ps.setString(10, encryptOrNull(KEY, u.getCognomeCarta()));
+                ps.setString(6, encryptOrNull(key, u.getNumCarta()));
+                ps.setString(7, encryptOrNull(key, u.getDataScadenza() == null ? null : u.getDataScadenza().toString()));
+                ps.setString(8, encryptOrNull(key, u.getCVV()));
+                ps.setString(9, encryptOrNull(key, u.getNomeCarta()));
+                ps.setString(10, encryptOrNull(key, u.getCognomeCarta()));
             } catch (Exception e) {
                 throw new SQLException("Encryption error", e);
             }
@@ -169,13 +171,13 @@ public class UtenteDAO implements DAOInterface<UtenteBean, String> {
         if (birth != null) u.setDataNascita(birth.toLocalDate());
 
         try {
-            u.setNomeCarta(decryptOrNull(KEY, rs.getString("nomeCarta")));
-            u.setCognomeCarta(decryptOrNull(KEY, rs.getString("cognomeCarta")));
-            u.setNumCarta(decryptOrNull(KEY, rs.getString("numCarta")));
-            u.setCVV(decryptOrNull(KEY, rs.getString("CVV")));
+            u.setNomeCarta(decryptOrNull(key, rs.getString("nomeCarta")));
+            u.setCognomeCarta(decryptOrNull(key, rs.getString("cognomeCarta")));
+            u.setNumCarta(decryptOrNull(key, rs.getString("numCarta")));
+            u.setCVV(decryptOrNull(key, rs.getString("CVV")));
 
             String exp = rs.getString("dataScadenza");
-            u.setDataScadenza(exp == null ? null : LocalDate.parse(decryptOrNull(KEY, exp)));
+            u.setDataScadenza(exp == null ? null : LocalDate.parse(decryptOrNull(key, exp)));
 
         } catch (Exception e) {
             throw new SQLException("Decryption error", e);
