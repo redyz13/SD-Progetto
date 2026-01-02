@@ -38,7 +38,6 @@ public class Login extends HttpServlet {
                     break;
                 case REGISTRATO:
                     req.getSession().setAttribute("tipoUtente", REGISTRATO);
-
                     redirectedPage = "index.jsp";
                     break;
                 default:
