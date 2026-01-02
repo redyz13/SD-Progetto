@@ -165,7 +165,8 @@ class SearchBarTest {
         when(rsMock.next()).thenReturn(true, false);
         when(rsMock.getObject(1)).thenReturn(1);
 
-        when(resp.getWriter()).thenThrow(new IOException());
+        // invece di when(resp.getWriter()).thenThrow(...)
+        doThrow(new IOException()).when(resp).getWriter();
 
         RequestDispatcher dispatcher = mock(RequestDispatcher.class);
         when(req.getRequestDispatcher("/pages/errorpage.jsp")).thenReturn(dispatcher);
@@ -174,6 +175,7 @@ class SearchBarTest {
 
         verify(dispatcher).forward(req, resp);
     }
+
 
     // -------- Test doGet() --------
 

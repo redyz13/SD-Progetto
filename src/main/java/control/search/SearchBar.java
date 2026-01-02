@@ -19,6 +19,7 @@ import model.DBConnection;
 public class SearchBar extends HttpServlet {
     private static final String TABLE_NAME = "Maglietta";
     private static DataSource ds;
+    private static final String ERROR_PAGE = "/pages/errorpage.jsp";
 
     public SearchBar() {
         ds = DBConnection.getDataSource();
@@ -40,14 +41,14 @@ public class SearchBar extends HttpServlet {
         String query = "SELECT * FROM " + TABLE_NAME +
                 " WHERE Tipo <> 'Personalizzata' AND Tipo <> 'Eliminata' AND nome LIKE ?";
 
-        try (
-                Connection connection = ds.getConnection();
-                PreparedStatement preparedStatement = connection.prepareStatement(query)
-        ) {
-            preparedStatement.setString(1, "%" + search + "%");
-            ResultSet resultSet = preparedStatement.executeQuery();
+        try (Connection connection = ds.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(query)) {
 
+            preparedStatement.setString(1, "%" + search + "%");
+
+            ResultSet resultSet = preparedStatement.executeQuery();
             List<Map<String, Object>> results = new ArrayList<>();
+
             ResultSetMetaData metaData = resultSet.getMetaData();
             int colonne = metaData.getColumnCount();
 
@@ -62,16 +63,23 @@ public class SearchBar extends HttpServlet {
             String lista = new Gson().toJson(results);
 
             try {
-                resp.setContentType("application/json");
-                resp.setCharacterEncoding("UTF-8");
-                resp.getWriter().write(lista);
+                writeJsonResponse(req, resp, lista);
             } catch (IOException e) {
-                req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
+                req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
             }
 
         } catch (SQLException e) {
-            req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
+            req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
         }
+
+    }
+
+    private void writeJsonResponse(HttpServletRequest req,
+                                   HttpServletResponse resp,
+                                   String json) throws ServletException, IOException {
+        resp.setContentType("application/json");
+        resp.setCharacterEncoding("UTF-8");
+        resp.getWriter().write(json);
     }
 
     @Override
