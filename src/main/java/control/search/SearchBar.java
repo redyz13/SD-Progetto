@@ -62,20 +62,15 @@ public class SearchBar extends HttpServlet {
 
             String lista = new Gson().toJson(results);
 
-            try {
-                writeJsonResponse(req, resp, lista);
-            } catch (IOException e) {
-                req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
-            }
+            writeJsonResponse(resp, lista);
 
-        } catch (SQLException e) {
+        } catch (SQLException | ServletException | IOException e) {
             req.getRequestDispatcher(ERROR_PAGE).forward(req, resp);
         }
 
     }
 
-    private void writeJsonResponse(HttpServletRequest req,
-                                   HttpServletResponse resp,
+    private void writeJsonResponse(HttpServletResponse resp,
                                    String json) throws ServletException, IOException {
         resp.setContentType("application/json");
         resp.setCharacterEncoding("UTF-8");
