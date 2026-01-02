@@ -48,7 +48,7 @@ class TipoTest {
     @Test
     void doGet_tipoValido_dbOk_forwardMagliettaTipo() throws Exception {
         try (MockedConstruction<MagliettaDAO> magliettaCons = mockConstruction(MagliettaDAO.class, (mock, ctx) -> {
-            when(mock.doRetrieveByTipo(eq("Film e Serie TV"))).thenReturn(Collections.emptyList());
+            when(mock.doRetrieveByTipo("Film e Serie TV")).thenReturn(Collections.emptyList());
         })) {
 
             servlet.doGet(req, resp);

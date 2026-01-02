@@ -200,7 +200,7 @@ class OrdineDAOTest {
         Collection<OrdineBean> res = dao.doRetriveAll("nonValido");
 
         assertTrue(res.isEmpty());
-        verify(connMock).prepareStatement(eq("SELECT * FROM Ordine"));
+        verify(connMock).prepareStatement("SELECT * FROM Ordine");
     }
 
     // -------- Test doSave() --------

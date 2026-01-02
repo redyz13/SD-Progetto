@@ -147,7 +147,7 @@ class SaveCustomTest {
             servlet.doPost(req, resp);
 
             verify(session, never()).setAttribute(eq("carrello"), any());
-            verify(existing).aggiungi(eq(9), eq("M"));
+            verify(existing).aggiungi(9, "M");
 
             verify(resp).sendRedirect("pages/carrello.jsp");
             verify(dispatcher, never()).forward(req, resp);

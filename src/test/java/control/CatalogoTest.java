@@ -54,7 +54,7 @@ class CatalogoTest {
         when(req.getRequestDispatcher("/catalogoAdmin.jsp")).thenReturn(dispatcherOk);
 
         try (MockedConstruction<MagliettaDAO> magliettaCons = mockConstruction(MagliettaDAO.class, (mock, ctx) -> {
-            when(mock.doRetriveAll(eq("prezzo"))).thenReturn(Collections.emptyList());
+            when(mock.doRetriveAll("prezzo")).thenReturn(Collections.emptyList());
         })) {
 
             servlet.doGet(req, resp);
@@ -93,7 +93,7 @@ class CatalogoTest {
         when(req.getRequestDispatcher("/catalogo.jsp")).thenReturn(dispatcherOk);
 
         try (MockedConstruction<MagliettaDAO> magliettaCons = mockConstruction(MagliettaDAO.class, (mock, ctx) -> {
-            when(mock.doRetriveAll(eq("prezzo"))).thenReturn(Collections.emptyList());
+            when(mock.doRetriveAll("prezzo")).thenReturn(Collections.emptyList());
         })) {
 
             servlet.doGet(req, resp);
@@ -130,7 +130,7 @@ class CatalogoTest {
         doThrow(new ServletException("boom")).when(dispatcherOk).forward(req, resp);
 
         try (MockedConstruction<MagliettaDAO> magliettaCons = mockConstruction(MagliettaDAO.class, (mock, ctx) -> {
-            when(mock.doRetriveAll(eq("prezzo"))).thenReturn(Collections.emptyList());
+            when(mock.doRetriveAll("prezzo")).thenReturn(Collections.emptyList());
         })) {
 
             servlet.doGet(req, resp);
@@ -151,7 +151,7 @@ class CatalogoTest {
         doThrow(new IOException("boom")).when(dispatcherOk).forward(req, resp);
 
         try (MockedConstruction<MagliettaDAO> magliettaCons = mockConstruction(MagliettaDAO.class, (mock, ctx) -> {
-            when(mock.doRetriveAll(eq("prezzo"))).thenReturn(Collections.emptyList());
+            when(mock.doRetriveAll("prezzo")).thenReturn(Collections.emptyList());
         })) {
 
             servlet.doGet(req, resp);
@@ -170,7 +170,7 @@ class CatalogoTest {
         when(req.getRequestDispatcher("/catalogo.jsp")).thenReturn(dispatcherOk);
 
         try (MockedConstruction<MagliettaDAO> magliettaCons = mockConstruction(MagliettaDAO.class, (mock, ctx) -> {
-            when(mock.doRetriveAll(eq("prezzo"))).thenReturn(Collections.emptyList());
+            when(mock.doRetriveAll("prezzo")).thenReturn(Collections.emptyList());
         })) {
 
             servlet.doPost(req, resp);

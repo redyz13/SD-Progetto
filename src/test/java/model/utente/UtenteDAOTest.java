@@ -211,7 +211,7 @@ class UtenteDAOTest {
     // {rs_piu_righe, decrypt_ok, birth_null, exp_null, db_ok}
     @Test
     void doRetrieveAll_dueRighe() throws Exception {
-        when(connMock.prepareStatement(eq("SELECT * FROM Utente"))).thenReturn(psMock);
+        when(connMock.prepareStatement("SELECT * FROM Utente")).thenReturn(psMock);
         when(psMock.executeQuery()).thenReturn(rsMock);
 
         AtomicInteger nextCalls = new AtomicInteger(0);
@@ -263,7 +263,7 @@ class UtenteDAOTest {
     // {rs_vuoto, db_ok}
     @Test
     void doRetrieveAll_zeroRighe() throws Exception {
-        when(connMock.prepareStatement(eq("SELECT * FROM Utente"))).thenReturn(psMock);
+        when(connMock.prepareStatement("SELECT * FROM Utente")).thenReturn(psMock);
         when(psMock.executeQuery()).thenReturn(rsMock);
         when(rsMock.next()).thenReturn(false);
 
@@ -381,7 +381,7 @@ class UtenteDAOTest {
 
     // {utente_valido, campi_carta_presenti, encrypt_exception, db_ok}
     @Test
-    void doSave_encryptException_wrapsSQLException() throws Exception {
+    void doSave_encryptException_wrapsSQLException() {
         UtenteBean u = new UtenteBean();
         u.setUsername("mango");
         u.setPwd("plain");
@@ -519,7 +519,7 @@ class UtenteDAOTest {
 
     // {utente_valido, campi_carta_presenti, encrypt_exception, db_ok}
     @Test
-    void doUpdate_encryptException_wrapsSQLException() throws Exception {
+    void doUpdate_encryptException_wrapsSQLException() {
         UtenteBean u = new UtenteBean();
         u.setUsername("mango");
         u.setPwd("plain");
