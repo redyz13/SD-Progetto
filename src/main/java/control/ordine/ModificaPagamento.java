@@ -37,6 +37,7 @@ public class ModificaPagamento extends HttpServlet {
             utenteDAO.doUpdate(utenteBean);
         } catch (SQLException e) {
             req.getRequestDispatcher("/pages/errorpage.jsp").forward(req, resp);
+            return;
         }
 
         if (req.getParameter("modificaPagamento").equals("profilo"))
