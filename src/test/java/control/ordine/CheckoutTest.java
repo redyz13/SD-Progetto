@@ -18,6 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.sql.SQLException;
+import java.time.LocalDate;
 import java.util.Collections;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -113,7 +114,24 @@ class CheckoutTest {
 
         try (MockedConstruction<OrdineDAO> ordineCons = mockConstruction(OrdineDAO.class, (mock, ctx) -> {
                  if (ctx.getCount() == 1) {
-                     doNothing().when(mock).doSave(any(OrdineBean.class));
+                     doAnswer(inv -> {
+                         OrdineBean o = inv.getArgument(0);
+
+                         assertEquals("mango", o.getUsername());
+                         assertEquals(20.0f, o.getPrezzoTotale(), 0.0001f);
+                         assertEquals(LocalDate.of(2030, 1, 1), o.getDataConsegna());
+
+                         assertNotNull(o.getDataOrdine());
+                         assertEquals(LocalDate.now(), o.getDataOrdine());
+
+                         assertEquals("Mario", o.getNomeConsegna());
+                         assertEquals("Rossi", o.getCognomeConsegna());
+                         assertEquals("80000", o.getCap());
+                         assertEquals("Via Mango", o.getVia());
+                         assertEquals("Casotto", o.getCitta());
+
+                         return null;
+                     }).when(mock).doSave(any(OrdineBean.class));
                  } else {
                      when(mock.getMaxID()).thenReturn(5);
                  }
@@ -137,8 +155,8 @@ class CheckoutTest {
 
             servlet.doPost(req, resp);
 
-            OrdineDAO ordineDAO_1 = ordineCons.constructed().get(0);
-            verify(ordineDAO_1).doSave(any(OrdineBean.class));
+            OrdineDAO ordineDAO = ordineCons.constructed().get(0);
+            verify(ordineDAO).doSave(any(OrdineBean.class));
 
             AcquistoDAO acquistoDAO = acquistoCons.constructed().get(0);
             verify(acquistoDAO).doSave(any(AcquistoBean.class));
