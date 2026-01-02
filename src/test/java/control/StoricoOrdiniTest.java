@@ -62,7 +62,7 @@ class StoricoOrdiniTest {
     @Test
     void doPost_ok_ordiniVuoti_forwardProfilo() throws Exception {
         try (MockedConstruction<OrdineDAO> ordineCons = mockConstruction(OrdineDAO.class, (mock, ctx) -> {
-                 when(mock.doRetrieveByKey(eq("mango"))).thenReturn(Collections.emptyList());
+                 when(mock.doRetrieveByKey("mango")).thenReturn(Collections.emptyList());
              });
              MockedConstruction<AcquistoDAO> acquistoCons = mockConstruction(AcquistoDAO.class)) {
 
@@ -93,7 +93,7 @@ class StoricoOrdiniTest {
         Collection<AcquistoBean> a2 = Arrays.asList(mock(AcquistoBean.class), mock(AcquistoBean.class));
 
         try (MockedConstruction<OrdineDAO> ordineCons = mockConstruction(OrdineDAO.class, (mock, ctx) -> {
-                 when(mock.doRetrieveByKey(eq("mango"))).thenReturn(ordini);
+                 when(mock.doRetrieveByKey("mango")).thenReturn(ordini);
              });
              MockedConstruction<AcquistoDAO> acquistoCons = mockConstruction(AcquistoDAO.class, (mock, ctx) -> {
                  when(mock.doRetrieveByOrdine(1)).thenReturn(a1);
@@ -137,7 +137,7 @@ class StoricoOrdiniTest {
         when(o1.getID()).thenReturn(1);
 
         try (MockedConstruction<OrdineDAO> ordineCons = mockConstruction(OrdineDAO.class, (mock, ctx) -> {
-                 when(mock.doRetrieveByKey(eq("mango"))).thenReturn(Collections.singletonList(o1));
+                 when(mock.doRetrieveByKey("mango")).thenReturn(Collections.singletonList(o1));
              });
              MockedConstruction<AcquistoDAO> acquistoCons = mockConstruction(AcquistoDAO.class, (mock, ctx) -> {
                  when(mock.doRetrieveByOrdine(1)).thenThrow(new SQLException("fail"));
@@ -206,7 +206,7 @@ class StoricoOrdiniTest {
     @Test
     void doGet_delegaDoPost() throws Exception {
         try (MockedConstruction<OrdineDAO> ordineCons = mockConstruction(OrdineDAO.class, (mock, ctx) -> {
-                 when(mock.doRetrieveByKey(eq("mango"))).thenReturn(Collections.emptyList());
+                 when(mock.doRetrieveByKey("mango")).thenReturn(Collections.emptyList());
              });
              MockedConstruction<AcquistoDAO> acquistoCons = mockConstruction(AcquistoDAO.class)) {
 
