@@ -1,0 +1,19 @@
+
+System Metadata
+-------------------------
+CPU Model:      12th Gen Intel(R) Core(TM) i7-12700KF
+CPU Cores:      20
+Total Memory:   31Gi
+OS:             Linux axel 6.18.2-arch2-1 #1 SMP PREEMPT_DYNAMIC Thu, 18 Dec 2025 18:00:18 +0000 x86_64 GNU/Linux
+Java Version:   openjdk version "21.0.9" 2025-10-21
+
+JMH Benchmark Metadata
+-------------------------
+Benchmark class: model.CarrelloModelBenchmark
+Output folder:   jmh/report/model.CarrelloModelBenchmark
+JMH JAR:         /home/redyz/Documents/Workspace/SD-Progetto/target/benchmarks.jar
+Exploded dir:    /home/redyz/Documents/Workspace/SD-Progetto/target/benchmarks_exploded
+Start time:      2026-01-04 12:09:04
+End time:        2026-01-04 12:21:17
+Results file:    jmh/report/model.CarrelloModelBenchmark/results.json
+Log file:        jmh/report/model.CarrelloModelBenchmark/jmh.log

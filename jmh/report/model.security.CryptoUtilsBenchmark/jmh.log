@@ -1,6 +1,6 @@
 # JMH version: 1.37
-# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10-Ubuntu-124.04
-# VM invoker: /usr/lib/jvm/java-21-openjdk-amd64/bin/java
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 5 iterations, 500 ms each
@@ -13,50 +13,50 @@
 
 # Run progress: 0.00% complete, ETA 00:03:45
 # Fork: 1 of 2
-# Warmup Iteration   1: 5.462 us/op
-# Warmup Iteration   2: 3.015 us/op
-# Warmup Iteration   3: 2.244 us/op
-# Warmup Iteration   4: 1.963 us/op
-# Warmup Iteration   5: 1.980 us/op
-Iteration   1: 1.914 us/op
-Iteration   2: 2.043 us/op
-Iteration   3: 1.940 us/op
-Iteration   4: 1.936 us/op
-Iteration   5: 2.004 us/op
-Iteration   6: 1.927 us/op
-Iteration   7: 1.948 us/op
-Iteration   8: 1.953 us/op
-Iteration   9: 1.994 us/op
-Iteration  10: 2.012 us/op
+# Warmup Iteration   1: 1.440 us/op
+# Warmup Iteration   2: 1.191 us/op
+# Warmup Iteration   3: 1.150 us/op
+# Warmup Iteration   4: 1.156 us/op
+# Warmup Iteration   5: 1.148 us/op
+Iteration   1: 1.154 us/op
+Iteration   2: 1.148 us/op
+Iteration   3: 1.161 us/op
+Iteration   4: 1.155 us/op
+Iteration   5: 1.147 us/op
+Iteration   6: 1.194 us/op
+Iteration   7: 1.183 us/op
+Iteration   8: 1.152 us/op
+Iteration   9: 1.160 us/op
+Iteration  10: 1.148 us/op
 
-# Run progress: 3.33% complete, ETA 00:05:20
+# Run progress: 3.33% complete, ETA 00:03:42
 # Fork: 2 of 2
-# Warmup Iteration   1: 5.533 us/op
-# Warmup Iteration   2: 2.736 us/op
-# Warmup Iteration   3: 2.252 us/op
-# Warmup Iteration   4: 1.984 us/op
-# Warmup Iteration   5: 1.961 us/op
-Iteration   1: 1.963 us/op
-Iteration   2: 2.074 us/op
-Iteration   3: 1.983 us/op
-Iteration   4: 1.985 us/op
-Iteration   5: 2.004 us/op
-Iteration   6: 1.970 us/op
-Iteration   7: 1.968 us/op
-Iteration   8: 1.976 us/op
-Iteration   9: 1.975 us/op
-Iteration  10: 1.989 us/op
+# Warmup Iteration   1: 1.494 us/op
+# Warmup Iteration   2: 1.197 us/op
+# Warmup Iteration   3: 1.194 us/op
+# Warmup Iteration   4: 1.194 us/op
+# Warmup Iteration   5: 1.214 us/op
+Iteration   1: 1.186 us/op
+Iteration   2: 1.190 us/op
+Iteration   3: 1.182 us/op
+Iteration   4: 1.185 us/op
+Iteration   5: 1.183 us/op
+Iteration   6: 1.185 us/op
+Iteration   7: 1.178 us/op
+Iteration   8: 1.177 us/op
+Iteration   9: 1.175 us/op
+Iteration  10: 1.186 us/op
 
 
 Result "model.security.CryptoUtilsBenchmark.decrypt_only":
-  1.978 ±(99.9%) 0.034 us/op [Average]
-  (min, avg, max) = (1.914, 1.978, 2.074), stdev = 0.039
-  CI (99.9%): [1.944, 2.011] (assumes normal distribution)
+  1.171 ±(99.9%) 0.014 us/op [Average]
+  (min, avg, max) = (1.147, 1.171, 1.194), stdev = 0.016
+  CI (99.9%): [1.157, 1.185] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10-Ubuntu-124.04
-# VM invoker: /usr/lib/jvm/java-21-openjdk-amd64/bin/java
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 5 iterations, 500 ms each
@@ -67,52 +67,52 @@ Result "model.security.CryptoUtilsBenchmark.decrypt_only":
 # Benchmark: model.security.CryptoUtilsBenchmark.decrypt_only
 # Parameters: (size = 64)
 
-# Run progress: 6.67% complete, ETA 00:04:57
+# Run progress: 6.67% complete, ETA 00:03:34
 # Fork: 1 of 2
-# Warmup Iteration   1: 4.702 us/op
-# Warmup Iteration   2: 2.363 us/op
-# Warmup Iteration   3: 2.270 us/op
-# Warmup Iteration   4: 2.020 us/op
-# Warmup Iteration   5: 2.038 us/op
-Iteration   1: 2.045 us/op
-Iteration   2: 2.037 us/op
-Iteration   3: 2.058 us/op
-Iteration   4: 2.030 us/op
-Iteration   5: 2.050 us/op
-Iteration   6: 2.016 us/op
-Iteration   7: 2.070 us/op
-Iteration   8: 2.137 us/op
-Iteration   9: 2.033 us/op
-Iteration  10: 2.011 us/op
+# Warmup Iteration   1: 1.503 us/op
+# Warmup Iteration   2: 1.217 us/op
+# Warmup Iteration   3: 1.207 us/op
+# Warmup Iteration   4: 1.200 us/op
+# Warmup Iteration   5: 1.194 us/op
+Iteration   1: 1.203 us/op
+Iteration   2: 1.192 us/op
+Iteration   3: 1.195 us/op
+Iteration   4: 1.188 us/op
+Iteration   5: 1.196 us/op
+Iteration   6: 1.193 us/op
+Iteration   7: 1.197 us/op
+Iteration   8: 1.196 us/op
+Iteration   9: 1.190 us/op
+Iteration  10: 1.189 us/op
 
-# Run progress: 10.00% complete, ETA 00:04:40
+# Run progress: 10.00% complete, ETA 00:03:26
 # Fork: 2 of 2
-# Warmup Iteration   1: 6.215 us/op
-# Warmup Iteration   2: 3.547 us/op
-# Warmup Iteration   3: 2.398 us/op
-# Warmup Iteration   4: 2.224 us/op
-# Warmup Iteration   5: 2.012 us/op
-Iteration   1: 2.025 us/op
-Iteration   2: 1.983 us/op
-Iteration   3: 1.972 us/op
-Iteration   4: 2.015 us/op
-Iteration   5: 1.983 us/op
-Iteration   6: 1.989 us/op
-Iteration   7: 2.014 us/op
-Iteration   8: 2.088 us/op
-Iteration   9: 2.014 us/op
-Iteration  10: 1.991 us/op
+# Warmup Iteration   1: 1.523 us/op
+# Warmup Iteration   2: 1.212 us/op
+# Warmup Iteration   3: 1.209 us/op
+# Warmup Iteration   4: 1.202 us/op
+# Warmup Iteration   5: 1.201 us/op
+Iteration   1: 1.196 us/op
+Iteration   2: 1.198 us/op
+Iteration   3: 1.198 us/op
+Iteration   4: 1.205 us/op
+Iteration   5: 1.198 us/op
+Iteration   6: 1.199 us/op
+Iteration   7: 1.199 us/op
+Iteration   8: 1.207 us/op
+Iteration   9: 1.204 us/op
+Iteration  10: 1.200 us/op
 
 
 Result "model.security.CryptoUtilsBenchmark.decrypt_only":
-  2.028 ±(99.9%) 0.035 us/op [Average]
-  (min, avg, max) = (1.972, 2.028, 2.137), stdev = 0.040
-  CI (99.9%): [1.993, 2.063] (assumes normal distribution)
+  1.197 ±(99.9%) 0.005 us/op [Average]
+  (min, avg, max) = (1.188, 1.197, 1.207), stdev = 0.005
+  CI (99.9%): [1.193, 1.202] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10-Ubuntu-124.04
-# VM invoker: /usr/lib/jvm/java-21-openjdk-amd64/bin/java
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 5 iterations, 500 ms each
@@ -123,52 +123,52 @@ Result "model.security.CryptoUtilsBenchmark.decrypt_only":
 # Benchmark: model.security.CryptoUtilsBenchmark.decrypt_only
 # Parameters: (size = 256)
 
-# Run progress: 13.33% complete, ETA 00:04:33
+# Run progress: 13.33% complete, ETA 00:03:19
 # Fork: 1 of 2
-# Warmup Iteration   1: 6.927 us/op
-# Warmup Iteration   2: 3.261 us/op
-# Warmup Iteration   3: 2.558 us/op
-# Warmup Iteration   4: 2.276 us/op
-# Warmup Iteration   5: 2.137 us/op
-Iteration   1: 2.124 us/op
-Iteration   2: 2.127 us/op
-Iteration   3: 2.102 us/op
-Iteration   4: 2.195 us/op
-Iteration   5: 2.107 us/op
-Iteration   6: 2.159 us/op
-Iteration   7: 2.139 us/op
-Iteration   8: 2.111 us/op
-Iteration   9: 2.104 us/op
-Iteration  10: 2.131 us/op
+# Warmup Iteration   1: 1.579 us/op
+# Warmup Iteration   2: 1.294 us/op
+# Warmup Iteration   3: 1.269 us/op
+# Warmup Iteration   4: 1.256 us/op
+# Warmup Iteration   5: 1.253 us/op
+Iteration   1: 1.280 us/op
+Iteration   2: 1.258 us/op
+Iteration   3: 1.260 us/op
+Iteration   4: 1.253 us/op
+Iteration   5: 1.252 us/op
+Iteration   6: 1.252 us/op
+Iteration   7: 1.248 us/op
+Iteration   8: 1.247 us/op
+Iteration   9: 1.256 us/op
+Iteration  10: 1.254 us/op
 
-# Run progress: 16.67% complete, ETA 00:04:19
+# Run progress: 16.67% complete, ETA 00:03:11
 # Fork: 2 of 2
-# Warmup Iteration   1: 7.405 us/op
-# Warmup Iteration   2: 3.160 us/op
-# Warmup Iteration   3: 2.444 us/op
-# Warmup Iteration   4: 2.126 us/op
-# Warmup Iteration   5: 2.142 us/op
-Iteration   1: 2.154 us/op
-Iteration   2: 2.135 us/op
-Iteration   3: 2.147 us/op
-Iteration   4: 2.135 us/op
-Iteration   5: 2.108 us/op
-Iteration   6: 2.228 us/op
-Iteration   7: 2.136 us/op
-Iteration   8: 2.122 us/op
-Iteration   9: 2.172 us/op
-Iteration  10: 2.148 us/op
+# Warmup Iteration   1: 1.604 us/op
+# Warmup Iteration   2: 1.266 us/op
+# Warmup Iteration   3: 1.267 us/op
+# Warmup Iteration   4: 1.263 us/op
+# Warmup Iteration   5: 1.241 us/op
+Iteration   1: 1.242 us/op
+Iteration   2: 1.249 us/op
+Iteration   3: 1.240 us/op
+Iteration   4: 1.245 us/op
+Iteration   5: 1.251 us/op
+Iteration   6: 1.250 us/op
+Iteration   7: 1.253 us/op
+Iteration   8: 1.242 us/op
+Iteration   9: 1.241 us/op
+Iteration  10: 1.236 us/op
 
 
 Result "model.security.CryptoUtilsBenchmark.decrypt_only":
-  2.139 ±(99.9%) 0.027 us/op [Average]
-  (min, avg, max) = (2.102, 2.139, 2.228), stdev = 0.032
-  CI (99.9%): [2.112, 2.167] (assumes normal distribution)
+  1.250 ±(99.9%) 0.008 us/op [Average]
+  (min, avg, max) = (1.236, 1.250, 1.280), stdev = 0.009
+  CI (99.9%): [1.242, 1.259] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10-Ubuntu-124.04
-# VM invoker: /usr/lib/jvm/java-21-openjdk-amd64/bin/java
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 5 iterations, 500 ms each
@@ -179,52 +179,52 @@ Result "model.security.CryptoUtilsBenchmark.decrypt_only":
 # Benchmark: model.security.CryptoUtilsBenchmark.decrypt_only
 # Parameters: (size = 1024)
 
-# Run progress: 20.00% complete, ETA 00:04:05
+# Run progress: 20.00% complete, ETA 00:03:03
 # Fork: 1 of 2
-# Warmup Iteration   1: 11.355 us/op
-# Warmup Iteration   2: 4.054 us/op
-# Warmup Iteration   3: 3.334 us/op
-# Warmup Iteration   4: 2.638 us/op
-# Warmup Iteration   5: 2.546 us/op
-Iteration   1: 2.571 us/op
-Iteration   2: 2.714 us/op
-Iteration   3: 2.596 us/op
-Iteration   4: 2.609 us/op
-Iteration   5: 2.682 us/op
-Iteration   6: 2.571 us/op
-Iteration   7: 2.578 us/op
-Iteration   8: 2.634 us/op
-Iteration   9: 2.596 us/op
-Iteration  10: 2.620 us/op
+# Warmup Iteration   1: 2.068 us/op
+# Warmup Iteration   2: 1.594 us/op
+# Warmup Iteration   3: 1.558 us/op
+# Warmup Iteration   4: 1.549 us/op
+# Warmup Iteration   5: 1.551 us/op
+Iteration   1: 1.547 us/op
+Iteration   2: 1.551 us/op
+Iteration   3: 1.556 us/op
+Iteration   4: 1.551 us/op
+Iteration   5: 1.548 us/op
+Iteration   6: 1.555 us/op
+Iteration   7: 1.557 us/op
+Iteration   8: 1.579 us/op
+Iteration   9: 1.557 us/op
+Iteration  10: 1.547 us/op
 
-# Run progress: 23.33% complete, ETA 00:03:55
+# Run progress: 23.33% complete, ETA 00:02:55
 # Fork: 2 of 2
-# Warmup Iteration   1: 6.091 us/op
-# Warmup Iteration   2: 3.560 us/op
-# Warmup Iteration   3: 3.008 us/op
-# Warmup Iteration   4: 2.679 us/op
-# Warmup Iteration   5: 2.747 us/op
-Iteration   1: 2.962 us/op
-Iteration   2: 2.641 us/op
-Iteration   3: 2.630 us/op
-Iteration   4: 2.684 us/op
-Iteration   5: 2.641 us/op
-Iteration   6: 2.680 us/op
-Iteration   7: 2.698 us/op
-Iteration   8: 2.620 us/op
-Iteration   9: 2.612 us/op
-Iteration  10: 2.655 us/op
+# Warmup Iteration   1: 2.038 us/op
+# Warmup Iteration   2: 1.657 us/op
+# Warmup Iteration   3: 1.579 us/op
+# Warmup Iteration   4: 1.576 us/op
+# Warmup Iteration   5: 1.575 us/op
+Iteration   1: 1.571 us/op
+Iteration   2: 1.567 us/op
+Iteration   3: 1.568 us/op
+Iteration   4: 1.561 us/op
+Iteration   5: 1.560 us/op
+Iteration   6: 1.564 us/op
+Iteration   7: 1.572 us/op
+Iteration   8: 1.565 us/op
+Iteration   9: 1.560 us/op
+Iteration  10: 1.566 us/op
 
 
 Result "model.security.CryptoUtilsBenchmark.decrypt_only":
-  2.650 ±(99.9%) 0.073 us/op [Average]
-  (min, avg, max) = (2.571, 2.650, 2.962), stdev = 0.085
-  CI (99.9%): [2.576, 2.723] (assumes normal distribution)
+  1.560 ±(99.9%) 0.008 us/op [Average]
+  (min, avg, max) = (1.547, 1.560, 1.579), stdev = 0.009
+  CI (99.9%): [1.552, 1.568] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10-Ubuntu-124.04
-# VM invoker: /usr/lib/jvm/java-21-openjdk-amd64/bin/java
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 5 iterations, 500 ms each
@@ -235,52 +235,52 @@ Result "model.security.CryptoUtilsBenchmark.decrypt_only":
 # Benchmark: model.security.CryptoUtilsBenchmark.decrypt_only
 # Parameters: (size = 4096)
 
-# Run progress: 26.67% complete, ETA 00:03:43
+# Run progress: 26.67% complete, ETA 00:02:48
 # Fork: 1 of 2
-# Warmup Iteration   1: 50.883 us/op
-# Warmup Iteration   2: 8.970 us/op
-# Warmup Iteration   3: 8.883 us/op
-# Warmup Iteration   4: 5.575 us/op
-# Warmup Iteration   5: 5.220 us/op
-Iteration   1: 5.219 us/op
-Iteration   2: 5.301 us/op
-Iteration   3: 5.341 us/op
-Iteration   4: 5.023 us/op
-Iteration   5: 5.053 us/op
-Iteration   6: 4.970 us/op
-Iteration   7: 5.103 us/op
-Iteration   8: 5.005 us/op
-Iteration   9: 4.896 us/op
-Iteration  10: 5.033 us/op
+# Warmup Iteration   1: 6.363 us/op
+# Warmup Iteration   2: 3.350 us/op
+# Warmup Iteration   3: 3.226 us/op
+# Warmup Iteration   4: 3.220 us/op
+# Warmup Iteration   5: 3.222 us/op
+Iteration   1: 3.201 us/op
+Iteration   2: 3.216 us/op
+Iteration   3: 3.205 us/op
+Iteration   4: 3.197 us/op
+Iteration   5: 3.209 us/op
+Iteration   6: 3.212 us/op
+Iteration   7: 3.195 us/op
+Iteration   8: 3.202 us/op
+Iteration   9: 3.211 us/op
+Iteration  10: 3.207 us/op
 
-# Run progress: 30.00% complete, ETA 00:03:33
+# Run progress: 30.00% complete, ETA 00:02:40
 # Fork: 2 of 2
-# Warmup Iteration   1: 42.179 us/op
-# Warmup Iteration   2: 8.368 us/op
-# Warmup Iteration   3: 7.406 us/op
-# Warmup Iteration   4: 5.134 us/op
-# Warmup Iteration   5: 4.929 us/op
-Iteration   1: 4.950 us/op
-Iteration   2: 5.131 us/op
-Iteration   3: 5.143 us/op
-Iteration   4: 5.002 us/op
-Iteration   5: 5.068 us/op
-Iteration   6: 4.981 us/op
-Iteration   7: 4.936 us/op
-Iteration   8: 4.969 us/op
-Iteration   9: 4.936 us/op
-Iteration  10: 5.065 us/op
+# Warmup Iteration   1: 5.806 us/op
+# Warmup Iteration   2: 3.295 us/op
+# Warmup Iteration   3: 3.191 us/op
+# Warmup Iteration   4: 3.186 us/op
+# Warmup Iteration   5: 3.165 us/op
+Iteration   1: 3.169 us/op
+Iteration   2: 3.194 us/op
+Iteration   3: 3.166 us/op
+Iteration   4: 3.161 us/op
+Iteration   5: 3.197 us/op
+Iteration   6: 3.164 us/op
+Iteration   7: 3.161 us/op
+Iteration   8: 3.155 us/op
+Iteration   9: 3.182 us/op
+Iteration  10: 3.173 us/op
 
 
 Result "model.security.CryptoUtilsBenchmark.decrypt_only":
-  5.056 ±(99.9%) 0.105 us/op [Average]
-  (min, avg, max) = (4.896, 5.056, 5.341), stdev = 0.121
-  CI (99.9%): [4.951, 5.161] (assumes normal distribution)
+  3.189 ±(99.9%) 0.018 us/op [Average]
+  (min, avg, max) = (3.155, 3.189, 3.216), stdev = 0.020
+  CI (99.9%): [3.171, 3.206] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10-Ubuntu-124.04
-# VM invoker: /usr/lib/jvm/java-21-openjdk-amd64/bin/java
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 5 iterations, 500 ms each
@@ -291,332 +291,332 @@ Result "model.security.CryptoUtilsBenchmark.decrypt_only":
 # Benchmark: model.security.CryptoUtilsBenchmark.encrypt_only
 # Parameters: (size = 16)
 
-# Run progress: 33.33% complete, ETA 00:03:24
+# Run progress: 33.33% complete, ETA 00:02:32
 # Fork: 1 of 2
-# Warmup Iteration   1: 6.015 us/op
-# Warmup Iteration   2: 2.871 us/op
-# Warmup Iteration   3: 2.424 us/op
+# Warmup Iteration   1: 1.576 us/op
+# Warmup Iteration   2: 1.267 us/op
+# Warmup Iteration   3: 1.240 us/op
+# Warmup Iteration   4: 1.231 us/op
+# Warmup Iteration   5: 1.232 us/op
+Iteration   1: 1.229 us/op
+Iteration   2: 1.232 us/op
+Iteration   3: 1.226 us/op
+Iteration   4: 1.229 us/op
+Iteration   5: 1.238 us/op
+Iteration   6: 1.231 us/op
+Iteration   7: 1.233 us/op
+Iteration   8: 1.234 us/op
+Iteration   9: 1.226 us/op
+Iteration  10: 1.232 us/op
+
+# Run progress: 36.67% complete, ETA 00:02:25
+# Fork: 2 of 2
+# Warmup Iteration   1: 1.609 us/op
+# Warmup Iteration   2: 1.296 us/op
+# Warmup Iteration   3: 1.286 us/op
+# Warmup Iteration   4: 1.281 us/op
+# Warmup Iteration   5: 1.284 us/op
+Iteration   1: 1.284 us/op
+Iteration   2: 1.283 us/op
+Iteration   3: 1.283 us/op
+Iteration   4: 1.278 us/op
+Iteration   5: 1.281 us/op
+Iteration   6: 1.283 us/op
+Iteration   7: 1.283 us/op
+Iteration   8: 1.277 us/op
+Iteration   9: 1.279 us/op
+Iteration  10: 1.283 us/op
+
+
+Result "model.security.CryptoUtilsBenchmark.encrypt_only":
+  1.256 ±(99.9%) 0.023 us/op [Average]
+  (min, avg, max) = (1.226, 1.256, 1.284), stdev = 0.026
+  CI (99.9%): [1.234, 1.279] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.security.CryptoUtilsBenchmark.encrypt_only
+# Parameters: (size = 64)
+
+# Run progress: 40.00% complete, ETA 00:02:17
+# Fork: 1 of 2
+# Warmup Iteration   1: 1.609 us/op
+# Warmup Iteration   2: 1.314 us/op
+# Warmup Iteration   3: 1.279 us/op
+# Warmup Iteration   4: 1.281 us/op
+# Warmup Iteration   5: 1.279 us/op
+Iteration   1: 1.283 us/op
+Iteration   2: 1.279 us/op
+Iteration   3: 1.275 us/op
+Iteration   4: 1.274 us/op
+Iteration   5: 1.278 us/op
+Iteration   6: 1.273 us/op
+Iteration   7: 1.275 us/op
+Iteration   8: 1.270 us/op
+Iteration   9: 1.269 us/op
+Iteration  10: 1.272 us/op
+
+# Run progress: 43.33% complete, ETA 00:02:10
+# Fork: 2 of 2
+# Warmup Iteration   1: 1.599 us/op
+# Warmup Iteration   2: 1.282 us/op
+# Warmup Iteration   3: 1.266 us/op
+# Warmup Iteration   4: 1.256 us/op
+# Warmup Iteration   5: 1.262 us/op
+Iteration   1: 1.253 us/op
+Iteration   2: 1.255 us/op
+Iteration   3: 1.255 us/op
+Iteration   4: 1.262 us/op
+Iteration   5: 1.256 us/op
+Iteration   6: 1.257 us/op
+Iteration   7: 1.253 us/op
+Iteration   8: 1.261 us/op
+Iteration   9: 1.256 us/op
+Iteration  10: 1.260 us/op
+
+
+Result "model.security.CryptoUtilsBenchmark.encrypt_only":
+  1.266 ±(99.9%) 0.009 us/op [Average]
+  (min, avg, max) = (1.253, 1.266, 1.283), stdev = 0.010
+  CI (99.9%): [1.257, 1.274] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.security.CryptoUtilsBenchmark.encrypt_only
+# Parameters: (size = 256)
+
+# Run progress: 46.67% complete, ETA 00:02:02
+# Fork: 1 of 2
+# Warmup Iteration   1: 1.733 us/op
+# Warmup Iteration   2: 1.360 us/op
+# Warmup Iteration   3: 1.381 us/op
+# Warmup Iteration   4: 1.340 us/op
+# Warmup Iteration   5: 1.344 us/op
+Iteration   1: 1.345 us/op
+Iteration   2: 1.346 us/op
+Iteration   3: 1.340 us/op
+Iteration   4: 1.344 us/op
+Iteration   5: 1.342 us/op
+Iteration   6: 1.340 us/op
+Iteration   7: 1.340 us/op
+Iteration   8: 1.340 us/op
+Iteration   9: 1.344 us/op
+Iteration  10: 1.345 us/op
+
+# Run progress: 50.00% complete, ETA 00:01:54
+# Fork: 2 of 2
+# Warmup Iteration   1: 1.763 us/op
+# Warmup Iteration   2: 1.376 us/op
+# Warmup Iteration   3: 1.359 us/op
+# Warmup Iteration   4: 1.353 us/op
+# Warmup Iteration   5: 1.355 us/op
+Iteration   1: 1.374 us/op
+Iteration   2: 1.348 us/op
+Iteration   3: 1.345 us/op
+Iteration   4: 1.343 us/op
+Iteration   5: 1.350 us/op
+Iteration   6: 1.353 us/op
+Iteration   7: 1.342 us/op
+Iteration   8: 1.349 us/op
+Iteration   9: 1.350 us/op
+Iteration  10: 1.354 us/op
+
+
+Result "model.security.CryptoUtilsBenchmark.encrypt_only":
+  1.347 ±(99.9%) 0.007 us/op [Average]
+  (min, avg, max) = (1.340, 1.347, 1.374), stdev = 0.008
+  CI (99.9%): [1.340, 1.353] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.security.CryptoUtilsBenchmark.encrypt_only
+# Parameters: (size = 1024)
+
+# Run progress: 53.33% complete, ETA 00:01:47
+# Fork: 1 of 2
+# Warmup Iteration   1: 2.265 us/op
+# Warmup Iteration   2: 1.736 us/op
+# Warmup Iteration   3: 1.691 us/op
+# Warmup Iteration   4: 1.680 us/op
+# Warmup Iteration   5: 1.672 us/op
+Iteration   1: 1.670 us/op
+Iteration   2: 1.673 us/op
+Iteration   3: 1.677 us/op
+Iteration   4: 1.685 us/op
+Iteration   5: 1.680 us/op
+Iteration   6: 1.684 us/op
+Iteration   7: 1.678 us/op
+Iteration   8: 1.671 us/op
+Iteration   9: 1.675 us/op
+Iteration  10: 1.683 us/op
+
+# Run progress: 56.67% complete, ETA 00:01:39
+# Fork: 2 of 2
+# Warmup Iteration   1: 2.328 us/op
+# Warmup Iteration   2: 1.757 us/op
+# Warmup Iteration   3: 1.719 us/op
+# Warmup Iteration   4: 1.690 us/op
+# Warmup Iteration   5: 1.687 us/op
+Iteration   1: 1.682 us/op
+Iteration   2: 1.681 us/op
+Iteration   3: 1.679 us/op
+Iteration   4: 1.684 us/op
+Iteration   5: 1.680 us/op
+Iteration   6: 1.682 us/op
+Iteration   7: 1.680 us/op
+Iteration   8: 1.674 us/op
+Iteration   9: 1.671 us/op
+Iteration  10: 1.678 us/op
+
+
+Result "model.security.CryptoUtilsBenchmark.encrypt_only":
+  1.678 ±(99.9%) 0.004 us/op [Average]
+  (min, avg, max) = (1.670, 1.678, 1.685), stdev = 0.005
+  CI (99.9%): [1.674, 1.682] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.security.CryptoUtilsBenchmark.encrypt_only
+# Parameters: (size = 4096)
+
+# Run progress: 60.00% complete, ETA 00:01:31
+# Fork: 1 of 2
+# Warmup Iteration   1: 5.980 us/op
+# Warmup Iteration   2: 3.603 us/op
+# Warmup Iteration   3: 3.473 us/op
+# Warmup Iteration   4: 3.466 us/op
+# Warmup Iteration   5: 3.444 us/op
+Iteration   1: 3.456 us/op
+Iteration   2: 3.421 us/op
+Iteration   3: 3.424 us/op
+Iteration   4: 3.456 us/op
+Iteration   5: 3.426 us/op
+Iteration   6: 3.412 us/op
+Iteration   7: 3.420 us/op
+Iteration   8: 3.437 us/op
+Iteration   9: 3.433 us/op
+Iteration  10: 3.442 us/op
+
+# Run progress: 63.33% complete, ETA 00:01:24
+# Fork: 2 of 2
+# Warmup Iteration   1: 6.076 us/op
+# Warmup Iteration   2: 3.680 us/op
+# Warmup Iteration   3: 3.442 us/op
+# Warmup Iteration   4: 3.441 us/op
+# Warmup Iteration   5: 3.433 us/op
+Iteration   1: 3.470 us/op
+Iteration   2: 3.468 us/op
+Iteration   3: 3.462 us/op
+Iteration   4: 3.447 us/op
+Iteration   5: 3.438 us/op
+Iteration   6: 3.428 us/op
+Iteration   7: 3.425 us/op
+Iteration   8: 3.433 us/op
+Iteration   9: 3.468 us/op
+Iteration  10: 3.450 us/op
+
+
+Result "model.security.CryptoUtilsBenchmark.encrypt_only":
+  3.441 ±(99.9%) 0.015 us/op [Average]
+  (min, avg, max) = (3.412, 3.441, 3.470), stdev = 0.018
+  CI (99.9%): [3.425, 3.456] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.security.CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt
+# Parameters: (size = 16)
+
+# Run progress: 66.67% complete, ETA 00:01:16
+# Fork: 1 of 2
+# Warmup Iteration   1: 3.188 us/op
+# Warmup Iteration   2: 2.483 us/op
+# Warmup Iteration   3: 2.462 us/op
 # Warmup Iteration   4: 2.420 us/op
-# Warmup Iteration   5: 2.353 us/op
-Iteration   1: 2.122 us/op
-Iteration   2: 2.323 us/op
-Iteration   3: 2.292 us/op
-Iteration   4: 2.187 us/op
-Iteration   5: 2.124 us/op
-Iteration   6: 2.289 us/op
-Iteration   7: 2.138 us/op
-Iteration   8: 2.132 us/op
-Iteration   9: 2.181 us/op
-Iteration  10: 2.153 us/op
+# Warmup Iteration   5: 2.421 us/op
+Iteration   1: 2.419 us/op
+Iteration   2: 2.417 us/op
+Iteration   3: 2.415 us/op
+Iteration   4: 2.417 us/op
+Iteration   5: 2.408 us/op
+Iteration   6: 2.413 us/op
+Iteration   7: 2.415 us/op
+Iteration   8: 2.401 us/op
+Iteration   9: 2.405 us/op
+Iteration  10: 2.409 us/op
 
-# Run progress: 36.67% complete, ETA 00:03:13
+# Run progress: 70.00% complete, ETA 00:01:08
 # Fork: 2 of 2
-# Warmup Iteration   1: 5.936 us/op
-# Warmup Iteration   2: 3.175 us/op
-# Warmup Iteration   3: 2.374 us/op
-# Warmup Iteration   4: 2.347 us/op
-# Warmup Iteration   5: 2.301 us/op
-Iteration   1: 2.238 us/op
-Iteration   2: 2.265 us/op
-Iteration   3: 2.204 us/op
-Iteration   4: 2.210 us/op
-Iteration   5: 2.200 us/op
-Iteration   6: 2.150 us/op
-Iteration   7: 2.197 us/op
-Iteration   8: 2.153 us/op
-Iteration   9: 2.181 us/op
-Iteration  10: 2.122 us/op
-
-
-Result "model.security.CryptoUtilsBenchmark.encrypt_only":
-  2.193 ±(99.9%) 0.053 us/op [Average]
-  (min, avg, max) = (2.122, 2.193, 2.323), stdev = 0.061
-  CI (99.9%): [2.140, 2.246] (assumes normal distribution)
-
-
-# JMH version: 1.37
-# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10-Ubuntu-124.04
-# VM invoker: /usr/lib/jvm/java-21-openjdk-amd64/bin/java
-# VM options: <none>
-# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 5 iterations, 500 ms each
-# Measurement: 10 iterations, 500 ms each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
-# Benchmark: model.security.CryptoUtilsBenchmark.encrypt_only
-# Parameters: (size = 64)
-
-# Run progress: 40.00% complete, ETA 00:03:02
-# Fork: 1 of 2
-# Warmup Iteration   1: 7.913 us/op
-# Warmup Iteration   2: 3.247 us/op
-# Warmup Iteration   3: 2.402 us/op
-# Warmup Iteration   4: 2.416 us/op
-# Warmup Iteration   5: 2.304 us/op
-Iteration   1: 2.226 us/op
-Iteration   2: 2.217 us/op
-Iteration   3: 2.167 us/op
-Iteration   4: 2.236 us/op
-Iteration   5: 2.216 us/op
-Iteration   6: 2.287 us/op
-Iteration   7: 2.195 us/op
-Iteration   8: 2.188 us/op
-Iteration   9: 2.162 us/op
-Iteration  10: 2.185 us/op
-
-# Run progress: 43.33% complete, ETA 00:02:52
-# Fork: 2 of 2
-# Warmup Iteration   1: 6.820 us/op
-# Warmup Iteration   2: 3.497 us/op
-# Warmup Iteration   3: 2.567 us/op
-# Warmup Iteration   4: 2.194 us/op
-# Warmup Iteration   5: 2.377 us/op
-Iteration   1: 2.248 us/op
-Iteration   2: 2.218 us/op
-Iteration   3: 2.209 us/op
-Iteration   4: 2.180 us/op
-Iteration   5: 2.155 us/op
-Iteration   6: 2.281 us/op
-Iteration   7: 2.186 us/op
-Iteration   8: 2.180 us/op
-Iteration   9: 2.153 us/op
-Iteration  10: 2.187 us/op
-
-
-Result "model.security.CryptoUtilsBenchmark.encrypt_only":
-  2.204 ±(99.9%) 0.033 us/op [Average]
-  (min, avg, max) = (2.153, 2.204, 2.287), stdev = 0.038
-  CI (99.9%): [2.171, 2.237] (assumes normal distribution)
-
-
-# JMH version: 1.37
-# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10-Ubuntu-124.04
-# VM invoker: /usr/lib/jvm/java-21-openjdk-amd64/bin/java
-# VM options: <none>
-# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 5 iterations, 500 ms each
-# Measurement: 10 iterations, 500 ms each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
-# Benchmark: model.security.CryptoUtilsBenchmark.encrypt_only
-# Parameters: (size = 256)
-
-# Run progress: 46.67% complete, ETA 00:02:42
-# Fork: 1 of 2
-# Warmup Iteration   1: 7.154 us/op
-# Warmup Iteration   2: 3.065 us/op
-# Warmup Iteration   3: 2.825 us/op
-# Warmup Iteration   4: 2.286 us/op
-# Warmup Iteration   5: 2.302 us/op
-Iteration   1: 2.289 us/op
-Iteration   2: 2.289 us/op
-Iteration   3: 2.342 us/op
-Iteration   4: 2.305 us/op
-Iteration   5: 2.374 us/op
-Iteration   6: 2.281 us/op
-Iteration   7: 2.385 us/op
-Iteration   8: 2.267 us/op
-Iteration   9: 2.344 us/op
-Iteration  10: 2.262 us/op
-
-# Run progress: 50.00% complete, ETA 00:02:32
-# Fork: 2 of 2
-# Warmup Iteration   1: 7.479 us/op
-# Warmup Iteration   2: 3.161 us/op
-# Warmup Iteration   3: 3.089 us/op
-# Warmup Iteration   4: 2.507 us/op
-# Warmup Iteration   5: 3.494 us/op
-Iteration   1: 2.535 us/op
-Iteration   2: 2.399 us/op
-Iteration   3: 2.499 us/op
-Iteration   4: 2.318 us/op
-Iteration   5: 2.394 us/op
-Iteration   6: 2.374 us/op
-Iteration   7: 2.374 us/op
-Iteration   8: 2.309 us/op
-Iteration   9: 2.307 us/op
-Iteration  10: 2.321 us/op
-
-
-Result "model.security.CryptoUtilsBenchmark.encrypt_only":
-  2.348 ±(99.9%) 0.062 us/op [Average]
-  (min, avg, max) = (2.262, 2.348, 2.535), stdev = 0.072
-  CI (99.9%): [2.286, 2.411] (assumes normal distribution)
-
-
-# JMH version: 1.37
-# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10-Ubuntu-124.04
-# VM invoker: /usr/lib/jvm/java-21-openjdk-amd64/bin/java
-# VM options: <none>
-# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 5 iterations, 500 ms each
-# Measurement: 10 iterations, 500 ms each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
-# Benchmark: model.security.CryptoUtilsBenchmark.encrypt_only
-# Parameters: (size = 1024)
-
-# Run progress: 53.33% complete, ETA 00:02:22
-# Fork: 1 of 2
-# Warmup Iteration   1: 12.512 us/op
-# Warmup Iteration   2: 4.434 us/op
-# Warmup Iteration   3: 3.241 us/op
-# Warmup Iteration   4: 2.794 us/op
-# Warmup Iteration   5: 2.787 us/op
-Iteration   1: 2.961 us/op
-Iteration   2: 2.841 us/op
-Iteration   3: 2.787 us/op
-Iteration   4: 2.840 us/op
-Iteration   5: 2.940 us/op
-Iteration   6: 2.835 us/op
-Iteration   7: 2.776 us/op
-Iteration   8: 2.772 us/op
-Iteration   9: 2.782 us/op
-Iteration  10: 2.773 us/op
-
-# Run progress: 56.67% complete, ETA 00:02:12
-# Fork: 2 of 2
-# Warmup Iteration   1: 12.247 us/op
-# Warmup Iteration   2: 4.525 us/op
-# Warmup Iteration   3: 3.464 us/op
-# Warmup Iteration   4: 3.024 us/op
-# Warmup Iteration   5: 3.119 us/op
-Iteration   1: 2.962 us/op
-Iteration   2: 2.902 us/op
-Iteration   3: 2.809 us/op
-Iteration   4: 2.815 us/op
-Iteration   5: 2.807 us/op
-Iteration   6: 2.822 us/op
-Iteration   7: 3.012 us/op
-Iteration   8: 2.955 us/op
-Iteration   9: 2.781 us/op
-Iteration  10: 2.866 us/op
-
-
-Result "model.security.CryptoUtilsBenchmark.encrypt_only":
-  2.852 ±(99.9%) 0.066 us/op [Average]
-  (min, avg, max) = (2.772, 2.852, 3.012), stdev = 0.076
-  CI (99.9%): [2.786, 2.918] (assumes normal distribution)
-
-
-# JMH version: 1.37
-# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10-Ubuntu-124.04
-# VM invoker: /usr/lib/jvm/java-21-openjdk-amd64/bin/java
-# VM options: <none>
-# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 5 iterations, 500 ms each
-# Measurement: 10 iterations, 500 ms each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
-# Benchmark: model.security.CryptoUtilsBenchmark.encrypt_only
-# Parameters: (size = 4096)
-
-# Run progress: 60.00% complete, ETA 00:02:01
-# Fork: 1 of 2
-# Warmup Iteration   1: 52.932 us/op
-# Warmup Iteration   2: 9.664 us/op
-# Warmup Iteration   3: 8.479 us/op
-# Warmup Iteration   4: 5.440 us/op
-# Warmup Iteration   5: 5.491 us/op
-Iteration   1: 5.490 us/op
-Iteration   2: 5.469 us/op
-Iteration   3: 5.415 us/op
-Iteration   4: 5.422 us/op
-Iteration   5: 5.529 us/op
-Iteration   6: 5.419 us/op
-Iteration   7: 5.450 us/op
-Iteration   8: 5.511 us/op
-Iteration   9: 5.601 us/op
-Iteration  10: 5.371 us/op
-
-# Run progress: 63.33% complete, ETA 00:01:51
-# Fork: 2 of 2
-# Warmup Iteration   1: 52.558 us/op
-# Warmup Iteration   2: 9.375 us/op
-# Warmup Iteration   3: 8.230 us/op
-# Warmup Iteration   4: 6.201 us/op
-# Warmup Iteration   5: 5.576 us/op
-Iteration   1: 5.545 us/op
-Iteration   2: 5.484 us/op
-Iteration   3: 5.452 us/op
-Iteration   4: 5.610 us/op
-Iteration   5: 5.554 us/op
-Iteration   6: 5.601 us/op
-Iteration   7: 5.915 us/op
-Iteration   8: 5.728 us/op
-Iteration   9: 5.471 us/op
-Iteration  10: 5.851 us/op
-
-
-Result "model.security.CryptoUtilsBenchmark.encrypt_only":
-  5.544 ±(99.9%) 0.124 us/op [Average]
-  (min, avg, max) = (5.371, 5.544, 5.915), stdev = 0.143
-  CI (99.9%): [5.420, 5.669] (assumes normal distribution)
-
-
-# JMH version: 1.37
-# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10-Ubuntu-124.04
-# VM invoker: /usr/lib/jvm/java-21-openjdk-amd64/bin/java
-# VM options: <none>
-# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 5 iterations, 500 ms each
-# Measurement: 10 iterations, 500 ms each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
-# Benchmark: model.security.CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt
-# Parameters: (size = 16)
-
-# Run progress: 66.67% complete, ETA 00:01:41
-# Fork: 1 of 2
-# Warmup Iteration   1: 14.943 us/op
-# Warmup Iteration   2: 6.267 us/op
-# Warmup Iteration   3: 5.459 us/op
-# Warmup Iteration   4: 4.710 us/op
-# Warmup Iteration   5: 4.410 us/op
-Iteration   1: 4.127 us/op
-Iteration   2: 4.556 us/op
-Iteration   3: 4.332 us/op
-Iteration   4: 4.285 us/op
-Iteration   5: 4.291 us/op
-Iteration   6: 4.259 us/op
-Iteration   7: 4.280 us/op
-Iteration   8: 4.600 us/op
-Iteration   9: 4.933 us/op
-Iteration  10: 4.813 us/op
-
-# Run progress: 70.00% complete, ETA 00:01:31
-# Fork: 2 of 2
-# Warmup Iteration   1: 14.594 us/op
-# Warmup Iteration   2: 6.357 us/op
-# Warmup Iteration   3: 5.387 us/op
-# Warmup Iteration   4: 4.431 us/op
-# Warmup Iteration   5: 4.177 us/op
-Iteration   1: 4.273 us/op
-Iteration   2: 4.229 us/op
-Iteration   3: 4.270 us/op
-Iteration   4: 4.226 us/op
-Iteration   5: 4.257 us/op
-Iteration   6: 4.262 us/op
-Iteration   7: 4.311 us/op
-Iteration   8: 4.419 us/op
-Iteration   9: 4.208 us/op
-Iteration  10: 4.671 us/op
+# Warmup Iteration   1: 3.167 us/op
+# Warmup Iteration   2: 2.445 us/op
+# Warmup Iteration   3: 2.475 us/op
+# Warmup Iteration   4: 2.434 us/op
+# Warmup Iteration   5: 2.407 us/op
+Iteration   1: 2.410 us/op
+Iteration   2: 2.410 us/op
+Iteration   3: 2.416 us/op
+Iteration   4: 2.415 us/op
+Iteration   5: 2.401 us/op
+Iteration   6: 2.409 us/op
+Iteration   7: 2.405 us/op
+Iteration   8: 2.409 us/op
+Iteration   9: 2.397 us/op
+Iteration  10: 2.393 us/op
 
 
 Result "model.security.CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt":
-  4.380 ±(99.9%) 0.189 us/op [Average]
-  (min, avg, max) = (4.127, 4.380, 4.933), stdev = 0.218
-  CI (99.9%): [4.191, 4.569] (assumes normal distribution)
+  2.409 ±(99.9%) 0.006 us/op [Average]
+  (min, avg, max) = (2.393, 2.409, 2.419), stdev = 0.007
+  CI (99.9%): [2.403, 2.415] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10-Ubuntu-124.04
-# VM invoker: /usr/lib/jvm/java-21-openjdk-amd64/bin/java
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 5 iterations, 500 ms each
@@ -627,52 +627,52 @@ Result "model.security.CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt":
 # Benchmark: model.security.CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt
 # Parameters: (size = 64)
 
-# Run progress: 73.33% complete, ETA 00:01:20
+# Run progress: 73.33% complete, ETA 00:01:01
 # Fork: 1 of 2
-# Warmup Iteration   1: 33.590 us/op
-# Warmup Iteration   2: 9.075 us/op
-# Warmup Iteration   3: 7.476 us/op
-# Warmup Iteration   4: 5.969 us/op
-# Warmup Iteration   5: 5.558 us/op
-Iteration   1: 4.731 us/op
-Iteration   2: 5.143 us/op
-Iteration   3: 6.477 us/op
-Iteration   4: 6.914 us/op
-Iteration   5: 5.678 us/op
-Iteration   6: 5.452 us/op
-Iteration   7: 6.266 us/op
-Iteration   8: 5.463 us/op
-Iteration   9: 5.893 us/op
-Iteration  10: 5.181 us/op
+# Warmup Iteration   1: 3.138 us/op
+# Warmup Iteration   2: 2.567 us/op
+# Warmup Iteration   3: 2.499 us/op
+# Warmup Iteration   4: 2.481 us/op
+# Warmup Iteration   5: 2.477 us/op
+Iteration   1: 2.480 us/op
+Iteration   2: 2.477 us/op
+Iteration   3: 2.490 us/op
+Iteration   4: 2.484 us/op
+Iteration   5: 2.490 us/op
+Iteration   6: 2.484 us/op
+Iteration   7: 2.489 us/op
+Iteration   8: 2.478 us/op
+Iteration   9: 2.489 us/op
+Iteration  10: 2.483 us/op
 
-# Run progress: 76.67% complete, ETA 00:01:10
+# Run progress: 76.67% complete, ETA 00:00:53
 # Fork: 2 of 2
-# Warmup Iteration   1: 16.146 us/op
-# Warmup Iteration   2: 6.790 us/op
-# Warmup Iteration   3: 5.955 us/op
-# Warmup Iteration   4: 4.754 us/op
-# Warmup Iteration   5: 4.624 us/op
-Iteration   1: 4.619 us/op
-Iteration   2: 4.859 us/op
-Iteration   3: 4.622 us/op
-Iteration   4: 4.680 us/op
-Iteration   5: 4.776 us/op
-Iteration   6: 4.502 us/op
-Iteration   7: 4.691 us/op
-Iteration   8: 4.728 us/op
-Iteration   9: 4.673 us/op
-Iteration  10: 4.619 us/op
+# Warmup Iteration   1: 3.153 us/op
+# Warmup Iteration   2: 2.571 us/op
+# Warmup Iteration   3: 2.506 us/op
+# Warmup Iteration   4: 2.489 us/op
+# Warmup Iteration   5: 2.486 us/op
+Iteration   1: 2.495 us/op
+Iteration   2: 2.499 us/op
+Iteration   3: 2.495 us/op
+Iteration   4: 2.493 us/op
+Iteration   5: 2.486 us/op
+Iteration   6: 2.501 us/op
+Iteration   7: 2.498 us/op
+Iteration   8: 2.510 us/op
+Iteration   9: 2.514 us/op
+Iteration  10: 2.487 us/op
 
 
 Result "model.security.CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt":
-  5.198 ±(99.9%) 0.617 us/op [Average]
-  (min, avg, max) = (4.502, 5.198, 6.914), stdev = 0.711
-  CI (99.9%): [4.581, 5.815] (assumes normal distribution)
+  2.491 ±(99.9%) 0.009 us/op [Average]
+  (min, avg, max) = (2.477, 2.491, 2.514), stdev = 0.010
+  CI (99.9%): [2.483, 2.500] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10-Ubuntu-124.04
-# VM invoker: /usr/lib/jvm/java-21-openjdk-amd64/bin/java
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 5 iterations, 500 ms each
@@ -683,52 +683,52 @@ Result "model.security.CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt":
 # Benchmark: model.security.CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt
 # Parameters: (size = 256)
 
-# Run progress: 80.00% complete, ETA 00:01:00
+# Run progress: 80.00% complete, ETA 00:00:45
 # Fork: 1 of 2
-# Warmup Iteration   1: 17.380 us/op
-# Warmup Iteration   2: 7.996 us/op
-# Warmup Iteration   3: 6.059 us/op
-# Warmup Iteration   4: 5.331 us/op
-# Warmup Iteration   5: 5.032 us/op
-Iteration   1: 4.943 us/op
-Iteration   2: 5.682 us/op
-Iteration   3: 5.004 us/op
-Iteration   4: 5.148 us/op
-Iteration   5: 4.964 us/op
-Iteration   6: 4.940 us/op
-Iteration   7: 5.054 us/op
-Iteration   8: 5.224 us/op
-Iteration   9: 4.928 us/op
-Iteration  10: 4.945 us/op
+# Warmup Iteration   1: 3.417 us/op
+# Warmup Iteration   2: 2.712 us/op
+# Warmup Iteration   3: 2.638 us/op
+# Warmup Iteration   4: 2.618 us/op
+# Warmup Iteration   5: 2.617 us/op
+Iteration   1: 2.623 us/op
+Iteration   2: 2.615 us/op
+Iteration   3: 2.617 us/op
+Iteration   4: 2.607 us/op
+Iteration   5: 2.616 us/op
+Iteration   6: 2.629 us/op
+Iteration   7: 2.618 us/op
+Iteration   8: 2.616 us/op
+Iteration   9: 2.622 us/op
+Iteration  10: 2.624 us/op
 
-# Run progress: 83.33% complete, ETA 00:00:50
+# Run progress: 83.33% complete, ETA 00:00:38
 # Fork: 2 of 2
-# Warmup Iteration   1: 17.378 us/op
-# Warmup Iteration   2: 8.904 us/op
-# Warmup Iteration   3: 6.160 us/op
-# Warmup Iteration   4: 5.380 us/op
-# Warmup Iteration   5: 5.132 us/op
-Iteration   1: 4.990 us/op
-Iteration   2: 5.044 us/op
-Iteration   3: 5.695 us/op
-Iteration   4: 5.540 us/op
-Iteration   5: 6.131 us/op
-Iteration   6: 6.239 us/op
-Iteration   7: 6.671 us/op
-Iteration   8: 7.919 us/op
-Iteration   9: 7.122 us/op
-Iteration  10: 6.881 us/op
+# Warmup Iteration   1: 3.536 us/op
+# Warmup Iteration   2: 2.690 us/op
+# Warmup Iteration   3: 2.749 us/op
+# Warmup Iteration   4: 2.659 us/op
+# Warmup Iteration   5: 2.654 us/op
+Iteration   1: 2.652 us/op
+Iteration   2: 2.660 us/op
+Iteration   3: 2.670 us/op
+Iteration   4: 2.652 us/op
+Iteration   5: 2.667 us/op
+Iteration   6: 2.670 us/op
+Iteration   7: 2.658 us/op
+Iteration   8: 2.656 us/op
+Iteration   9: 2.654 us/op
+Iteration  10: 2.659 us/op
 
 
 Result "model.security.CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt":
-  5.653 ±(99.9%) 0.771 us/op [Average]
-  (min, avg, max) = (4.928, 5.653, 7.919), stdev = 0.887
-  CI (99.9%): [4.883, 6.424] (assumes normal distribution)
+  2.639 ±(99.9%) 0.019 us/op [Average]
+  (min, avg, max) = (2.607, 2.639, 2.670), stdev = 0.022
+  CI (99.9%): [2.620, 2.658] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10-Ubuntu-124.04
-# VM invoker: /usr/lib/jvm/java-21-openjdk-amd64/bin/java
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 5 iterations, 500 ms each
@@ -739,52 +739,52 @@ Result "model.security.CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt":
 # Benchmark: model.security.CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt
 # Parameters: (size = 1024)
 
-# Run progress: 86.67% complete, ETA 00:00:40
+# Run progress: 86.67% complete, ETA 00:00:30
 # Fork: 1 of 2
-# Warmup Iteration   1: 50.796 us/op
-# Warmup Iteration   2: 11.243 us/op
-# Warmup Iteration   3: 7.762 us/op
-# Warmup Iteration   4: 6.197 us/op
-# Warmup Iteration   5: 5.680 us/op
-Iteration   1: 5.588 us/op
-Iteration   2: 5.674 us/op
-Iteration   3: 5.637 us/op
-Iteration   4: 5.568 us/op
-Iteration   5: 5.562 us/op
-Iteration   6: 5.639 us/op
-Iteration   7: 5.718 us/op
-Iteration   8: 5.562 us/op
-Iteration   9: 5.680 us/op
-Iteration  10: 5.566 us/op
+# Warmup Iteration   1: 4.633 us/op
+# Warmup Iteration   2: 3.483 us/op
+# Warmup Iteration   3: 3.345 us/op
+# Warmup Iteration   4: 3.320 us/op
+# Warmup Iteration   5: 3.332 us/op
+Iteration   1: 3.317 us/op
+Iteration   2: 3.316 us/op
+Iteration   3: 3.317 us/op
+Iteration   4: 3.338 us/op
+Iteration   5: 3.311 us/op
+Iteration   6: 3.309 us/op
+Iteration   7: 3.319 us/op
+Iteration   8: 3.374 us/op
+Iteration   9: 3.306 us/op
+Iteration  10: 3.308 us/op
 
-# Run progress: 90.00% complete, ETA 00:00:30
+# Run progress: 90.00% complete, ETA 00:00:22
 # Fork: 2 of 2
-# Warmup Iteration   1: 18.755 us/op
-# Warmup Iteration   2: 9.210 us/op
-# Warmup Iteration   3: 8.851 us/op
-# Warmup Iteration   4: 5.900 us/op
-# Warmup Iteration   5: 5.659 us/op
-Iteration   1: 5.537 us/op
-Iteration   2: 5.513 us/op
-Iteration   3: 5.673 us/op
-Iteration   4: 5.535 us/op
-Iteration   5: 5.603 us/op
-Iteration   6: 5.516 us/op
-Iteration   7: 5.763 us/op
-Iteration   8: 5.551 us/op
-Iteration   9: 5.658 us/op
-Iteration  10: 5.584 us/op
+# Warmup Iteration   1: 4.733 us/op
+# Warmup Iteration   2: 3.441 us/op
+# Warmup Iteration   3: 3.433 us/op
+# Warmup Iteration   4: 3.353 us/op
+# Warmup Iteration   5: 3.350 us/op
+Iteration   1: 3.351 us/op
+Iteration   2: 3.346 us/op
+Iteration   3: 3.331 us/op
+Iteration   4: 3.321 us/op
+Iteration   5: 3.317 us/op
+Iteration   6: 3.334 us/op
+Iteration   7: 3.340 us/op
+Iteration   8: 3.328 us/op
+Iteration   9: 3.336 us/op
+Iteration  10: 3.335 us/op
 
 
 Result "model.security.CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt":
-  5.606 ±(99.9%) 0.061 us/op [Average]
-  (min, avg, max) = (5.513, 5.606, 5.763), stdev = 0.070
-  CI (99.9%): [5.545, 5.668] (assumes normal distribution)
+  3.328 ±(99.9%) 0.015 us/op [Average]
+  (min, avg, max) = (3.306, 3.328, 3.374), stdev = 0.017
+  CI (99.9%): [3.313, 3.342] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10-Ubuntu-124.04
-# VM invoker: /usr/lib/jvm/java-21-openjdk-amd64/bin/java
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 5 iterations, 500 ms each
@@ -795,50 +795,50 @@ Result "model.security.CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt":
 # Benchmark: model.security.CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt
 # Parameters: (size = 4096)
 
-# Run progress: 93.33% complete, ETA 00:00:20
+# Run progress: 93.33% complete, ETA 00:00:15
 # Fork: 1 of 2
-# Warmup Iteration   1: 97.464 us/op
-# Warmup Iteration   2: 20.351 us/op
-# Warmup Iteration   3: 16.526 us/op
-# Warmup Iteration   4: 11.020 us/op
-# Warmup Iteration   5: 10.982 us/op
-Iteration   1: 10.951 us/op
-Iteration   2: 11.005 us/op
-Iteration   3: 10.557 us/op
-Iteration   4: 10.692 us/op
-Iteration   5: 10.957 us/op
-Iteration   6: 10.689 us/op
-Iteration   7: 10.988 us/op
-Iteration   8: 10.590 us/op
-Iteration   9: 11.093 us/op
-Iteration  10: 10.700 us/op
+# Warmup Iteration   1: 11.533 us/op
+# Warmup Iteration   2: 7.040 us/op
+# Warmup Iteration   3: 6.711 us/op
+# Warmup Iteration   4: 6.688 us/op
+# Warmup Iteration   5: 6.732 us/op
+Iteration   1: 6.743 us/op
+Iteration   2: 6.697 us/op
+Iteration   3: 6.696 us/op
+Iteration   4: 6.707 us/op
+Iteration   5: 6.707 us/op
+Iteration   6: 6.684 us/op
+Iteration   7: 6.666 us/op
+Iteration   8: 6.664 us/op
+Iteration   9: 6.699 us/op
+Iteration  10: 6.701 us/op
 
-# Run progress: 96.67% complete, ETA 00:00:10
+# Run progress: 96.67% complete, ETA 00:00:07
 # Fork: 2 of 2
-# Warmup Iteration   1: 104.293 us/op
-# Warmup Iteration   2: 29.057 us/op
-# Warmup Iteration   3: 22.659 us/op
-# Warmup Iteration   4: 11.114 us/op
-# Warmup Iteration   5: 11.401 us/op
-Iteration   1: 11.370 us/op
-Iteration   2: 10.836 us/op
-Iteration   3: 10.664 us/op
-Iteration   4: 10.695 us/op
-Iteration   5: 11.056 us/op
-Iteration   6: 10.762 us/op
-Iteration   7: 10.565 us/op
-Iteration   8: 10.845 us/op
-Iteration   9: 10.593 us/op
-Iteration  10: 10.689 us/op
+# Warmup Iteration   1: 11.319 us/op
+# Warmup Iteration   2: 7.065 us/op
+# Warmup Iteration   3: 6.720 us/op
+# Warmup Iteration   4: 6.710 us/op
+# Warmup Iteration   5: 6.710 us/op
+Iteration   1: 6.667 us/op
+Iteration   2: 6.652 us/op
+Iteration   3: 6.648 us/op
+Iteration   4: 6.644 us/op
+Iteration   5: 6.665 us/op
+Iteration   6: 6.672 us/op
+Iteration   7: 6.658 us/op
+Iteration   8: 6.680 us/op
+Iteration   9: 6.719 us/op
+Iteration  10: 6.732 us/op
 
 
 Result "model.security.CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt":
-  10.815 ±(99.9%) 0.187 us/op [Average]
-  (min, avg, max) = (10.557, 10.815, 11.370), stdev = 0.215
-  CI (99.9%): [10.628, 11.002] (assumes normal distribution)
+  6.685 ±(99.9%) 0.024 us/op [Average]
+  (min, avg, max) = (6.644, 6.685, 6.743), stdev = 0.028
+  CI (99.9%): [6.661, 6.709] (assumes normal distribution)
 
 
-# Run complete. Total time: 00:05:04
+# Run complete. Total time: 00:03:49
 
 REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
 why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
@@ -852,21 +852,21 @@ works, and factor in a small probability of new VM bugs. Additionally, while com
 different JVMs are already problematic, the performance difference caused by different Blackhole
 modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
 
-Benchmark                                            (size)  Mode  Cnt   Score   Error  Units
-CryptoUtilsBenchmark.decrypt_only                        16  avgt   20   1.978 ± 0.034  us/op
-CryptoUtilsBenchmark.decrypt_only                        64  avgt   20   2.028 ± 0.035  us/op
-CryptoUtilsBenchmark.decrypt_only                       256  avgt   20   2.139 ± 0.027  us/op
-CryptoUtilsBenchmark.decrypt_only                      1024  avgt   20   2.650 ± 0.073  us/op
-CryptoUtilsBenchmark.decrypt_only                      4096  avgt   20   5.056 ± 0.105  us/op
-CryptoUtilsBenchmark.encrypt_only                        16  avgt   20   2.193 ± 0.053  us/op
-CryptoUtilsBenchmark.encrypt_only                        64  avgt   20   2.204 ± 0.033  us/op
-CryptoUtilsBenchmark.encrypt_only                       256  avgt   20   2.348 ± 0.062  us/op
-CryptoUtilsBenchmark.encrypt_only                      1024  avgt   20   2.852 ± 0.066  us/op
-CryptoUtilsBenchmark.encrypt_only                      4096  avgt   20   5.544 ± 0.124  us/op
-CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt      16  avgt   20   4.380 ± 0.189  us/op
-CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt      64  avgt   20   5.198 ± 0.617  us/op
-CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt     256  avgt   20   5.653 ± 0.771  us/op
-CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt    1024  avgt   20   5.606 ± 0.061  us/op
-CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt    4096  avgt   20  10.815 ± 0.187  us/op
+Benchmark                                            (size)  Mode  Cnt  Score   Error  Units
+CryptoUtilsBenchmark.decrypt_only                        16  avgt   20  1.171 ± 0.014  us/op
+CryptoUtilsBenchmark.decrypt_only                        64  avgt   20  1.197 ± 0.005  us/op
+CryptoUtilsBenchmark.decrypt_only                       256  avgt   20  1.250 ± 0.008  us/op
+CryptoUtilsBenchmark.decrypt_only                      1024  avgt   20  1.560 ± 0.008  us/op
+CryptoUtilsBenchmark.decrypt_only                      4096  avgt   20  3.189 ± 0.018  us/op
+CryptoUtilsBenchmark.encrypt_only                        16  avgt   20  1.256 ± 0.023  us/op
+CryptoUtilsBenchmark.encrypt_only                        64  avgt   20  1.266 ± 0.009  us/op
+CryptoUtilsBenchmark.encrypt_only                       256  avgt   20  1.347 ± 0.007  us/op
+CryptoUtilsBenchmark.encrypt_only                      1024  avgt   20  1.678 ± 0.004  us/op
+CryptoUtilsBenchmark.encrypt_only                      4096  avgt   20  3.441 ± 0.015  us/op
+CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt      16  avgt   20  2.409 ± 0.006  us/op
+CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt      64  avgt   20  2.491 ± 0.009  us/op
+CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt     256  avgt   20  2.639 ± 0.019  us/op
+CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt    1024  avgt   20  3.328 ± 0.015  us/op
+CryptoUtilsBenchmark.roundtrip_encrypt_then_decrypt    4096  avgt   20  6.685 ± 0.024  us/op
 
 Benchmark result is saved to jmh/report/model.security.CryptoUtilsBenchmark/results.json

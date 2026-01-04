@@ -1,0 +1,2753 @@
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.aggiungi_hit_existing
+# Parameters: (cartSize = 10, taglia = S)
+
+# Run progress: 0.00% complete, ETA 00:12:00
+# Fork: 1 of 2
+# Warmup Iteration   1: 14.432 ns/op
+# Warmup Iteration   2: 14.320 ns/op
+# Warmup Iteration   3: 14.409 ns/op
+# Warmup Iteration   4: 14.397 ns/op
+# Warmup Iteration   5: 14.410 ns/op
+Iteration   1: 14.422 ns/op
+Iteration   2: 14.418 ns/op
+Iteration   3: 14.381 ns/op
+Iteration   4: 14.401 ns/op
+Iteration   5: 14.419 ns/op
+Iteration   6: 14.411 ns/op
+Iteration   7: 14.409 ns/op
+Iteration   8: 14.396 ns/op
+Iteration   9: 14.476 ns/op
+Iteration  10: 14.395 ns/op
+
+# Run progress: 1.04% complete, ETA 00:12:07
+# Fork: 2 of 2
+# Warmup Iteration   1: 14.402 ns/op
+# Warmup Iteration   2: 14.240 ns/op
+# Warmup Iteration   3: 14.506 ns/op
+# Warmup Iteration   4: 14.473 ns/op
+# Warmup Iteration   5: 14.441 ns/op
+Iteration   1: 14.483 ns/op
+Iteration   2: 14.472 ns/op
+Iteration   3: 14.422 ns/op
+Iteration   4: 14.426 ns/op
+Iteration   5: 14.458 ns/op
+Iteration   6: 14.481 ns/op
+Iteration   7: 14.461 ns/op
+Iteration   8: 14.444 ns/op
+Iteration   9: 14.475 ns/op
+Iteration  10: 14.479 ns/op
+
+
+Result "model.CarrelloModelBenchmark.aggiungi_hit_existing":
+  14.437 ±(99.9%) 0.029 ns/op [Average]
+  (min, avg, max) = (14.381, 14.437, 14.483), stdev = 0.034
+  CI (99.9%): [14.407, 14.466] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.aggiungi_hit_existing
+# Parameters: (cartSize = 10, taglia = M)
+
+# Run progress: 2.08% complete, ETA 00:11:58
+# Fork: 1 of 2
+# Warmup Iteration   1: 14.410 ns/op
+# Warmup Iteration   2: 14.331 ns/op
+# Warmup Iteration   3: 14.421 ns/op
+# Warmup Iteration   4: 14.420 ns/op
+# Warmup Iteration   5: 14.402 ns/op
+Iteration   1: 14.379 ns/op
+Iteration   2: 14.390 ns/op
+Iteration   3: 14.391 ns/op
+Iteration   4: 14.394 ns/op
+Iteration   5: 14.386 ns/op
+Iteration   6: 14.395 ns/op
+Iteration   7: 14.417 ns/op
+Iteration   8: 14.397 ns/op
+Iteration   9: 14.406 ns/op
+Iteration  10: 14.394 ns/op
+
+# Run progress: 3.13% complete, ETA 00:11:50
+# Fork: 2 of 2
+# Warmup Iteration   1: 14.470 ns/op
+# Warmup Iteration   2: 14.324 ns/op
+# Warmup Iteration   3: 14.413 ns/op
+# Warmup Iteration   4: 14.392 ns/op
+# Warmup Iteration   5: 14.450 ns/op
+Iteration   1: 14.719 ns/op
+Iteration   2: 14.663 ns/op
+Iteration   3: 14.530 ns/op
+Iteration   4: 14.445 ns/op
+Iteration   5: 14.425 ns/op
+Iteration   6: 14.424 ns/op
+Iteration   7: 14.384 ns/op
+Iteration   8: 14.412 ns/op
+Iteration   9: 14.356 ns/op
+Iteration  10: 14.337 ns/op
+
+
+Result "model.CarrelloModelBenchmark.aggiungi_hit_existing":
+  14.432 ±(99.9%) 0.084 ns/op [Average]
+  (min, avg, max) = (14.337, 14.432, 14.719), stdev = 0.097
+  CI (99.9%): [14.348, 14.516] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.aggiungi_hit_existing
+# Parameters: (cartSize = 10, taglia = L)
+
+# Run progress: 4.17% complete, ETA 00:11:43
+# Fork: 1 of 2
+# Warmup Iteration   1: 14.459 ns/op
+# Warmup Iteration   2: 14.296 ns/op
+# Warmup Iteration   3: 14.424 ns/op
+# Warmup Iteration   4: 14.472 ns/op
+# Warmup Iteration   5: 14.425 ns/op
+Iteration   1: 14.410 ns/op
+Iteration   2: 14.350 ns/op
+Iteration   3: 14.374 ns/op
+Iteration   4: 14.384 ns/op
+Iteration   5: 14.400 ns/op
+Iteration   6: 14.471 ns/op
+Iteration   7: 14.446 ns/op
+Iteration   8: 14.412 ns/op
+Iteration   9: 14.435 ns/op
+Iteration  10: 14.370 ns/op
+
+# Run progress: 5.21% complete, ETA 00:11:35
+# Fork: 2 of 2
+# Warmup Iteration   1: 14.465 ns/op
+# Warmup Iteration   2: 14.489 ns/op
+# Warmup Iteration   3: 14.420 ns/op
+# Warmup Iteration   4: 14.368 ns/op
+# Warmup Iteration   5: 14.384 ns/op
+Iteration   1: 14.436 ns/op
+Iteration   2: 14.438 ns/op
+Iteration   3: 14.375 ns/op
+Iteration   4: 14.391 ns/op
+Iteration   5: 14.412 ns/op
+Iteration   6: 14.433 ns/op
+Iteration   7: 14.422 ns/op
+Iteration   8: 14.423 ns/op
+Iteration   9: 14.406 ns/op
+Iteration  10: 14.385 ns/op
+
+
+Result "model.CarrelloModelBenchmark.aggiungi_hit_existing":
+  14.409 ±(99.9%) 0.026 ns/op [Average]
+  (min, avg, max) = (14.350, 14.409, 14.471), stdev = 0.030
+  CI (99.9%): [14.382, 14.435] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.aggiungi_hit_existing
+# Parameters: (cartSize = 10, taglia = XL)
+
+# Run progress: 6.25% complete, ETA 00:11:27
+# Fork: 1 of 2
+# Warmup Iteration   1: 14.450 ns/op
+# Warmup Iteration   2: 14.365 ns/op
+# Warmup Iteration   3: 14.408 ns/op
+# Warmup Iteration   4: 14.423 ns/op
+# Warmup Iteration   5: 14.368 ns/op
+Iteration   1: 14.407 ns/op
+Iteration   2: 14.383 ns/op
+Iteration   3: 14.411 ns/op
+Iteration   4: 14.366 ns/op
+Iteration   5: 14.393 ns/op
+Iteration   6: 14.418 ns/op
+Iteration   7: 14.388 ns/op
+Iteration   8: 14.359 ns/op
+Iteration   9: 14.371 ns/op
+Iteration  10: 14.409 ns/op
+
+# Run progress: 7.29% complete, ETA 00:11:19
+# Fork: 2 of 2
+# Warmup Iteration   1: 14.414 ns/op
+# Warmup Iteration   2: 14.303 ns/op
+# Warmup Iteration   3: 14.373 ns/op
+# Warmup Iteration   4: 14.418 ns/op
+# Warmup Iteration   5: 14.406 ns/op
+Iteration   1: 14.372 ns/op
+Iteration   2: 14.431 ns/op
+Iteration   3: 14.418 ns/op
+Iteration   4: 14.369 ns/op
+Iteration   5: 14.368 ns/op
+Iteration   6: 14.370 ns/op
+Iteration   7: 14.426 ns/op
+Iteration   8: 14.376 ns/op
+Iteration   9: 14.387 ns/op
+Iteration  10: 14.379 ns/op
+
+
+Result "model.CarrelloModelBenchmark.aggiungi_hit_existing":
+  14.390 ±(99.9%) 0.020 ns/op [Average]
+  (min, avg, max) = (14.359, 14.390, 14.431), stdev = 0.022
+  CI (99.9%): [14.370, 14.410] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.aggiungi_hit_existing
+# Parameters: (cartSize = 100, taglia = S)
+
+# Run progress: 8.33% complete, ETA 00:11:11
+# Fork: 1 of 2
+# Warmup Iteration   1: 40.548 ns/op
+# Warmup Iteration   2: 33.471 ns/op
+# Warmup Iteration   3: 34.253 ns/op
+# Warmup Iteration   4: 34.214 ns/op
+# Warmup Iteration   5: 34.353 ns/op
+Iteration   1: 34.197 ns/op
+Iteration   2: 34.276 ns/op
+Iteration   3: 34.227 ns/op
+Iteration   4: 34.377 ns/op
+Iteration   5: 34.231 ns/op
+Iteration   6: 34.328 ns/op
+Iteration   7: 34.361 ns/op
+Iteration   8: 34.485 ns/op
+Iteration   9: 34.433 ns/op
+Iteration  10: 34.323 ns/op
+
+# Run progress: 9.38% complete, ETA 00:11:04
+# Fork: 2 of 2
+# Warmup Iteration   1: 35.897 ns/op
+# Warmup Iteration   2: 34.251 ns/op
+# Warmup Iteration   3: 34.198 ns/op
+# Warmup Iteration   4: 34.246 ns/op
+# Warmup Iteration   5: 34.213 ns/op
+Iteration   1: 34.284 ns/op
+Iteration   2: 34.274 ns/op
+Iteration   3: 34.209 ns/op
+Iteration   4: 34.199 ns/op
+Iteration   5: 34.275 ns/op
+Iteration   6: 34.169 ns/op
+Iteration   7: 34.148 ns/op
+Iteration   8: 34.140 ns/op
+Iteration   9: 34.184 ns/op
+Iteration  10: 34.277 ns/op
+
+
+Result "model.CarrelloModelBenchmark.aggiungi_hit_existing":
+  34.270 ±(99.9%) 0.081 ns/op [Average]
+  (min, avg, max) = (34.140, 34.270, 34.485), stdev = 0.093
+  CI (99.9%): [34.189, 34.351] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.aggiungi_hit_existing
+# Parameters: (cartSize = 100, taglia = M)
+
+# Run progress: 10.42% complete, ETA 00:10:56
+# Fork: 1 of 2
+# Warmup Iteration   1: 39.441 ns/op
+# Warmup Iteration   2: 33.576 ns/op
+# Warmup Iteration   3: 34.194 ns/op
+# Warmup Iteration   4: 34.198 ns/op
+# Warmup Iteration   5: 34.247 ns/op
+Iteration   1: 34.210 ns/op
+Iteration   2: 34.240 ns/op
+Iteration   3: 34.244 ns/op
+Iteration   4: 34.269 ns/op
+Iteration   5: 34.223 ns/op
+Iteration   6: 34.277 ns/op
+Iteration   7: 34.239 ns/op
+Iteration   8: 34.197 ns/op
+Iteration   9: 34.196 ns/op
+Iteration  10: 34.277 ns/op
+
+# Run progress: 11.46% complete, ETA 00:10:49
+# Fork: 2 of 2
+# Warmup Iteration   1: 41.007 ns/op
+# Warmup Iteration   2: 33.619 ns/op
+# Warmup Iteration   3: 34.276 ns/op
+# Warmup Iteration   4: 34.287 ns/op
+# Warmup Iteration   5: 34.238 ns/op
+Iteration   1: 34.240 ns/op
+Iteration   2: 34.243 ns/op
+Iteration   3: 34.250 ns/op
+Iteration   4: 34.266 ns/op
+Iteration   5: 34.264 ns/op
+Iteration   6: 34.255 ns/op
+Iteration   7: 34.211 ns/op
+Iteration   8: 34.285 ns/op
+Iteration   9: 34.256 ns/op
+Iteration  10: 34.289 ns/op
+
+
+Result "model.CarrelloModelBenchmark.aggiungi_hit_existing":
+  34.246 ±(99.9%) 0.024 ns/op [Average]
+  (min, avg, max) = (34.196, 34.246, 34.289), stdev = 0.028
+  CI (99.9%): [34.222, 34.271] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.aggiungi_hit_existing
+# Parameters: (cartSize = 100, taglia = L)
+
+# Run progress: 12.50% complete, ETA 00:10:41
+# Fork: 1 of 2
+# Warmup Iteration   1: 37.879 ns/op
+# Warmup Iteration   2: 33.614 ns/op
+# Warmup Iteration   3: 34.186 ns/op
+# Warmup Iteration   4: 34.272 ns/op
+# Warmup Iteration   5: 34.238 ns/op
+Iteration   1: 34.273 ns/op
+Iteration   2: 34.201 ns/op
+Iteration   3: 34.288 ns/op
+Iteration   4: 34.284 ns/op
+Iteration   5: 34.203 ns/op
+Iteration   6: 34.280 ns/op
+Iteration   7: 34.278 ns/op
+Iteration   8: 34.182 ns/op
+Iteration   9: 34.203 ns/op
+Iteration  10: 34.243 ns/op
+
+# Run progress: 13.54% complete, ETA 00:10:33
+# Fork: 2 of 2
+# Warmup Iteration   1: 39.061 ns/op
+# Warmup Iteration   2: 33.421 ns/op
+# Warmup Iteration   3: 34.251 ns/op
+# Warmup Iteration   4: 34.291 ns/op
+# Warmup Iteration   5: 34.418 ns/op
+Iteration   1: 34.296 ns/op
+Iteration   2: 34.355 ns/op
+Iteration   3: 34.292 ns/op
+Iteration   4: 34.393 ns/op
+Iteration   5: 34.311 ns/op
+Iteration   6: 34.376 ns/op
+Iteration   7: 34.263 ns/op
+Iteration   8: 34.323 ns/op
+Iteration   9: 34.335 ns/op
+Iteration  10: 34.321 ns/op
+
+
+Result "model.CarrelloModelBenchmark.aggiungi_hit_existing":
+  34.285 ±(99.9%) 0.051 ns/op [Average]
+  (min, avg, max) = (34.182, 34.285, 34.393), stdev = 0.058
+  CI (99.9%): [34.234, 34.336] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.aggiungi_hit_existing
+# Parameters: (cartSize = 100, taglia = XL)
+
+# Run progress: 14.58% complete, ETA 00:10:26
+# Fork: 1 of 2
+# Warmup Iteration   1: 40.799 ns/op
+# Warmup Iteration   2: 33.556 ns/op
+# Warmup Iteration   3: 34.244 ns/op
+# Warmup Iteration   4: 34.277 ns/op
+# Warmup Iteration   5: 34.289 ns/op
+Iteration   1: 34.334 ns/op
+Iteration   2: 34.331 ns/op
+Iteration   3: 34.295 ns/op
+Iteration   4: 34.305 ns/op
+Iteration   5: 34.355 ns/op
+Iteration   6: 34.265 ns/op
+Iteration   7: 34.302 ns/op
+Iteration   8: 34.241 ns/op
+Iteration   9: 34.344 ns/op
+Iteration  10: 34.208 ns/op
+
+# Run progress: 15.63% complete, ETA 00:10:18
+# Fork: 2 of 2
+# Warmup Iteration   1: 40.140 ns/op
+# Warmup Iteration   2: 33.447 ns/op
+# Warmup Iteration   3: 34.321 ns/op
+# Warmup Iteration   4: 34.286 ns/op
+# Warmup Iteration   5: 34.357 ns/op
+Iteration   1: 34.227 ns/op
+Iteration   2: 34.287 ns/op
+Iteration   3: 34.260 ns/op
+Iteration   4: 34.284 ns/op
+Iteration   5: 34.283 ns/op
+Iteration   6: 34.305 ns/op
+Iteration   7: 34.254 ns/op
+Iteration   8: 34.260 ns/op
+Iteration   9: 34.260 ns/op
+Iteration  10: 34.313 ns/op
+
+
+Result "model.CarrelloModelBenchmark.aggiungi_hit_existing":
+  34.285 ±(99.9%) 0.034 ns/op [Average]
+  (min, avg, max) = (34.208, 34.285, 34.355), stdev = 0.039
+  CI (99.9%): [34.251, 34.320] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.aggiungi_hit_existing
+# Parameters: (cartSize = 1000, taglia = S)
+
+# Run progress: 16.67% complete, ETA 00:10:10
+# Fork: 1 of 2
+# Warmup Iteration   1: 278.773 ns/op
+# Warmup Iteration   2: 269.148 ns/op
+# Warmup Iteration   3: 266.656 ns/op
+# Warmup Iteration   4: 266.450 ns/op
+# Warmup Iteration   5: 266.617 ns/op
+Iteration   1: 266.363 ns/op
+Iteration   2: 266.661 ns/op
+Iteration   3: 267.215 ns/op
+Iteration   4: 266.830 ns/op
+Iteration   5: 267.089 ns/op
+Iteration   6: 266.892 ns/op
+Iteration   7: 266.701 ns/op
+Iteration   8: 267.029 ns/op
+Iteration   9: 266.698 ns/op
+Iteration  10: 266.720 ns/op
+
+# Run progress: 17.71% complete, ETA 00:10:03
+# Fork: 2 of 2
+# Warmup Iteration   1: 276.176 ns/op
+# Warmup Iteration   2: 271.048 ns/op
+# Warmup Iteration   3: 266.997 ns/op
+# Warmup Iteration   4: 268.001 ns/op
+# Warmup Iteration   5: 267.112 ns/op
+Iteration   1: 268.830 ns/op
+Iteration   2: 266.627 ns/op
+Iteration   3: 266.962 ns/op
+Iteration   4: 267.137 ns/op
+Iteration   5: 268.037 ns/op
+Iteration   6: 268.155 ns/op
+Iteration   7: 267.668 ns/op
+Iteration   8: 267.767 ns/op
+Iteration   9: 268.301 ns/op
+Iteration  10: 270.006 ns/op
+
+
+Result "model.CarrelloModelBenchmark.aggiungi_hit_existing":
+  267.384 ±(99.9%) 0.787 ns/op [Average]
+  (min, avg, max) = (266.363, 267.384, 270.006), stdev = 0.906
+  CI (99.9%): [266.598, 268.171] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.aggiungi_hit_existing
+# Parameters: (cartSize = 1000, taglia = M)
+
+# Run progress: 18.75% complete, ETA 00:09:55
+# Fork: 1 of 2
+# Warmup Iteration   1: 277.376 ns/op
+# Warmup Iteration   2: 269.895 ns/op
+# Warmup Iteration   3: 267.048 ns/op
+# Warmup Iteration   4: 267.148 ns/op
+# Warmup Iteration   5: 267.557 ns/op
+Iteration   1: 266.726 ns/op
+Iteration   2: 266.601 ns/op
+Iteration   3: 266.241 ns/op
+Iteration   4: 266.369 ns/op
+Iteration   5: 267.326 ns/op
+Iteration   6: 266.637 ns/op
+Iteration   7: 266.590 ns/op
+Iteration   8: 266.603 ns/op
+Iteration   9: 266.710 ns/op
+Iteration  10: 266.925 ns/op
+
+# Run progress: 19.79% complete, ETA 00:09:47
+# Fork: 2 of 2
+# Warmup Iteration   1: 277.378 ns/op
+# Warmup Iteration   2: 272.004 ns/op
+# Warmup Iteration   3: 266.597 ns/op
+# Warmup Iteration   4: 267.644 ns/op
+# Warmup Iteration   5: 267.071 ns/op
+Iteration   1: 267.205 ns/op
+Iteration   2: 267.017 ns/op
+Iteration   3: 266.434 ns/op
+Iteration   4: 266.475 ns/op
+Iteration   5: 267.298 ns/op
+Iteration   6: 266.186 ns/op
+Iteration   7: 266.468 ns/op
+Iteration   8: 266.941 ns/op
+Iteration   9: 267.052 ns/op
+Iteration  10: 266.809 ns/op
+
+
+Result "model.CarrelloModelBenchmark.aggiungi_hit_existing":
+  266.731 ±(99.9%) 0.291 ns/op [Average]
+  (min, avg, max) = (266.186, 266.731, 267.326), stdev = 0.335
+  CI (99.9%): [266.440, 267.021] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.aggiungi_hit_existing
+# Parameters: (cartSize = 1000, taglia = L)
+
+# Run progress: 20.83% complete, ETA 00:09:40
+# Fork: 1 of 2
+# Warmup Iteration   1: 277.188 ns/op
+# Warmup Iteration   2: 268.801 ns/op
+# Warmup Iteration   3: 269.373 ns/op
+# Warmup Iteration   4: 268.639 ns/op
+# Warmup Iteration   5: 267.256 ns/op
+Iteration   1: 268.102 ns/op
+Iteration   2: 268.269 ns/op
+Iteration   3: 266.795 ns/op
+Iteration   4: 269.003 ns/op
+Iteration   5: 266.543 ns/op
+Iteration   6: 268.046 ns/op
+Iteration   7: 268.168 ns/op
+Iteration   8: 268.049 ns/op
+Iteration   9: 267.018 ns/op
+Iteration  10: 267.693 ns/op
+
+# Run progress: 21.88% complete, ETA 00:09:32
+# Fork: 2 of 2
+# Warmup Iteration   1: 277.980 ns/op
+# Warmup Iteration   2: 270.069 ns/op
+# Warmup Iteration   3: 267.015 ns/op
+# Warmup Iteration   4: 267.459 ns/op
+# Warmup Iteration   5: 268.727 ns/op
+Iteration   1: 266.937 ns/op
+Iteration   2: 268.091 ns/op
+Iteration   3: 268.108 ns/op
+Iteration   4: 267.440 ns/op
+Iteration   5: 266.409 ns/op
+Iteration   6: 272.685 ns/op
+Iteration   7: 268.214 ns/op
+Iteration   8: 268.774 ns/op
+Iteration   9: 268.013 ns/op
+Iteration  10: 268.245 ns/op
+
+
+Result "model.CarrelloModelBenchmark.aggiungi_hit_existing":
+  268.030 ±(99.9%) 1.134 ns/op [Average]
+  (min, avg, max) = (266.409, 268.030, 272.685), stdev = 1.305
+  CI (99.9%): [266.896, 269.164] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.aggiungi_hit_existing
+# Parameters: (cartSize = 1000, taglia = XL)
+
+# Run progress: 22.92% complete, ETA 00:09:24
+# Fork: 1 of 2
+# Warmup Iteration   1: 279.035 ns/op
+# Warmup Iteration   2: 270.878 ns/op
+# Warmup Iteration   3: 266.735 ns/op
+# Warmup Iteration   4: 266.573 ns/op
+# Warmup Iteration   5: 267.132 ns/op
+Iteration   1: 267.118 ns/op
+Iteration   2: 266.827 ns/op
+Iteration   3: 267.276 ns/op
+Iteration   4: 266.900 ns/op
+Iteration   5: 266.885 ns/op
+Iteration   6: 266.641 ns/op
+Iteration   7: 266.602 ns/op
+Iteration   8: 266.981 ns/op
+Iteration   9: 267.063 ns/op
+Iteration  10: 266.677 ns/op
+
+# Run progress: 23.96% complete, ETA 00:09:17
+# Fork: 2 of 2
+# Warmup Iteration   1: 276.154 ns/op
+# Warmup Iteration   2: 269.504 ns/op
+# Warmup Iteration   3: 267.346 ns/op
+# Warmup Iteration   4: 267.555 ns/op
+# Warmup Iteration   5: 266.487 ns/op
+Iteration   1: 269.386 ns/op
+Iteration   2: 268.860 ns/op
+Iteration   3: 266.912 ns/op
+Iteration   4: 268.204 ns/op
+Iteration   5: 267.259 ns/op
+Iteration   6: 266.945 ns/op
+Iteration   7: 268.609 ns/op
+Iteration   8: 266.865 ns/op
+Iteration   9: 268.134 ns/op
+Iteration  10: 268.556 ns/op
+
+
+Result "model.CarrelloModelBenchmark.aggiungi_hit_existing":
+  267.435 ±(99.9%) 0.739 ns/op [Average]
+  (min, avg, max) = (266.602, 267.435, 269.386), stdev = 0.851
+  CI (99.9%): [266.696, 268.174] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.aggiungi_miss_insert
+# Parameters: (cartSize = 10, taglia = S)
+
+# Run progress: 25.00% complete, ETA 00:09:09
+# Fork: 1 of 2
+# Warmup Iteration   1: 55.516 ns/op
+# Warmup Iteration   2: 49.803 ns/op
+# Warmup Iteration   3: 48.949 ns/op
+# Warmup Iteration   4: 49.053 ns/op
+# Warmup Iteration   5: 50.674 ns/op
+Iteration   1: 52.251 ns/op
+Iteration   2: 52.305 ns/op
+Iteration   3: 52.273 ns/op
+Iteration   4: 52.251 ns/op
+Iteration   5: 52.095 ns/op
+Iteration   6: 52.339 ns/op
+Iteration   7: 51.990 ns/op
+Iteration   8: 52.093 ns/op
+Iteration   9: 52.174 ns/op
+Iteration  10: 52.373 ns/op
+
+# Run progress: 26.04% complete, ETA 00:09:01
+# Fork: 2 of 2
+# Warmup Iteration   1: 53.194 ns/op
+# Warmup Iteration   2: 50.638 ns/op
+# Warmup Iteration   3: 48.678 ns/op
+# Warmup Iteration   4: 48.804 ns/op
+# Warmup Iteration   5: 50.574 ns/op
+Iteration   1: 53.152 ns/op
+Iteration   2: 53.184 ns/op
+Iteration   3: 53.196 ns/op
+Iteration   4: 53.275 ns/op
+Iteration   5: 53.123 ns/op
+Iteration   6: 53.250 ns/op
+Iteration   7: 53.226 ns/op
+Iteration   8: 53.119 ns/op
+Iteration   9: 53.208 ns/op
+Iteration  10: 53.107 ns/op
+
+
+Result "model.CarrelloModelBenchmark.aggiungi_miss_insert":
+  52.699 ±(99.9%) 0.440 ns/op [Average]
+  (min, avg, max) = (51.990, 52.699, 53.275), stdev = 0.506
+  CI (99.9%): [52.260, 53.139] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.aggiungi_miss_insert
+# Parameters: (cartSize = 10, taglia = M)
+
+# Run progress: 27.08% complete, ETA 00:08:54
+# Fork: 1 of 2
+# Warmup Iteration   1: 53.120 ns/op
+# Warmup Iteration   2: 49.294 ns/op
+# Warmup Iteration   3: 50.152 ns/op
+# Warmup Iteration   4: 48.591 ns/op
+# Warmup Iteration   5: 51.709 ns/op
+Iteration   1: 52.205 ns/op
+Iteration   2: 52.217 ns/op
+Iteration   3: 52.043 ns/op
+Iteration   4: 52.098 ns/op
+Iteration   5: 52.018 ns/op
+Iteration   6: 51.902 ns/op
+Iteration   7: 52.208 ns/op
+Iteration   8: 52.081 ns/op
+Iteration   9: 52.114 ns/op
+Iteration  10: 52.108 ns/op
+
+# Run progress: 28.13% complete, ETA 00:08:46
+# Fork: 2 of 2
+# Warmup Iteration   1: 52.978 ns/op
+# Warmup Iteration   2: 50.213 ns/op
+# Warmup Iteration   3: 49.660 ns/op
+# Warmup Iteration   4: 48.749 ns/op
+# Warmup Iteration   5: 50.282 ns/op
+Iteration   1: 52.123 ns/op
+Iteration   2: 52.193 ns/op
+Iteration   3: 52.076 ns/op
+Iteration   4: 52.183 ns/op
+Iteration   5: 52.292 ns/op
+Iteration   6: 52.131 ns/op
+Iteration   7: 52.004 ns/op
+Iteration   8: 52.144 ns/op
+Iteration   9: 52.093 ns/op
+Iteration  10: 52.325 ns/op
+
+
+Result "model.CarrelloModelBenchmark.aggiungi_miss_insert":
+  52.128 ±(99.9%) 0.086 ns/op [Average]
+  (min, avg, max) = (51.902, 52.128, 52.325), stdev = 0.099
+  CI (99.9%): [52.042, 52.214] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.aggiungi_miss_insert
+# Parameters: (cartSize = 10, taglia = L)
+
+# Run progress: 29.17% complete, ETA 00:08:39
+# Fork: 1 of 2
+# Warmup Iteration   1: 52.854 ns/op
+# Warmup Iteration   2: 49.792 ns/op
+# Warmup Iteration   3: 49.214 ns/op
+# Warmup Iteration   4: 49.528 ns/op
+# Warmup Iteration   5: 53.409 ns/op
+Iteration   1: 52.331 ns/op
+Iteration   2: 52.484 ns/op
+Iteration   3: 52.283 ns/op
+Iteration   4: 52.409 ns/op
+Iteration   5: 52.512 ns/op
+Iteration   6: 52.440 ns/op
+Iteration   7: 52.392 ns/op
+Iteration   8: 52.274 ns/op
+Iteration   9: 52.468 ns/op
+Iteration  10: 52.180 ns/op
+
+# Run progress: 30.21% complete, ETA 00:08:31
+# Fork: 2 of 2
+# Warmup Iteration   1: 53.255 ns/op
+# Warmup Iteration   2: 50.393 ns/op
+# Warmup Iteration   3: 49.242 ns/op
+# Warmup Iteration   4: 48.924 ns/op
+# Warmup Iteration   5: 50.714 ns/op
+Iteration   1: 52.184 ns/op
+Iteration   2: 52.333 ns/op
+Iteration   3: 52.269 ns/op
+Iteration   4: 52.082 ns/op
+Iteration   5: 52.216 ns/op
+Iteration   6: 52.449 ns/op
+Iteration   7: 52.119 ns/op
+Iteration   8: 52.227 ns/op
+Iteration   9: 52.205 ns/op
+Iteration  10: 52.281 ns/op
+
+
+Result "model.CarrelloModelBenchmark.aggiungi_miss_insert":
+  52.307 ±(99.9%) 0.109 ns/op [Average]
+  (min, avg, max) = (52.082, 52.307, 52.512), stdev = 0.126
+  CI (99.9%): [52.198, 52.416] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.aggiungi_miss_insert
+# Parameters: (cartSize = 10, taglia = XL)
+
+# Run progress: 31.25% complete, ETA 00:08:23
+# Fork: 1 of 2
+# Warmup Iteration   1: 53.366 ns/op
+# Warmup Iteration   2: 49.159 ns/op
+# Warmup Iteration   3: 48.838 ns/op
+# Warmup Iteration   4: 49.427 ns/op
+# Warmup Iteration   5: 52.887 ns/op
+Iteration   1: 53.178 ns/op
+Iteration   2: 53.059 ns/op
+Iteration   3: 53.212 ns/op
+Iteration   4: 53.269 ns/op
+Iteration   5: 53.267 ns/op
+Iteration   6: 53.417 ns/op
+Iteration   7: 53.244 ns/op
+Iteration   8: 53.226 ns/op
+Iteration   9: 53.276 ns/op
+Iteration  10: 53.205 ns/op
+
+# Run progress: 32.29% complete, ETA 00:08:16
+# Fork: 2 of 2
+# Warmup Iteration   1: 53.065 ns/op
+# Warmup Iteration   2: 49.415 ns/op
+# Warmup Iteration   3: 49.362 ns/op
+# Warmup Iteration   4: 48.808 ns/op
+# Warmup Iteration   5: 51.103 ns/op
+Iteration   1: 52.215 ns/op
+Iteration   2: 52.481 ns/op
+Iteration   3: 52.276 ns/op
+Iteration   4: 52.364 ns/op
+Iteration   5: 52.165 ns/op
+Iteration   6: 52.000 ns/op
+Iteration   7: 52.038 ns/op
+Iteration   8: 52.196 ns/op
+Iteration   9: 52.189 ns/op
+Iteration  10: 52.627 ns/op
+
+
+Result "model.CarrelloModelBenchmark.aggiungi_miss_insert":
+  52.745 ±(99.9%) 0.455 ns/op [Average]
+  (min, avg, max) = (52.000, 52.745, 53.417), stdev = 0.524
+  CI (99.9%): [52.291, 53.200] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.aggiungi_miss_insert
+# Parameters: (cartSize = 100, taglia = S)
+
+# Run progress: 33.33% complete, ETA 00:08:08
+# Fork: 1 of 2
+# Warmup Iteration   1: 122.791 ns/op
+# Warmup Iteration   2: 111.375 ns/op
+# Warmup Iteration   3: 118.264 ns/op
+# Warmup Iteration   4: 118.650 ns/op
+# Warmup Iteration   5: 119.467 ns/op
+Iteration   1: 118.219 ns/op
+Iteration   2: 117.535 ns/op
+Iteration   3: 118.441 ns/op
+Iteration   4: 118.213 ns/op
+Iteration   5: 121.203 ns/op
+Iteration   6: 121.369 ns/op
+Iteration   7: 121.410 ns/op
+Iteration   8: 121.655 ns/op
+Iteration   9: 122.061 ns/op
+Iteration  10: 121.562 ns/op
+
+# Run progress: 34.38% complete, ETA 00:08:00
+# Fork: 2 of 2
+# Warmup Iteration   1: 125.413 ns/op
+# Warmup Iteration   2: 111.162 ns/op
+# Warmup Iteration   3: 118.647 ns/op
+# Warmup Iteration   4: 118.220 ns/op
+# Warmup Iteration   5: 118.345 ns/op
+Iteration   1: 118.618 ns/op
+Iteration   2: 118.681 ns/op
+Iteration   3: 118.614 ns/op
+Iteration   4: 118.538 ns/op
+Iteration   5: 121.964 ns/op
+Iteration   6: 121.574 ns/op
+Iteration   7: 122.121 ns/op
+Iteration   8: 121.642 ns/op
+Iteration   9: 121.912 ns/op
+Iteration  10: 121.572 ns/op
+
+
+Result "model.CarrelloModelBenchmark.aggiungi_miss_insert":
+  120.345 ±(99.9%) 1.472 ns/op [Average]
+  (min, avg, max) = (117.535, 120.345, 122.121), stdev = 1.695
+  CI (99.9%): [118.873, 121.817] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.aggiungi_miss_insert
+# Parameters: (cartSize = 100, taglia = M)
+
+# Run progress: 35.42% complete, ETA 00:07:53
+# Fork: 1 of 2
+# Warmup Iteration   1: 128.450 ns/op
+# Warmup Iteration   2: 113.377 ns/op
+# Warmup Iteration   3: 121.442 ns/op
+# Warmup Iteration   4: 120.774 ns/op
+# Warmup Iteration   5: 121.234 ns/op
+Iteration   1: 120.347 ns/op
+Iteration   2: 120.683 ns/op
+Iteration   3: 120.199 ns/op
+Iteration   4: 120.423 ns/op
+Iteration   5: 122.710 ns/op
+Iteration   6: 124.653 ns/op
+Iteration   7: 124.892 ns/op
+Iteration   8: 124.317 ns/op
+Iteration   9: 124.001 ns/op
+Iteration  10: 124.778 ns/op
+
+# Run progress: 36.46% complete, ETA 00:07:45
+# Fork: 2 of 2
+# Warmup Iteration   1: 121.873 ns/op
+# Warmup Iteration   2: 116.799 ns/op
+# Warmup Iteration   3: 118.487 ns/op
+# Warmup Iteration   4: 118.274 ns/op
+# Warmup Iteration   5: 118.349 ns/op
+Iteration   1: 118.486 ns/op
+Iteration   2: 117.827 ns/op
+Iteration   3: 118.853 ns/op
+Iteration   4: 118.002 ns/op
+Iteration   5: 120.150 ns/op
+Iteration   6: 120.668 ns/op
+Iteration   7: 121.016 ns/op
+Iteration   8: 120.733 ns/op
+Iteration   9: 121.247 ns/op
+Iteration  10: 120.339 ns/op
+
+
+Result "model.CarrelloModelBenchmark.aggiungi_miss_insert":
+  121.216 ±(99.9%) 1.969 ns/op [Average]
+  (min, avg, max) = (117.827, 121.216, 124.892), stdev = 2.267
+  CI (99.9%): [119.248, 123.185] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.aggiungi_miss_insert
+# Parameters: (cartSize = 100, taglia = L)
+
+# Run progress: 37.50% complete, ETA 00:07:37
+# Fork: 1 of 2
+# Warmup Iteration   1: 129.332 ns/op
+# Warmup Iteration   2: 111.545 ns/op
+# Warmup Iteration   3: 117.921 ns/op
+# Warmup Iteration   4: 117.548 ns/op
+# Warmup Iteration   5: 118.732 ns/op
+Iteration   1: 118.212 ns/op
+Iteration   2: 117.710 ns/op
+Iteration   3: 118.267 ns/op
+Iteration   4: 117.849 ns/op
+Iteration   5: 119.837 ns/op
+Iteration   6: 119.965 ns/op
+Iteration   7: 120.606 ns/op
+Iteration   8: 120.568 ns/op
+Iteration   9: 120.151 ns/op
+Iteration  10: 119.723 ns/op
+
+# Run progress: 38.54% complete, ETA 00:07:30
+# Fork: 2 of 2
+# Warmup Iteration   1: 124.504 ns/op
+# Warmup Iteration   2: 112.018 ns/op
+# Warmup Iteration   3: 118.897 ns/op
+# Warmup Iteration   4: 118.020 ns/op
+# Warmup Iteration   5: 117.925 ns/op
+Iteration   1: 118.362 ns/op
+Iteration   2: 117.796 ns/op
+Iteration   3: 118.667 ns/op
+Iteration   4: 119.023 ns/op
+Iteration   5: 121.022 ns/op
+Iteration   6: 120.487 ns/op
+Iteration   7: 120.937 ns/op
+Iteration   8: 120.814 ns/op
+Iteration   9: 121.299 ns/op
+Iteration  10: 120.461 ns/op
+
+
+Result "model.CarrelloModelBenchmark.aggiungi_miss_insert":
+  119.588 ±(99.9%) 1.063 ns/op [Average]
+  (min, avg, max) = (117.710, 119.588, 121.299), stdev = 1.224
+  CI (99.9%): [118.525, 120.651] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.aggiungi_miss_insert
+# Parameters: (cartSize = 100, taglia = XL)
+
+# Run progress: 39.58% complete, ETA 00:07:22
+# Fork: 1 of 2
+# Warmup Iteration   1: 123.911 ns/op
+# Warmup Iteration   2: 111.705 ns/op
+# Warmup Iteration   3: 118.320 ns/op
+# Warmup Iteration   4: 118.158 ns/op
+# Warmup Iteration   5: 117.880 ns/op
+Iteration   1: 118.509 ns/op
+Iteration   2: 118.290 ns/op
+Iteration   3: 118.475 ns/op
+Iteration   4: 118.119 ns/op
+Iteration   5: 120.559 ns/op
+Iteration   6: 120.873 ns/op
+Iteration   7: 121.144 ns/op
+Iteration   8: 120.908 ns/op
+Iteration   9: 121.309 ns/op
+Iteration  10: 120.718 ns/op
+
+# Run progress: 40.63% complete, ETA 00:07:15
+# Fork: 2 of 2
+# Warmup Iteration   1: 122.853 ns/op
+# Warmup Iteration   2: 111.538 ns/op
+# Warmup Iteration   3: 118.392 ns/op
+# Warmup Iteration   4: 118.343 ns/op
+# Warmup Iteration   5: 118.594 ns/op
+Iteration   1: 118.050 ns/op
+Iteration   2: 117.904 ns/op
+Iteration   3: 117.673 ns/op
+Iteration   4: 117.616 ns/op
+Iteration   5: 119.721 ns/op
+Iteration   6: 120.787 ns/op
+Iteration   7: 120.291 ns/op
+Iteration   8: 120.250 ns/op
+Iteration   9: 120.533 ns/op
+Iteration  10: 120.708 ns/op
+
+
+Result "model.CarrelloModelBenchmark.aggiungi_miss_insert":
+  119.622 ±(99.9%) 1.170 ns/op [Average]
+  (min, avg, max) = (117.616, 119.622, 121.309), stdev = 1.348
+  CI (99.9%): [118.452, 120.792] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.aggiungi_miss_insert
+# Parameters: (cartSize = 1000, taglia = S)
+
+# Run progress: 41.67% complete, ETA 00:07:07
+# Fork: 1 of 2
+# Warmup Iteration   1: 1408.227 ns/op
+# Warmup Iteration   2: 1337.804 ns/op
+# Warmup Iteration   3: 1324.899 ns/op
+# Warmup Iteration   4: 1329.195 ns/op
+# Warmup Iteration   5: 1324.723 ns/op
+Iteration   1: 1323.630 ns/op
+Iteration   2: 1323.399 ns/op
+Iteration   3: 1326.935 ns/op
+Iteration   4: 1328.600 ns/op
+Iteration   5: 1320.242 ns/op
+Iteration   6: 1322.470 ns/op
+Iteration   7: 1319.318 ns/op
+Iteration   8: 1320.402 ns/op
+Iteration   9: 1320.387 ns/op
+Iteration  10: 1320.148 ns/op
+
+# Run progress: 42.71% complete, ETA 00:06:59
+# Fork: 2 of 2
+# Warmup Iteration   1: 1396.284 ns/op
+# Warmup Iteration   2: 1339.589 ns/op
+# Warmup Iteration   3: 1324.586 ns/op
+# Warmup Iteration   4: 1324.751 ns/op
+# Warmup Iteration   5: 1325.386 ns/op
+Iteration   1: 1324.696 ns/op
+Iteration   2: 1325.518 ns/op
+Iteration   3: 1328.522 ns/op
+Iteration   4: 1327.970 ns/op
+Iteration   5: 1311.916 ns/op
+Iteration   6: 1312.796 ns/op
+Iteration   7: 1313.816 ns/op
+Iteration   8: 1315.751 ns/op
+Iteration   9: 1313.774 ns/op
+Iteration  10: 1313.030 ns/op
+
+
+Result "model.CarrelloModelBenchmark.aggiungi_miss_insert":
+  1320.666 ±(99.9%) 4.857 ns/op [Average]
+  (min, avg, max) = (1311.916, 1320.666, 1328.600), stdev = 5.593
+  CI (99.9%): [1315.809, 1325.523] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.aggiungi_miss_insert
+# Parameters: (cartSize = 1000, taglia = M)
+
+# Run progress: 43.75% complete, ETA 00:06:52
+# Fork: 1 of 2
+# Warmup Iteration   1: 1389.482 ns/op
+# Warmup Iteration   2: 1339.044 ns/op
+# Warmup Iteration   3: 1325.363 ns/op
+# Warmup Iteration   4: 1324.598 ns/op
+# Warmup Iteration   5: 1325.862 ns/op
+Iteration   1: 1329.490 ns/op
+Iteration   2: 1322.973 ns/op
+Iteration   3: 1324.461 ns/op
+Iteration   4: 1322.007 ns/op
+Iteration   5: 1316.838 ns/op
+Iteration   6: 1315.480 ns/op
+Iteration   7: 1313.023 ns/op
+Iteration   8: 1315.994 ns/op
+Iteration   9: 1318.168 ns/op
+Iteration  10: 1313.509 ns/op
+
+# Run progress: 44.79% complete, ETA 00:06:44
+# Fork: 2 of 2
+# Warmup Iteration   1: 1390.223 ns/op
+# Warmup Iteration   2: 1338.522 ns/op
+# Warmup Iteration   3: 1328.212 ns/op
+# Warmup Iteration   4: 1324.568 ns/op
+# Warmup Iteration   5: 1324.993 ns/op
+Iteration   1: 1324.999 ns/op
+Iteration   2: 1325.726 ns/op
+Iteration   3: 1323.347 ns/op
+Iteration   4: 1326.885 ns/op
+Iteration   5: 1318.630 ns/op
+Iteration   6: 1320.969 ns/op
+Iteration   7: 1317.277 ns/op
+Iteration   8: 1317.866 ns/op
+Iteration   9: 1317.145 ns/op
+Iteration  10: 1321.984 ns/op
+
+
+Result "model.CarrelloModelBenchmark.aggiungi_miss_insert":
+  1320.339 ±(99.9%) 4.006 ns/op [Average]
+  (min, avg, max) = (1313.023, 1320.339, 1329.490), stdev = 4.614
+  CI (99.9%): [1316.332, 1324.345] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.aggiungi_miss_insert
+# Parameters: (cartSize = 1000, taglia = L)
+
+# Run progress: 45.83% complete, ETA 00:06:36
+# Fork: 1 of 2
+# Warmup Iteration   1: 1398.724 ns/op
+# Warmup Iteration   2: 1334.572 ns/op
+# Warmup Iteration   3: 1323.099 ns/op
+# Warmup Iteration   4: 1322.850 ns/op
+# Warmup Iteration   5: 1320.002 ns/op
+Iteration   1: 1320.618 ns/op
+Iteration   2: 1318.323 ns/op
+Iteration   3: 1322.868 ns/op
+Iteration   4: 1319.962 ns/op
+Iteration   5: 1315.251 ns/op
+Iteration   6: 1314.458 ns/op
+Iteration   7: 1317.049 ns/op
+Iteration   8: 1311.393 ns/op
+Iteration   9: 1313.640 ns/op
+Iteration  10: 1312.991 ns/op
+
+# Run progress: 46.88% complete, ETA 00:06:29
+# Fork: 2 of 2
+# Warmup Iteration   1: 1395.667 ns/op
+# Warmup Iteration   2: 1338.821 ns/op
+# Warmup Iteration   3: 1323.279 ns/op
+# Warmup Iteration   4: 1323.219 ns/op
+# Warmup Iteration   5: 1323.092 ns/op
+Iteration   1: 1323.831 ns/op
+Iteration   2: 1324.779 ns/op
+Iteration   3: 1324.086 ns/op
+Iteration   4: 1328.855 ns/op
+Iteration   5: 1314.927 ns/op
+Iteration   6: 1314.161 ns/op
+Iteration   7: 1313.487 ns/op
+Iteration   8: 1319.000 ns/op
+Iteration   9: 1316.251 ns/op
+Iteration  10: 1314.971 ns/op
+
+
+Result "model.CarrelloModelBenchmark.aggiungi_miss_insert":
+  1318.045 ±(99.9%) 4.159 ns/op [Average]
+  (min, avg, max) = (1311.393, 1318.045, 1328.855), stdev = 4.789
+  CI (99.9%): [1313.886, 1322.204] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.aggiungi_miss_insert
+# Parameters: (cartSize = 1000, taglia = XL)
+
+# Run progress: 47.92% complete, ETA 00:06:21
+# Fork: 1 of 2
+# Warmup Iteration   1: 1401.160 ns/op
+# Warmup Iteration   2: 1336.305 ns/op
+# Warmup Iteration   3: 1322.810 ns/op
+# Warmup Iteration   4: 1322.385 ns/op
+# Warmup Iteration   5: 1324.230 ns/op
+Iteration   1: 1322.500 ns/op
+Iteration   2: 1322.983 ns/op
+Iteration   3: 1322.216 ns/op
+Iteration   4: 1326.903 ns/op
+Iteration   5: 1317.617 ns/op
+Iteration   6: 1310.328 ns/op
+Iteration   7: 1315.526 ns/op
+Iteration   8: 1313.141 ns/op
+Iteration   9: 1314.782 ns/op
+Iteration  10: 1315.230 ns/op
+
+# Run progress: 48.96% complete, ETA 00:06:13
+# Fork: 2 of 2
+# Warmup Iteration   1: 1398.767 ns/op
+# Warmup Iteration   2: 1338.045 ns/op
+# Warmup Iteration   3: 1323.272 ns/op
+# Warmup Iteration   4: 1323.956 ns/op
+# Warmup Iteration   5: 1323.753 ns/op
+Iteration   1: 1327.156 ns/op
+Iteration   2: 1324.323 ns/op
+Iteration   3: 1324.697 ns/op
+Iteration   4: 1319.275 ns/op
+Iteration   5: 1312.749 ns/op
+Iteration   6: 1309.488 ns/op
+Iteration   7: 1311.014 ns/op
+Iteration   8: 1311.592 ns/op
+Iteration   9: 1316.111 ns/op
+Iteration  10: 1315.048 ns/op
+
+
+Result "model.CarrelloModelBenchmark.aggiungi_miss_insert":
+  1317.634 ±(99.9%) 4.955 ns/op [Average]
+  (min, avg, max) = (1309.488, 1317.634, 1327.156), stdev = 5.706
+  CI (99.9%): [1312.679, 1322.589] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.rimuovi_removeIf_then_readd
+# Parameters: (cartSize = 10, taglia = S)
+
+# Run progress: 50.00% complete, ETA 00:06:06
+# Fork: 1 of 2
+# Warmup Iteration   1: 52.037 ns/op
+# Warmup Iteration   2: 49.158 ns/op
+# Warmup Iteration   3: 47.684 ns/op
+# Warmup Iteration   4: 47.487 ns/op
+# Warmup Iteration   5: 47.588 ns/op
+Iteration   1: 50.938 ns/op
+Iteration   2: 51.202 ns/op
+Iteration   3: 51.174 ns/op
+Iteration   4: 51.260 ns/op
+Iteration   5: 51.288 ns/op
+Iteration   6: 51.201 ns/op
+Iteration   7: 51.418 ns/op
+Iteration   8: 51.040 ns/op
+Iteration   9: 51.403 ns/op
+Iteration  10: 51.232 ns/op
+
+# Run progress: 51.04% complete, ETA 00:05:58
+# Fork: 2 of 2
+# Warmup Iteration   1: 51.594 ns/op
+# Warmup Iteration   2: 48.232 ns/op
+# Warmup Iteration   3: 47.322 ns/op
+# Warmup Iteration   4: 47.735 ns/op
+# Warmup Iteration   5: 49.264 ns/op
+Iteration   1: 50.902 ns/op
+Iteration   2: 50.870 ns/op
+Iteration   3: 50.825 ns/op
+Iteration   4: 50.824 ns/op
+Iteration   5: 50.902 ns/op
+Iteration   6: 50.958 ns/op
+Iteration   7: 50.998 ns/op
+Iteration   8: 50.826 ns/op
+Iteration   9: 50.809 ns/op
+Iteration  10: 50.766 ns/op
+
+
+Result "model.CarrelloModelBenchmark.rimuovi_removeIf_then_readd":
+  51.042 ±(99.9%) 0.183 ns/op [Average]
+  (min, avg, max) = (50.766, 51.042, 51.418), stdev = 0.211
+  CI (99.9%): [50.859, 51.225] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.rimuovi_removeIf_then_readd
+# Parameters: (cartSize = 10, taglia = M)
+
+# Run progress: 52.08% complete, ETA 00:05:51
+# Fork: 1 of 2
+# Warmup Iteration   1: 52.380 ns/op
+# Warmup Iteration   2: 48.420 ns/op
+# Warmup Iteration   3: 47.874 ns/op
+# Warmup Iteration   4: 48.057 ns/op
+# Warmup Iteration   5: 49.814 ns/op
+Iteration   1: 51.336 ns/op
+Iteration   2: 51.256 ns/op
+Iteration   3: 51.317 ns/op
+Iteration   4: 51.484 ns/op
+Iteration   5: 51.573 ns/op
+Iteration   6: 51.994 ns/op
+Iteration   7: 51.366 ns/op
+Iteration   8: 51.263 ns/op
+Iteration   9: 51.266 ns/op
+Iteration  10: 51.384 ns/op
+
+# Run progress: 53.13% complete, ETA 00:05:43
+# Fork: 2 of 2
+# Warmup Iteration   1: 52.089 ns/op
+# Warmup Iteration   2: 49.388 ns/op
+# Warmup Iteration   3: 48.190 ns/op
+# Warmup Iteration   4: 47.200 ns/op
+# Warmup Iteration   5: 47.880 ns/op
+Iteration   1: 50.382 ns/op
+Iteration   2: 50.805 ns/op
+Iteration   3: 50.952 ns/op
+Iteration   4: 50.951 ns/op
+Iteration   5: 51.144 ns/op
+Iteration   6: 50.930 ns/op
+Iteration   7: 50.859 ns/op
+Iteration   8: 50.869 ns/op
+Iteration   9: 51.184 ns/op
+Iteration  10: 50.834 ns/op
+
+
+Result "model.CarrelloModelBenchmark.rimuovi_removeIf_then_readd":
+  51.157 ±(99.9%) 0.302 ns/op [Average]
+  (min, avg, max) = (50.382, 51.157, 51.994), stdev = 0.348
+  CI (99.9%): [50.855, 51.460] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.rimuovi_removeIf_then_readd
+# Parameters: (cartSize = 10, taglia = L)
+
+# Run progress: 54.17% complete, ETA 00:05:35
+# Fork: 1 of 2
+# Warmup Iteration   1: 51.668 ns/op
+# Warmup Iteration   2: 48.581 ns/op
+# Warmup Iteration   3: 47.770 ns/op
+# Warmup Iteration   4: 47.826 ns/op
+# Warmup Iteration   5: 49.245 ns/op
+Iteration   1: 50.948 ns/op
+Iteration   2: 50.945 ns/op
+Iteration   3: 50.844 ns/op
+Iteration   4: 50.761 ns/op
+Iteration   5: 50.775 ns/op
+Iteration   6: 50.845 ns/op
+Iteration   7: 50.875 ns/op
+Iteration   8: 50.850 ns/op
+Iteration   9: 50.887 ns/op
+Iteration  10: 51.190 ns/op
+
+# Run progress: 55.21% complete, ETA 00:05:28
+# Fork: 2 of 2
+# Warmup Iteration   1: 51.494 ns/op
+# Warmup Iteration   2: 48.283 ns/op
+# Warmup Iteration   3: 47.813 ns/op
+# Warmup Iteration   4: 47.167 ns/op
+# Warmup Iteration   5: 49.454 ns/op
+Iteration   1: 50.854 ns/op
+Iteration   2: 50.925 ns/op
+Iteration   3: 50.806 ns/op
+Iteration   4: 50.863 ns/op
+Iteration   5: 51.085 ns/op
+Iteration   6: 51.274 ns/op
+Iteration   7: 51.114 ns/op
+Iteration   8: 50.885 ns/op
+Iteration   9: 50.873 ns/op
+Iteration  10: 51.075 ns/op
+
+
+Result "model.CarrelloModelBenchmark.rimuovi_removeIf_then_readd":
+  50.934 ±(99.9%) 0.122 ns/op [Average]
+  (min, avg, max) = (50.761, 50.934, 51.274), stdev = 0.140
+  CI (99.9%): [50.812, 51.056] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.rimuovi_removeIf_then_readd
+# Parameters: (cartSize = 10, taglia = XL)
+
+# Run progress: 56.25% complete, ETA 00:05:20
+# Fork: 1 of 2
+# Warmup Iteration   1: 51.652 ns/op
+# Warmup Iteration   2: 48.823 ns/op
+# Warmup Iteration   3: 48.879 ns/op
+# Warmup Iteration   4: 47.666 ns/op
+# Warmup Iteration   5: 47.482 ns/op
+Iteration   1: 50.902 ns/op
+Iteration   2: 50.748 ns/op
+Iteration   3: 50.854 ns/op
+Iteration   4: 50.808 ns/op
+Iteration   5: 50.707 ns/op
+Iteration   6: 50.778 ns/op
+Iteration   7: 50.915 ns/op
+Iteration   8: 50.898 ns/op
+Iteration   9: 50.824 ns/op
+Iteration  10: 50.840 ns/op
+
+# Run progress: 57.29% complete, ETA 00:05:12
+# Fork: 2 of 2
+# Warmup Iteration   1: 52.098 ns/op
+# Warmup Iteration   2: 48.744 ns/op
+# Warmup Iteration   3: 47.811 ns/op
+# Warmup Iteration   4: 47.375 ns/op
+# Warmup Iteration   5: 49.521 ns/op
+Iteration   1: 51.121 ns/op
+Iteration   2: 51.109 ns/op
+Iteration   3: 51.103 ns/op
+Iteration   4: 51.125 ns/op
+Iteration   5: 51.002 ns/op
+Iteration   6: 51.048 ns/op
+Iteration   7: 50.980 ns/op
+Iteration   8: 51.311 ns/op
+Iteration   9: 51.203 ns/op
+Iteration  10: 51.400 ns/op
+
+
+Result "model.CarrelloModelBenchmark.rimuovi_removeIf_then_readd":
+  50.984 ±(99.9%) 0.165 ns/op [Average]
+  (min, avg, max) = (50.707, 50.984, 51.400), stdev = 0.190
+  CI (99.9%): [50.819, 51.149] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.rimuovi_removeIf_then_readd
+# Parameters: (cartSize = 100, taglia = S)
+
+# Run progress: 58.33% complete, ETA 00:05:05
+# Fork: 1 of 2
+# Warmup Iteration   1: 127.590 ns/op
+# Warmup Iteration   2: 117.818 ns/op
+# Warmup Iteration   3: 119.886 ns/op
+# Warmup Iteration   4: 120.099 ns/op
+# Warmup Iteration   5: 120.695 ns/op
+Iteration   1: 120.559 ns/op
+Iteration   2: 120.235 ns/op
+Iteration   3: 120.680 ns/op
+Iteration   4: 120.193 ns/op
+Iteration   5: 120.498 ns/op
+Iteration   6: 120.074 ns/op
+Iteration   7: 122.798 ns/op
+Iteration   8: 122.479 ns/op
+Iteration   9: 123.124 ns/op
+Iteration  10: 122.447 ns/op
+
+# Run progress: 59.38% complete, ETA 00:04:57
+# Fork: 2 of 2
+# Warmup Iteration   1: 127.211 ns/op
+# Warmup Iteration   2: 118.494 ns/op
+# Warmup Iteration   3: 121.557 ns/op
+# Warmup Iteration   4: 120.937 ns/op
+# Warmup Iteration   5: 121.138 ns/op
+Iteration   1: 120.638 ns/op
+Iteration   2: 121.317 ns/op
+Iteration   3: 121.518 ns/op
+Iteration   4: 121.167 ns/op
+Iteration   5: 121.287 ns/op
+Iteration   6: 121.172 ns/op
+Iteration   7: 123.997 ns/op
+Iteration   8: 123.500 ns/op
+Iteration   9: 123.455 ns/op
+Iteration  10: 123.638 ns/op
+
+
+Result "model.CarrelloModelBenchmark.rimuovi_removeIf_then_readd":
+  121.739 ±(99.9%) 1.138 ns/op [Average]
+  (min, avg, max) = (120.074, 121.739, 123.997), stdev = 1.310
+  CI (99.9%): [120.601, 122.876] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.rimuovi_removeIf_then_readd
+# Parameters: (cartSize = 100, taglia = M)
+
+# Run progress: 60.42% complete, ETA 00:04:50
+# Fork: 1 of 2
+# Warmup Iteration   1: 129.275 ns/op
+# Warmup Iteration   2: 120.229 ns/op
+# Warmup Iteration   3: 124.085 ns/op
+# Warmup Iteration   4: 124.830 ns/op
+# Warmup Iteration   5: 125.681 ns/op
+Iteration   1: 126.211 ns/op
+Iteration   2: 124.887 ns/op
+Iteration   3: 125.228 ns/op
+Iteration   4: 125.447 ns/op
+Iteration   5: 124.141 ns/op
+Iteration   6: 124.978 ns/op
+Iteration   7: 127.012 ns/op
+Iteration   8: 127.692 ns/op
+Iteration   9: 127.552 ns/op
+Iteration  10: 127.606 ns/op
+
+# Run progress: 61.46% complete, ETA 00:04:42
+# Fork: 2 of 2
+# Warmup Iteration   1: 129.529 ns/op
+# Warmup Iteration   2: 120.787 ns/op
+# Warmup Iteration   3: 123.617 ns/op
+# Warmup Iteration   4: 123.627 ns/op
+# Warmup Iteration   5: 123.569 ns/op
+Iteration   1: 123.691 ns/op
+Iteration   2: 123.984 ns/op
+Iteration   3: 123.126 ns/op
+Iteration   4: 123.729 ns/op
+Iteration   5: 122.935 ns/op
+Iteration   6: 123.995 ns/op
+Iteration   7: 126.511 ns/op
+Iteration   8: 126.172 ns/op
+Iteration   9: 125.879 ns/op
+Iteration  10: 125.690 ns/op
+
+
+Result "model.CarrelloModelBenchmark.rimuovi_removeIf_then_readd":
+  125.323 ±(99.9%) 1.307 ns/op [Average]
+  (min, avg, max) = (122.935, 125.323, 127.692), stdev = 1.505
+  CI (99.9%): [124.016, 126.630] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.rimuovi_removeIf_then_readd
+# Parameters: (cartSize = 100, taglia = L)
+
+# Run progress: 62.50% complete, ETA 00:04:34
+# Fork: 1 of 2
+# Warmup Iteration   1: 132.355 ns/op
+# Warmup Iteration   2: 120.594 ns/op
+# Warmup Iteration   3: 121.301 ns/op
+# Warmup Iteration   4: 121.134 ns/op
+# Warmup Iteration   5: 121.928 ns/op
+Iteration   1: 121.163 ns/op
+Iteration   2: 121.434 ns/op
+Iteration   3: 121.298 ns/op
+Iteration   4: 121.407 ns/op
+Iteration   5: 121.174 ns/op
+Iteration   6: 121.563 ns/op
+Iteration   7: 124.587 ns/op
+Iteration   8: 124.935 ns/op
+Iteration   9: 124.833 ns/op
+Iteration  10: 124.413 ns/op
+
+# Run progress: 63.54% complete, ETA 00:04:27
+# Fork: 2 of 2
+# Warmup Iteration   1: 129.344 ns/op
+# Warmup Iteration   2: 119.398 ns/op
+# Warmup Iteration   3: 122.449 ns/op
+# Warmup Iteration   4: 121.841 ns/op
+# Warmup Iteration   5: 124.216 ns/op
+Iteration   1: 121.709 ns/op
+Iteration   2: 122.123 ns/op
+Iteration   3: 122.086 ns/op
+Iteration   4: 122.496 ns/op
+Iteration   5: 122.123 ns/op
+Iteration   6: 122.043 ns/op
+Iteration   7: 124.296 ns/op
+Iteration   8: 123.649 ns/op
+Iteration   9: 124.796 ns/op
+Iteration  10: 124.242 ns/op
+
+
+Result "model.CarrelloModelBenchmark.rimuovi_removeIf_then_readd":
+  122.818 ±(99.9%) 1.255 ns/op [Average]
+  (min, avg, max) = (121.163, 122.818, 124.935), stdev = 1.446
+  CI (99.9%): [121.563, 124.074] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.rimuovi_removeIf_then_readd
+# Parameters: (cartSize = 100, taglia = XL)
+
+# Run progress: 64.58% complete, ETA 00:04:19
+# Fork: 1 of 2
+# Warmup Iteration   1: 130.135 ns/op
+# Warmup Iteration   2: 119.884 ns/op
+# Warmup Iteration   3: 122.061 ns/op
+# Warmup Iteration   4: 121.558 ns/op
+# Warmup Iteration   5: 122.788 ns/op
+Iteration   1: 122.311 ns/op
+Iteration   2: 121.641 ns/op
+Iteration   3: 122.215 ns/op
+Iteration   4: 122.554 ns/op
+Iteration   5: 121.780 ns/op
+Iteration   6: 122.888 ns/op
+Iteration   7: 124.453 ns/op
+Iteration   8: 124.323 ns/op
+Iteration   9: 124.971 ns/op
+Iteration  10: 124.877 ns/op
+
+# Run progress: 65.63% complete, ETA 00:04:11
+# Fork: 2 of 2
+# Warmup Iteration   1: 127.574 ns/op
+# Warmup Iteration   2: 118.235 ns/op
+# Warmup Iteration   3: 120.577 ns/op
+# Warmup Iteration   4: 120.647 ns/op
+# Warmup Iteration   5: 120.933 ns/op
+Iteration   1: 120.684 ns/op
+Iteration   2: 120.272 ns/op
+Iteration   3: 121.471 ns/op
+Iteration   4: 124.742 ns/op
+Iteration   5: 120.295 ns/op
+Iteration   6: 121.335 ns/op
+Iteration   7: 123.317 ns/op
+Iteration   8: 122.904 ns/op
+Iteration   9: 122.937 ns/op
+Iteration  10: 122.450 ns/op
+
+
+Result "model.CarrelloModelBenchmark.rimuovi_removeIf_then_readd":
+  122.621 ±(99.9%) 1.287 ns/op [Average]
+  (min, avg, max) = (120.272, 122.621, 124.971), stdev = 1.482
+  CI (99.9%): [121.334, 123.908] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.rimuovi_removeIf_then_readd
+# Parameters: (cartSize = 1000, taglia = S)
+
+# Run progress: 66.67% complete, ETA 00:04:04
+# Fork: 1 of 2
+# Warmup Iteration   1: 1402.437 ns/op
+# Warmup Iteration   2: 1329.668 ns/op
+# Warmup Iteration   3: 1317.751 ns/op
+# Warmup Iteration   4: 1320.282 ns/op
+# Warmup Iteration   5: 1321.892 ns/op
+Iteration   1: 1319.868 ns/op
+Iteration   2: 1316.569 ns/op
+Iteration   3: 1316.883 ns/op
+Iteration   4: 1320.956 ns/op
+Iteration   5: 1306.380 ns/op
+Iteration   6: 1306.112 ns/op
+Iteration   7: 1307.446 ns/op
+Iteration   8: 1308.933 ns/op
+Iteration   9: 1303.581 ns/op
+Iteration  10: 1307.616 ns/op
+
+# Run progress: 67.71% complete, ETA 00:03:56
+# Fork: 2 of 2
+# Warmup Iteration   1: 1395.290 ns/op
+# Warmup Iteration   2: 1332.538 ns/op
+# Warmup Iteration   3: 1313.121 ns/op
+# Warmup Iteration   4: 1313.367 ns/op
+# Warmup Iteration   5: 1314.309 ns/op
+Iteration   1: 1317.080 ns/op
+Iteration   2: 1312.680 ns/op
+Iteration   3: 1313.567 ns/op
+Iteration   4: 1311.798 ns/op
+Iteration   5: 1310.065 ns/op
+Iteration   6: 1307.707 ns/op
+Iteration   7: 1307.080 ns/op
+Iteration   8: 1304.151 ns/op
+Iteration   9: 1311.516 ns/op
+Iteration  10: 1307.249 ns/op
+
+
+Result "model.CarrelloModelBenchmark.rimuovi_removeIf_then_readd":
+  1310.862 ±(99.9%) 4.486 ns/op [Average]
+  (min, avg, max) = (1303.581, 1310.862, 1320.956), stdev = 5.166
+  CI (99.9%): [1306.376, 1315.347] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.rimuovi_removeIf_then_readd
+# Parameters: (cartSize = 1000, taglia = M)
+
+# Run progress: 68.75% complete, ETA 00:03:48
+# Fork: 1 of 2
+# Warmup Iteration   1: 1387.259 ns/op
+# Warmup Iteration   2: 1333.820 ns/op
+# Warmup Iteration   3: 1319.182 ns/op
+# Warmup Iteration   4: 1318.053 ns/op
+# Warmup Iteration   5: 1320.758 ns/op
+Iteration   1: 1319.657 ns/op
+Iteration   2: 1320.522 ns/op
+Iteration   3: 1316.219 ns/op
+Iteration   4: 1319.194 ns/op
+Iteration   5: 1312.000 ns/op
+Iteration   6: 1312.845 ns/op
+Iteration   7: 1313.234 ns/op
+Iteration   8: 1312.014 ns/op
+Iteration   9: 1312.919 ns/op
+Iteration  10: 1314.206 ns/op
+
+# Run progress: 69.79% complete, ETA 00:03:41
+# Fork: 2 of 2
+# Warmup Iteration   1: 1386.491 ns/op
+# Warmup Iteration   2: 1329.600 ns/op
+# Warmup Iteration   3: 1320.788 ns/op
+# Warmup Iteration   4: 1309.751 ns/op
+# Warmup Iteration   5: 1313.161 ns/op
+Iteration   1: 1313.280 ns/op
+Iteration   2: 1318.487 ns/op
+Iteration   3: 1313.349 ns/op
+Iteration   4: 1314.051 ns/op
+Iteration   5: 1310.967 ns/op
+Iteration   6: 1309.593 ns/op
+Iteration   7: 1310.138 ns/op
+Iteration   8: 1306.490 ns/op
+Iteration   9: 1305.611 ns/op
+Iteration  10: 1310.019 ns/op
+
+
+Result "model.CarrelloModelBenchmark.rimuovi_removeIf_then_readd":
+  1313.240 ±(99.9%) 3.526 ns/op [Average]
+  (min, avg, max) = (1305.611, 1313.240, 1320.522), stdev = 4.060
+  CI (99.9%): [1309.714, 1316.765] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.rimuovi_removeIf_then_readd
+# Parameters: (cartSize = 1000, taglia = L)
+
+# Run progress: 70.83% complete, ETA 00:03:33
+# Fork: 1 of 2
+# Warmup Iteration   1: 1389.877 ns/op
+# Warmup Iteration   2: 1331.563 ns/op
+# Warmup Iteration   3: 1318.783 ns/op
+# Warmup Iteration   4: 1320.674 ns/op
+# Warmup Iteration   5: 1318.545 ns/op
+Iteration   1: 1318.857 ns/op
+Iteration   2: 1320.422 ns/op
+Iteration   3: 1322.624 ns/op
+Iteration   4: 1321.115 ns/op
+Iteration   5: 1309.262 ns/op
+Iteration   6: 1308.715 ns/op
+Iteration   7: 1309.598 ns/op
+Iteration   8: 1307.744 ns/op
+Iteration   9: 1310.127 ns/op
+Iteration  10: 1311.551 ns/op
+
+# Run progress: 71.88% complete, ETA 00:03:26
+# Fork: 2 of 2
+# Warmup Iteration   1: 1411.898 ns/op
+# Warmup Iteration   2: 1337.817 ns/op
+# Warmup Iteration   3: 1328.809 ns/op
+# Warmup Iteration   4: 1331.287 ns/op
+# Warmup Iteration   5: 1326.758 ns/op
+Iteration   1: 1329.025 ns/op
+Iteration   2: 1328.550 ns/op
+Iteration   3: 1324.368 ns/op
+Iteration   4: 1331.688 ns/op
+Iteration   5: 1317.512 ns/op
+Iteration   6: 1317.018 ns/op
+Iteration   7: 1317.428 ns/op
+Iteration   8: 1320.502 ns/op
+Iteration   9: 1314.041 ns/op
+Iteration  10: 1316.671 ns/op
+
+
+Result "model.CarrelloModelBenchmark.rimuovi_removeIf_then_readd":
+  1317.841 ±(99.9%) 6.189 ns/op [Average]
+  (min, avg, max) = (1307.744, 1317.841, 1331.688), stdev = 7.127
+  CI (99.9%): [1311.652, 1324.030] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.rimuovi_removeIf_then_readd
+# Parameters: (cartSize = 1000, taglia = XL)
+
+# Run progress: 72.92% complete, ETA 00:03:18
+# Fork: 1 of 2
+# Warmup Iteration   1: 1411.610 ns/op
+# Warmup Iteration   2: 1329.642 ns/op
+# Warmup Iteration   3: 1314.842 ns/op
+# Warmup Iteration   4: 1315.046 ns/op
+# Warmup Iteration   5: 1313.799 ns/op
+Iteration   1: 1319.684 ns/op
+Iteration   2: 1313.091 ns/op
+Iteration   3: 1312.394 ns/op
+Iteration   4: 1321.534 ns/op
+Iteration   5: 1313.881 ns/op
+Iteration   6: 1310.326 ns/op
+Iteration   7: 1307.771 ns/op
+Iteration   8: 1309.802 ns/op
+Iteration   9: 1310.556 ns/op
+Iteration  10: 1310.477 ns/op
+
+# Run progress: 73.96% complete, ETA 00:03:10
+# Fork: 2 of 2
+# Warmup Iteration   1: 1384.492 ns/op
+# Warmup Iteration   2: 1330.568 ns/op
+# Warmup Iteration   3: 1321.187 ns/op
+# Warmup Iteration   4: 1318.052 ns/op
+# Warmup Iteration   5: 1315.757 ns/op
+Iteration   1: 1317.616 ns/op
+Iteration   2: 1319.515 ns/op
+Iteration   3: 1318.804 ns/op
+Iteration   4: 1324.016 ns/op
+Iteration   5: 1308.666 ns/op
+Iteration   6: 1313.988 ns/op
+Iteration   7: 1309.904 ns/op
+Iteration   8: 1307.746 ns/op
+Iteration   9: 1310.412 ns/op
+Iteration  10: 1314.433 ns/op
+
+
+Result "model.CarrelloModelBenchmark.rimuovi_removeIf_then_readd":
+  1313.731 ±(99.9%) 4.224 ns/op [Average]
+  (min, avg, max) = (1307.746, 1313.731, 1324.016), stdev = 4.864
+  CI (99.9%): [1309.507, 1317.954] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.setQuantita_update
+# Parameters: (cartSize = 10, taglia = S)
+
+# Run progress: 75.00% complete, ETA 00:03:03
+# Fork: 1 of 2
+# Warmup Iteration   1: 14.467 ns/op
+# Warmup Iteration   2: 14.373 ns/op
+# Warmup Iteration   3: 14.234 ns/op
+# Warmup Iteration   4: 14.228 ns/op
+# Warmup Iteration   5: 14.203 ns/op
+Iteration   1: 14.222 ns/op
+Iteration   2: 14.232 ns/op
+Iteration   3: 14.255 ns/op
+Iteration   4: 14.228 ns/op
+Iteration   5: 14.240 ns/op
+Iteration   6: 14.225 ns/op
+Iteration   7: 14.280 ns/op
+Iteration   8: 14.269 ns/op
+Iteration   9: 14.246 ns/op
+Iteration  10: 14.261 ns/op
+
+# Run progress: 76.04% complete, ETA 00:02:55
+# Fork: 2 of 2
+# Warmup Iteration   1: 14.474 ns/op
+# Warmup Iteration   2: 14.342 ns/op
+# Warmup Iteration   3: 14.295 ns/op
+# Warmup Iteration   4: 14.289 ns/op
+# Warmup Iteration   5: 14.280 ns/op
+Iteration   1: 14.269 ns/op
+Iteration   2: 14.288 ns/op
+Iteration   3: 14.284 ns/op
+Iteration   4: 14.273 ns/op
+Iteration   5: 14.250 ns/op
+Iteration   6: 14.288 ns/op
+Iteration   7: 14.301 ns/op
+Iteration   8: 14.297 ns/op
+Iteration   9: 14.292 ns/op
+Iteration  10: 14.265 ns/op
+
+
+Result "model.CarrelloModelBenchmark.setQuantita_update":
+  14.263 ±(99.9%) 0.022 ns/op [Average]
+  (min, avg, max) = (14.222, 14.263, 14.301), stdev = 0.025
+  CI (99.9%): [14.241, 14.285] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.setQuantita_update
+# Parameters: (cartSize = 10, taglia = M)
+
+# Run progress: 77.08% complete, ETA 00:02:47
+# Fork: 1 of 2
+# Warmup Iteration   1: 14.511 ns/op
+# Warmup Iteration   2: 14.371 ns/op
+# Warmup Iteration   3: 14.303 ns/op
+# Warmup Iteration   4: 14.267 ns/op
+# Warmup Iteration   5: 14.363 ns/op
+Iteration   1: 14.288 ns/op
+Iteration   2: 14.269 ns/op
+Iteration   3: 14.281 ns/op
+Iteration   4: 14.291 ns/op
+Iteration   5: 14.318 ns/op
+Iteration   6: 14.264 ns/op
+Iteration   7: 14.294 ns/op
+Iteration   8: 14.326 ns/op
+Iteration   9: 14.278 ns/op
+Iteration  10: 14.263 ns/op
+
+# Run progress: 78.13% complete, ETA 00:02:40
+# Fork: 2 of 2
+# Warmup Iteration   1: 14.481 ns/op
+# Warmup Iteration   2: 14.388 ns/op
+# Warmup Iteration   3: 14.252 ns/op
+# Warmup Iteration   4: 14.240 ns/op
+# Warmup Iteration   5: 14.236 ns/op
+Iteration   1: 14.288 ns/op
+Iteration   2: 14.246 ns/op
+Iteration   3: 14.307 ns/op
+Iteration   4: 14.230 ns/op
+Iteration   5: 14.321 ns/op
+Iteration   6: 14.249 ns/op
+Iteration   7: 14.247 ns/op
+Iteration   8: 14.245 ns/op
+Iteration   9: 14.266 ns/op
+Iteration  10: 14.261 ns/op
+
+
+Result "model.CarrelloModelBenchmark.setQuantita_update":
+  14.277 ±(99.9%) 0.024 ns/op [Average]
+  (min, avg, max) = (14.230, 14.277, 14.326), stdev = 0.028
+  CI (99.9%): [14.253, 14.301] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.setQuantita_update
+# Parameters: (cartSize = 10, taglia = L)
+
+# Run progress: 79.17% complete, ETA 00:02:32
+# Fork: 1 of 2
+# Warmup Iteration   1: 14.509 ns/op
+# Warmup Iteration   2: 14.369 ns/op
+# Warmup Iteration   3: 14.253 ns/op
+# Warmup Iteration   4: 14.225 ns/op
+# Warmup Iteration   5: 14.225 ns/op
+Iteration   1: 14.269 ns/op
+Iteration   2: 14.315 ns/op
+Iteration   3: 14.246 ns/op
+Iteration   4: 14.262 ns/op
+Iteration   5: 14.250 ns/op
+Iteration   6: 14.309 ns/op
+Iteration   7: 14.258 ns/op
+Iteration   8: 14.212 ns/op
+Iteration   9: 14.306 ns/op
+Iteration  10: 14.273 ns/op
+
+# Run progress: 80.21% complete, ETA 00:02:25
+# Fork: 2 of 2
+# Warmup Iteration   1: 14.448 ns/op
+# Warmup Iteration   2: 14.315 ns/op
+# Warmup Iteration   3: 14.232 ns/op
+# Warmup Iteration   4: 14.254 ns/op
+# Warmup Iteration   5: 14.231 ns/op
+Iteration   1: 14.189 ns/op
+Iteration   2: 14.293 ns/op
+Iteration   3: 14.245 ns/op
+Iteration   4: 14.262 ns/op
+Iteration   5: 14.225 ns/op
+Iteration   6: 14.223 ns/op
+Iteration   7: 14.249 ns/op
+Iteration   8: 14.228 ns/op
+Iteration   9: 14.233 ns/op
+Iteration  10: 14.218 ns/op
+
+
+Result "model.CarrelloModelBenchmark.setQuantita_update":
+  14.253 ±(99.9%) 0.030 ns/op [Average]
+  (min, avg, max) = (14.189, 14.253, 14.315), stdev = 0.034
+  CI (99.9%): [14.224, 14.283] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.setQuantita_update
+# Parameters: (cartSize = 10, taglia = XL)
+
+# Run progress: 81.25% complete, ETA 00:02:17
+# Fork: 1 of 2
+# Warmup Iteration   1: 14.627 ns/op
+# Warmup Iteration   2: 14.353 ns/op
+# Warmup Iteration   3: 14.271 ns/op
+# Warmup Iteration   4: 14.321 ns/op
+# Warmup Iteration   5: 14.282 ns/op
+Iteration   1: 14.283 ns/op
+Iteration   2: 14.298 ns/op
+Iteration   3: 14.299 ns/op
+Iteration   4: 14.356 ns/op
+Iteration   5: 14.282 ns/op
+Iteration   6: 14.284 ns/op
+Iteration   7: 14.275 ns/op
+Iteration   8: 14.349 ns/op
+Iteration   9: 14.313 ns/op
+Iteration  10: 14.310 ns/op
+
+# Run progress: 82.29% complete, ETA 00:02:09
+# Fork: 2 of 2
+# Warmup Iteration   1: 14.458 ns/op
+# Warmup Iteration   2: 14.372 ns/op
+# Warmup Iteration   3: 14.222 ns/op
+# Warmup Iteration   4: 14.244 ns/op
+# Warmup Iteration   5: 14.218 ns/op
+Iteration   1: 14.224 ns/op
+Iteration   2: 14.240 ns/op
+Iteration   3: 14.256 ns/op
+Iteration   4: 14.310 ns/op
+Iteration   5: 14.288 ns/op
+Iteration   6: 14.258 ns/op
+Iteration   7: 14.256 ns/op
+Iteration   8: 14.284 ns/op
+Iteration   9: 14.244 ns/op
+Iteration  10: 14.223 ns/op
+
+
+Result "model.CarrelloModelBenchmark.setQuantita_update":
+  14.282 ±(99.9%) 0.032 ns/op [Average]
+  (min, avg, max) = (14.223, 14.282, 14.356), stdev = 0.036
+  CI (99.9%): [14.250, 14.313] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.setQuantita_update
+# Parameters: (cartSize = 100, taglia = S)
+
+# Run progress: 83.33% complete, ETA 00:02:02
+# Fork: 1 of 2
+# Warmup Iteration   1: 31.299 ns/op
+# Warmup Iteration   2: 30.748 ns/op
+# Warmup Iteration   3: 31.396 ns/op
+# Warmup Iteration   4: 31.370 ns/op
+# Warmup Iteration   5: 31.367 ns/op
+Iteration   1: 31.267 ns/op
+Iteration   2: 31.337 ns/op
+Iteration   3: 31.346 ns/op
+Iteration   4: 31.403 ns/op
+Iteration   5: 31.379 ns/op
+Iteration   6: 31.276 ns/op
+Iteration   7: 31.308 ns/op
+Iteration   8: 31.389 ns/op
+Iteration   9: 31.139 ns/op
+Iteration  10: 31.371 ns/op
+
+# Run progress: 84.38% complete, ETA 00:01:54
+# Fork: 2 of 2
+# Warmup Iteration   1: 31.336 ns/op
+# Warmup Iteration   2: 30.840 ns/op
+# Warmup Iteration   3: 33.283 ns/op
+# Warmup Iteration   4: 32.991 ns/op
+# Warmup Iteration   5: 32.969 ns/op
+Iteration   1: 33.027 ns/op
+Iteration   2: 32.837 ns/op
+Iteration   3: 33.212 ns/op
+Iteration   4: 32.735 ns/op
+Iteration   5: 32.902 ns/op
+Iteration   6: 32.853 ns/op
+Iteration   7: 33.038 ns/op
+Iteration   8: 33.742 ns/op
+Iteration   9: 33.062 ns/op
+Iteration  10: 32.896 ns/op
+
+
+Result "model.CarrelloModelBenchmark.setQuantita_update":
+  32.176 ±(99.9%) 0.781 ns/op [Average]
+  (min, avg, max) = (31.139, 32.176, 33.742), stdev = 0.900
+  CI (99.9%): [31.394, 32.957] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.setQuantita_update
+# Parameters: (cartSize = 100, taglia = M)
+
+# Run progress: 85.42% complete, ETA 00:01:46
+# Fork: 1 of 2
+# Warmup Iteration   1: 31.282 ns/op
+# Warmup Iteration   2: 30.693 ns/op
+# Warmup Iteration   3: 30.693 ns/op
+# Warmup Iteration   4: 30.704 ns/op
+# Warmup Iteration   5: 31.003 ns/op
+Iteration   1: 30.611 ns/op
+Iteration   2: 31.941 ns/op
+Iteration   3: 30.738 ns/op
+Iteration   4: 30.617 ns/op
+Iteration   5: 31.476 ns/op
+Iteration   6: 32.728 ns/op
+Iteration   7: 30.718 ns/op
+Iteration   8: 32.125 ns/op
+Iteration   9: 30.668 ns/op
+Iteration  10: 31.373 ns/op
+
+# Run progress: 86.46% complete, ETA 00:01:39
+# Fork: 2 of 2
+# Warmup Iteration   1: 31.377 ns/op
+# Warmup Iteration   2: 30.831 ns/op
+# Warmup Iteration   3: 31.151 ns/op
+# Warmup Iteration   4: 31.306 ns/op
+# Warmup Iteration   5: 31.388 ns/op
+Iteration   1: 31.375 ns/op
+Iteration   2: 31.417 ns/op
+Iteration   3: 31.364 ns/op
+Iteration   4: 31.517 ns/op
+Iteration   5: 31.424 ns/op
+Iteration   6: 31.286 ns/op
+Iteration   7: 31.175 ns/op
+Iteration   8: 31.454 ns/op
+Iteration   9: 31.219 ns/op
+Iteration  10: 31.288 ns/op
+
+
+Result "model.CarrelloModelBenchmark.setQuantita_update":
+  31.326 ±(99.9%) 0.458 ns/op [Average]
+  (min, avg, max) = (30.611, 31.326, 32.728), stdev = 0.527
+  CI (99.9%): [30.868, 31.784] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.setQuantita_update
+# Parameters: (cartSize = 100, taglia = L)
+
+# Run progress: 87.50% complete, ETA 00:01:31
+# Fork: 1 of 2
+# Warmup Iteration   1: 31.267 ns/op
+# Warmup Iteration   2: 30.837 ns/op
+# Warmup Iteration   3: 30.859 ns/op
+# Warmup Iteration   4: 30.683 ns/op
+# Warmup Iteration   5: 30.764 ns/op
+Iteration   1: 30.789 ns/op
+Iteration   2: 30.815 ns/op
+Iteration   3: 30.770 ns/op
+Iteration   4: 30.741 ns/op
+Iteration   5: 30.960 ns/op
+Iteration   6: 30.773 ns/op
+Iteration   7: 30.763 ns/op
+Iteration   8: 30.783 ns/op
+Iteration   9: 30.963 ns/op
+Iteration  10: 30.764 ns/op
+
+# Run progress: 88.54% complete, ETA 00:01:23
+# Fork: 2 of 2
+# Warmup Iteration   1: 31.181 ns/op
+# Warmup Iteration   2: 30.682 ns/op
+# Warmup Iteration   3: 30.760 ns/op
+# Warmup Iteration   4: 30.635 ns/op
+# Warmup Iteration   5: 30.680 ns/op
+Iteration   1: 30.690 ns/op
+Iteration   2: 30.755 ns/op
+Iteration   3: 30.644 ns/op
+Iteration   4: 30.693 ns/op
+Iteration   5: 30.591 ns/op
+Iteration   6: 30.700 ns/op
+Iteration   7: 30.709 ns/op
+Iteration   8: 30.685 ns/op
+Iteration   9: 30.747 ns/op
+Iteration  10: 30.825 ns/op
+
+
+Result "model.CarrelloModelBenchmark.setQuantita_update":
+  30.758 ±(99.9%) 0.078 ns/op [Average]
+  (min, avg, max) = (30.591, 30.758, 30.963), stdev = 0.090
+  CI (99.9%): [30.680, 30.836] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.setQuantita_update
+# Parameters: (cartSize = 100, taglia = XL)
+
+# Run progress: 89.58% complete, ETA 00:01:16
+# Fork: 1 of 2
+# Warmup Iteration   1: 31.262 ns/op
+# Warmup Iteration   2: 30.857 ns/op
+# Warmup Iteration   3: 31.203 ns/op
+# Warmup Iteration   4: 31.104 ns/op
+# Warmup Iteration   5: 31.126 ns/op
+Iteration   1: 31.024 ns/op
+Iteration   2: 31.079 ns/op
+Iteration   3: 31.172 ns/op
+Iteration   4: 31.220 ns/op
+Iteration   5: 30.892 ns/op
+Iteration   6: 31.032 ns/op
+Iteration   7: 31.035 ns/op
+Iteration   8: 31.004 ns/op
+Iteration   9: 31.003 ns/op
+Iteration  10: 31.263 ns/op
+
+# Run progress: 90.63% complete, ETA 00:01:08
+# Fork: 2 of 2
+# Warmup Iteration   1: 31.294 ns/op
+# Warmup Iteration   2: 30.836 ns/op
+# Warmup Iteration   3: 32.957 ns/op
+# Warmup Iteration   4: 32.954 ns/op
+# Warmup Iteration   5: 33.162 ns/op
+Iteration   1: 33.144 ns/op
+Iteration   2: 32.966 ns/op
+Iteration   3: 32.825 ns/op
+Iteration   4: 33.317 ns/op
+Iteration   5: 32.920 ns/op
+Iteration   6: 33.224 ns/op
+Iteration   7: 32.794 ns/op
+Iteration   8: 33.215 ns/op
+Iteration   9: 33.382 ns/op
+Iteration  10: 32.493 ns/op
+
+
+Result "model.CarrelloModelBenchmark.setQuantita_update":
+  32.050 ±(99.9%) 0.889 ns/op [Average]
+  (min, avg, max) = (30.892, 32.050, 33.382), stdev = 1.024
+  CI (99.9%): [31.161, 32.940] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.setQuantita_update
+# Parameters: (cartSize = 1000, taglia = S)
+
+# Run progress: 91.67% complete, ETA 00:01:01
+# Fork: 1 of 2
+# Warmup Iteration   1: 273.304 ns/op
+# Warmup Iteration   2: 242.257 ns/op
+# Warmup Iteration   3: 267.853 ns/op
+# Warmup Iteration   4: 267.615 ns/op
+# Warmup Iteration   5: 267.680 ns/op
+Iteration   1: 267.314 ns/op
+Iteration   2: 267.250 ns/op
+Iteration   3: 267.854 ns/op
+Iteration   4: 267.872 ns/op
+Iteration   5: 267.217 ns/op
+Iteration   6: 267.987 ns/op
+Iteration   7: 267.338 ns/op
+Iteration   8: 267.538 ns/op
+Iteration   9: 267.729 ns/op
+Iteration  10: 267.355 ns/op
+
+# Run progress: 92.71% complete, ETA 00:00:53
+# Fork: 2 of 2
+# Warmup Iteration   1: 273.738 ns/op
+# Warmup Iteration   2: 241.467 ns/op
+# Warmup Iteration   3: 268.271 ns/op
+# Warmup Iteration   4: 268.083 ns/op
+# Warmup Iteration   5: 268.029 ns/op
+Iteration   1: 268.602 ns/op
+Iteration   2: 268.515 ns/op
+Iteration   3: 268.325 ns/op
+Iteration   4: 267.759 ns/op
+Iteration   5: 268.556 ns/op
+Iteration   6: 268.405 ns/op
+Iteration   7: 268.115 ns/op
+Iteration   8: 267.785 ns/op
+Iteration   9: 268.963 ns/op
+Iteration  10: 268.436 ns/op
+
+
+Result "model.CarrelloModelBenchmark.setQuantita_update":
+  267.946 ±(99.9%) 0.455 ns/op [Average]
+  (min, avg, max) = (267.217, 267.946, 268.963), stdev = 0.524
+  CI (99.9%): [267.491, 268.401] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.setQuantita_update
+# Parameters: (cartSize = 1000, taglia = M)
+
+# Run progress: 93.75% complete, ETA 00:00:45
+# Fork: 1 of 2
+# Warmup Iteration   1: 273.833 ns/op
+# Warmup Iteration   2: 241.539 ns/op
+# Warmup Iteration   3: 267.522 ns/op
+# Warmup Iteration   4: 267.874 ns/op
+# Warmup Iteration   5: 267.995 ns/op
+Iteration   1: 267.495 ns/op
+Iteration   2: 268.097 ns/op
+Iteration   3: 267.669 ns/op
+Iteration   4: 267.552 ns/op
+Iteration   5: 267.825 ns/op
+Iteration   6: 268.269 ns/op
+Iteration   7: 267.959 ns/op
+Iteration   8: 267.880 ns/op
+Iteration   9: 268.074 ns/op
+Iteration  10: 268.233 ns/op
+
+# Run progress: 94.79% complete, ETA 00:00:38
+# Fork: 2 of 2
+# Warmup Iteration   1: 273.380 ns/op
+# Warmup Iteration   2: 242.236 ns/op
+# Warmup Iteration   3: 268.194 ns/op
+# Warmup Iteration   4: 268.568 ns/op
+# Warmup Iteration   5: 267.443 ns/op
+Iteration   1: 268.402 ns/op
+Iteration   2: 267.598 ns/op
+Iteration   3: 267.934 ns/op
+Iteration   4: 267.606 ns/op
+Iteration   5: 268.094 ns/op
+Iteration   6: 267.600 ns/op
+Iteration   7: 268.507 ns/op
+Iteration   8: 267.579 ns/op
+Iteration   9: 267.838 ns/op
+Iteration  10: 267.494 ns/op
+
+
+Result "model.CarrelloModelBenchmark.setQuantita_update":
+  267.885 ±(99.9%) 0.272 ns/op [Average]
+  (min, avg, max) = (267.494, 267.885, 268.507), stdev = 0.313
+  CI (99.9%): [267.614, 268.157] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.setQuantita_update
+# Parameters: (cartSize = 1000, taglia = L)
+
+# Run progress: 95.83% complete, ETA 00:00:30
+# Fork: 1 of 2
+# Warmup Iteration   1: 273.890 ns/op
+# Warmup Iteration   2: 241.417 ns/op
+# Warmup Iteration   3: 268.029 ns/op
+# Warmup Iteration   4: 268.259 ns/op
+# Warmup Iteration   5: 269.112 ns/op
+Iteration   1: 268.236 ns/op
+Iteration   2: 268.697 ns/op
+Iteration   3: 268.898 ns/op
+Iteration   4: 268.338 ns/op
+Iteration   5: 269.173 ns/op
+Iteration   6: 270.331 ns/op
+Iteration   7: 268.294 ns/op
+Iteration   8: 267.865 ns/op
+Iteration   9: 268.224 ns/op
+Iteration  10: 268.627 ns/op
+
+# Run progress: 96.88% complete, ETA 00:00:22
+# Fork: 2 of 2
+# Warmup Iteration   1: 273.805 ns/op
+# Warmup Iteration   2: 242.108 ns/op
+# Warmup Iteration   3: 267.398 ns/op
+# Warmup Iteration   4: 267.465 ns/op
+# Warmup Iteration   5: 267.523 ns/op
+Iteration   1: 267.313 ns/op
+Iteration   2: 267.482 ns/op
+Iteration   3: 267.410 ns/op
+Iteration   4: 267.395 ns/op
+Iteration   5: 268.140 ns/op
+Iteration   6: 267.579 ns/op
+Iteration   7: 267.452 ns/op
+Iteration   8: 267.833 ns/op
+Iteration   9: 267.608 ns/op
+Iteration  10: 267.711 ns/op
+
+
+Result "model.CarrelloModelBenchmark.setQuantita_update":
+  268.130 ±(99.9%) 0.651 ns/op [Average]
+  (min, avg, max) = (267.313, 268.130, 270.331), stdev = 0.750
+  CI (99.9%): [267.479, 268.782] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.9, OpenJDK 64-Bit Server VM, 21.0.9+10
+# VM invoker: /usr/lib/jvm/java-21-openjdk/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: model.CarrelloModelBenchmark.setQuantita_update
+# Parameters: (cartSize = 1000, taglia = XL)
+
+# Run progress: 97.92% complete, ETA 00:00:15
+# Fork: 1 of 2
+# Warmup Iteration   1: 275.397 ns/op
+# Warmup Iteration   2: 241.487 ns/op
+# Warmup Iteration   3: 268.099 ns/op
+# Warmup Iteration   4: 268.326 ns/op
+# Warmup Iteration   5: 267.770 ns/op
+Iteration   1: 268.244 ns/op
+Iteration   2: 267.755 ns/op
+Iteration   3: 268.366 ns/op
+Iteration   4: 267.916 ns/op
+Iteration   5: 268.542 ns/op
+Iteration   6: 267.985 ns/op
+Iteration   7: 268.317 ns/op
+Iteration   8: 267.958 ns/op
+Iteration   9: 268.480 ns/op
+Iteration  10: 268.322 ns/op
+
+# Run progress: 98.96% complete, ETA 00:00:07
+# Fork: 2 of 2
+# Warmup Iteration   1: 274.191 ns/op
+# Warmup Iteration   2: 241.994 ns/op
+# Warmup Iteration   3: 268.943 ns/op
+# Warmup Iteration   4: 268.780 ns/op
+# Warmup Iteration   5: 269.378 ns/op
+Iteration   1: 268.180 ns/op
+Iteration   2: 268.485 ns/op
+Iteration   3: 268.388 ns/op
+Iteration   4: 267.987 ns/op
+Iteration   5: 268.282 ns/op
+Iteration   6: 268.230 ns/op
+Iteration   7: 268.064 ns/op
+Iteration   8: 268.840 ns/op
+Iteration   9: 268.378 ns/op
+Iteration  10: 268.822 ns/op
+
+
+Result "model.CarrelloModelBenchmark.setQuantita_update":
+  268.277 ±(99.9%) 0.247 ns/op [Average]
+  (min, avg, max) = (267.755, 268.277, 268.840), stdev = 0.284
+  CI (99.9%): [268.030, 268.524] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:12:12
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                           (cartSize)  (taglia)  Mode  Cnt     Score   Error  Units
+CarrelloModelBenchmark.aggiungi_hit_existing                10         S  avgt   20    14.437 ± 0.029  ns/op
+CarrelloModelBenchmark.aggiungi_hit_existing                10         M  avgt   20    14.432 ± 0.084  ns/op
+CarrelloModelBenchmark.aggiungi_hit_existing                10         L  avgt   20    14.409 ± 0.026  ns/op
+CarrelloModelBenchmark.aggiungi_hit_existing                10        XL  avgt   20    14.390 ± 0.020  ns/op
+CarrelloModelBenchmark.aggiungi_hit_existing               100         S  avgt   20    34.270 ± 0.081  ns/op
+CarrelloModelBenchmark.aggiungi_hit_existing               100         M  avgt   20    34.246 ± 0.024  ns/op
+CarrelloModelBenchmark.aggiungi_hit_existing               100         L  avgt   20    34.285 ± 0.051  ns/op
+CarrelloModelBenchmark.aggiungi_hit_existing               100        XL  avgt   20    34.285 ± 0.034  ns/op
+CarrelloModelBenchmark.aggiungi_hit_existing              1000         S  avgt   20   267.384 ± 0.787  ns/op
+CarrelloModelBenchmark.aggiungi_hit_existing              1000         M  avgt   20   266.731 ± 0.291  ns/op
+CarrelloModelBenchmark.aggiungi_hit_existing              1000         L  avgt   20   268.030 ± 1.134  ns/op
+CarrelloModelBenchmark.aggiungi_hit_existing              1000        XL  avgt   20   267.435 ± 0.739  ns/op
+CarrelloModelBenchmark.aggiungi_miss_insert                 10         S  avgt   20    52.699 ± 0.440  ns/op
+CarrelloModelBenchmark.aggiungi_miss_insert                 10         M  avgt   20    52.128 ± 0.086  ns/op
+CarrelloModelBenchmark.aggiungi_miss_insert                 10         L  avgt   20    52.307 ± 0.109  ns/op
+CarrelloModelBenchmark.aggiungi_miss_insert                 10        XL  avgt   20    52.745 ± 0.455  ns/op
+CarrelloModelBenchmark.aggiungi_miss_insert                100         S  avgt   20   120.345 ± 1.472  ns/op
+CarrelloModelBenchmark.aggiungi_miss_insert                100         M  avgt   20   121.216 ± 1.969  ns/op
+CarrelloModelBenchmark.aggiungi_miss_insert                100         L  avgt   20   119.588 ± 1.063  ns/op
+CarrelloModelBenchmark.aggiungi_miss_insert                100        XL  avgt   20   119.622 ± 1.170  ns/op
+CarrelloModelBenchmark.aggiungi_miss_insert               1000         S  avgt   20  1320.666 ± 4.857  ns/op
+CarrelloModelBenchmark.aggiungi_miss_insert               1000         M  avgt   20  1320.339 ± 4.006  ns/op
+CarrelloModelBenchmark.aggiungi_miss_insert               1000         L  avgt   20  1318.045 ± 4.159  ns/op
+CarrelloModelBenchmark.aggiungi_miss_insert               1000        XL  avgt   20  1317.634 ± 4.955  ns/op
+CarrelloModelBenchmark.rimuovi_removeIf_then_readd          10         S  avgt   20    51.042 ± 0.183  ns/op
+CarrelloModelBenchmark.rimuovi_removeIf_then_readd          10         M  avgt   20    51.157 ± 0.302  ns/op
+CarrelloModelBenchmark.rimuovi_removeIf_then_readd          10         L  avgt   20    50.934 ± 0.122  ns/op
+CarrelloModelBenchmark.rimuovi_removeIf_then_readd          10        XL  avgt   20    50.984 ± 0.165  ns/op
+CarrelloModelBenchmark.rimuovi_removeIf_then_readd         100         S  avgt   20   121.739 ± 1.138  ns/op
+CarrelloModelBenchmark.rimuovi_removeIf_then_readd         100         M  avgt   20   125.323 ± 1.307  ns/op
+CarrelloModelBenchmark.rimuovi_removeIf_then_readd         100         L  avgt   20   122.818 ± 1.255  ns/op
+CarrelloModelBenchmark.rimuovi_removeIf_then_readd         100        XL  avgt   20   122.621 ± 1.287  ns/op
+CarrelloModelBenchmark.rimuovi_removeIf_then_readd        1000         S  avgt   20  1310.862 ± 4.486  ns/op
+CarrelloModelBenchmark.rimuovi_removeIf_then_readd        1000         M  avgt   20  1313.240 ± 3.526  ns/op
+CarrelloModelBenchmark.rimuovi_removeIf_then_readd        1000         L  avgt   20  1317.841 ± 6.189  ns/op
+CarrelloModelBenchmark.rimuovi_removeIf_then_readd        1000        XL  avgt   20  1313.731 ± 4.224  ns/op
+CarrelloModelBenchmark.setQuantita_update                   10         S  avgt   20    14.263 ± 0.022  ns/op
+CarrelloModelBenchmark.setQuantita_update                   10         M  avgt   20    14.277 ± 0.024  ns/op
+CarrelloModelBenchmark.setQuantita_update                   10         L  avgt   20    14.253 ± 0.030  ns/op
+CarrelloModelBenchmark.setQuantita_update                   10        XL  avgt   20    14.282 ± 0.032  ns/op
+CarrelloModelBenchmark.setQuantita_update                  100         S  avgt   20    32.176 ± 0.781  ns/op
+CarrelloModelBenchmark.setQuantita_update                  100         M  avgt   20    31.326 ± 0.458  ns/op
+CarrelloModelBenchmark.setQuantita_update                  100         L  avgt   20    30.758 ± 0.078  ns/op
+CarrelloModelBenchmark.setQuantita_update                  100        XL  avgt   20    32.050 ± 0.889  ns/op
+CarrelloModelBenchmark.setQuantita_update                 1000         S  avgt   20   267.946 ± 0.455  ns/op
+CarrelloModelBenchmark.setQuantita_update                 1000         M  avgt   20   267.885 ± 0.272  ns/op
+CarrelloModelBenchmark.setQuantita_update                 1000         L  avgt   20   268.130 ± 0.651  ns/op
+CarrelloModelBenchmark.setQuantita_update                 1000        XL  avgt   20   268.277 ± 0.247  ns/op
+
+Benchmark result is saved to jmh/report/model.CarrelloModelBenchmark/results.json
